@@ -9,7 +9,13 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ["../base/index.js", "plugin:jsx-a11y/recommended", "plugin:react/recommended", "plugin:react/jsx-runtime"],
+  extends: [
+    "../base/index.js",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:typescript-enum/recommended",
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -17,7 +23,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["jsx-a11y", "react", "react-hooks"],
+  plugins: ["jsx-a11y", "react", "react-hooks", "typescript-enum"],
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
     "@typescript-eslint/ban-types": [

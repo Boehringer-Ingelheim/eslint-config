@@ -102,11 +102,12 @@ module.exports = {
 };
 ```
 
-This shared ESLint configuration is specifically tailored for [React](https://reactjs.org/) projects, and extends `@boehringer-ingelheim/eslint-config/base`. It uses the browser environment, and includes recommended configurations for the following plugins: jsx-a11y, react, and react-hooks.
+This shared ESLint configuration is specifically tailored for [React](https://reactjs.org/) projects, and extends `@boehringer-ingelheim/eslint-config/base`. It uses the browser environment, and includes recommended configurations for the following plugins:
 
 - [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 - [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react)
 - [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
+- [`eslint-plugin-typescript-enum`](https://github.com/shian15810/eslint-plugin-typescript-enum)
 
 The configuration sets several custom rules, including `@typescript-eslint/ban-types` and `@typescript-eslint/consistent-type-definitions`, as well as rules for organizing and formatting import statements.
 
