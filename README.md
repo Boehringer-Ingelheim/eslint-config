@@ -6,7 +6,7 @@ This is the shared ESLint configuration used at [Boehringer Ingelheim](https://g
 
 [![npm version](https://img.shields.io/npm/v/@boehringer-ingelheim/eslint-config?style=for-the-badge)](https://www.npmjs.com/package/@boehringer-ingelheim/eslint-config)
 [![npm downloads](https://img.shields.io/npm/dm/@boehringer-ingelheim/eslint-config?style=for-the-badge)](https://www.npmjs.com/package/@boehringer-ingelheim/eslint-config)
-[![License: Apache-2.0](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://github.com/boehringer-ingelheim/eslint-config/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://github.com/boehringer-ingelheim/eslint-config/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/boehringer-ingelheim/eslint-config/graphs/commit-activity)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg?logo=conventional-commits&style=for-the-badge)](https://conventionalcommits.org)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-494949?logo=semantic-release&style=for-the-badge)](https://github.com/semantic-release/semantic-release)
