@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.0.1...v1.1.0) (2023-03-01)
+
+
+### Features
+
+* **react:** disallow the use of TypeScript enums ([cd7fc5c](https://github.com/Boehringer-Ingelheim/eslint-config/commit/cd7fc5cd1d71d902e814c01b1e0dc8ed2dbd1710))
+
 ## [1.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.0.0...v1.0.1) (2023-02-16)
 
 
