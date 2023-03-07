@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.0...v1.1.1) (2023-03-07)
+
+
+### Bug Fixes
+
+* **eslint-plugin:** [import/no-unused-modules] ignore rule on specified files ([be03c76](https://github.com/Boehringer-Ingelheim/eslint-config/commit/be03c76474f15a6cb40392fd323d0a994f0daceb))
+
 # [1.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.0.1...v1.1.0) (2023-03-01)
 
 
