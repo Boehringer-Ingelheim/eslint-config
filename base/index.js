@@ -17,6 +17,18 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:sonarjs/recommended",
   ],
+  overrides: [
+    {
+      files: [
+        "**/*.d.ts", // TypeScript declaration files
+        "**/*.{spec,test}.*", // Usually test files
+        "*.{js,ts}", // Mostly configuration files
+      ],
+      rules: {
+        "import/no-unused-modules": "off",
+      },
+    },
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "./tsconfig.json",
