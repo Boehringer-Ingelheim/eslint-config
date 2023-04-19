@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.1...v1.1.2) (2023-04-19)
+
+
+### Bug Fixes
+
+* **eslint-plugin:** [import/no-unused-modules] support CJS and ESM file extension on specified files ([4d872bf](https://github.com/Boehringer-Ingelheim/eslint-config/commit/4d872bf16e74ab94eec4911a6dc41b184d5bba06))
+
 ## [1.1.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.0...v1.1.1) (2023-03-07)
 
 
