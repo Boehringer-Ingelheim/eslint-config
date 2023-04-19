@@ -31,7 +31,8 @@ module.exports = {
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "./tsconfig.json",
+    // find the tsconfig.json nearest each source file
+    project: true,
   },
   plugins: ["@typescript-eslint", "sonarjs", "sort-keys-plus"],
   rules: {
