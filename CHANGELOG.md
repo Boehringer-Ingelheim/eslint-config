@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.2...v1.1.3) (2023-04-19)
+
+
+### Bug Fixes
+
+* **eslint-plugin:** [parserOptions] improve monorepo support ([7e97ec0](https://github.com/Boehringer-Ingelheim/eslint-config/commit/7e97ec031f8df6018b17a9a6a5886f86f03b6df6))
+
 ## [1.1.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.1...v1.1.2) (2023-04-19)
 
 
