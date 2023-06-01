@@ -22,7 +22,7 @@ module.exports = {
       files: [
         "**/*.d.ts", // TypeScript declaration files
         "**/*.{spec,test}.*", // Usually test files
-        "*.{js,cjs,mjs,ts,cts,mts}", // Mostly configuration files
+        "./*.{js,cjs,mjs,ts,cts,mts}", // Mostly configuration files on root level
       ],
       rules: {
         "import/no-unused-modules": "off",
