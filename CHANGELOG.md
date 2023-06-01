@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.3...v1.1.4) (2023-06-01)
+
+
+### Bug Fixes
+
+* **eslint-plugin:** [import/no-unused-modules] ignore configuration files on `eslintrc` file level ([a50fdf2](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a50fdf2447945babf08ede0c21fee971c1d42b22))
+
 ## [1.1.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.2...v1.1.3) (2023-04-19)
 
 
