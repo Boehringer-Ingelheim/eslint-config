@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.4...v2.0.0) (2023-08-14)
+
+
+### Features
+
+* update to typescript-eslint@6 ([dc77acf](https://github.com/Boehringer-Ingelheim/eslint-config/commit/dc77acf4b8427ec36c8e42711abf86cf2ee73066))
+
+
+### BREAKING CHANGES
+
+* update to typescript-eslint@6
+
 ## [1.1.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.3...v1.1.4) (2023-06-01)
 
 
