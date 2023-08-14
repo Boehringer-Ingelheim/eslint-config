@@ -6,5 +6,5 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 
 /** @type {import('eslint').ESLint.ConfigData}  */
 module.exports = {
-  extends: ["./index.js", "plugin:@typescript-eslint/strict"],
+  extends: ["./index.js", "plugin:@typescript-eslint/strict-type-checked"],
 };
