@@ -71,7 +71,7 @@ The following plugins are used in this configuration:
 - [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
 - [`eslint-plugin-sonarjs`](https://github.com/SonarSource/eslint-plugin-sonarjs)
 
-Additionally, the [`eslint-plugin-sort-keys-plus`](https://github.com/forivall/eslint-plugin-sort-keys-plus) is used to automatically fix sorting issues.
+Additionally, the [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) is used to automatically fix sorting issues.
 
 This configuration also sets up the TypeScript parser [`@typescript-eslint/parser`](https://typescript-eslint.io/architecture/parser) and [`eslint-import-resolver-typescript`](https://github.com/import-js/eslint-import-resolver-typescript). The TypeScript project file `./tsconfig.json` is set as default value for the project option in the parser configuration. If this is not the case, this must be changed accordingly:
 

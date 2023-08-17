@@ -43,44 +43,51 @@ module.exports = {
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
 
-    // eslint-plugin-import: https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
-    "import/order": [
-      "error",
-      {
-        alphabetize: {
-          caseInsensitive: true,
-          order: "asc",
-          orderImportKind: "asc",
-        },
-        pathGroups: [
-          {
-            group: "external",
-            pattern: "react",
-            position: "before",
-          },
-        ],
-        pathGroupsExcludedImportTypes: ["react"],
-      },
-    ],
-
     // eslint-plugin-react: https://github.com/jsx-eslint/eslint-plugin-react/tree/master/lib/rules
     "react/jsx-pascal-case": "error",
-    "react/jsx-sort-props": [
-      "error",
-      {
-        callbacksLast: true,
-        ignoreCase: true,
-        noSortAlphabetically: false,
-        reservedFirst: true,
-        shorthandFirst: false,
-        shorthandLast: false,
-      },
-    ],
+    "react/jsx-sort-props": "off", // disabled due to conflict with eslint-plugin-perfectionist
     "react/sort-default-props": "error",
 
     // eslint-plugin-react-hooks: https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
+
+    // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "custom-groups": {
+          type: {
+            react: ["react"],
+          },
+          value: {
+            react: ["react"],
+          },
+        },
+        groups: [
+          "react",
+          // Groups from shared config: https://eslint-plugin-perfectionist.azat.io/rules/sort-imports#groups
+          "type",
+          ["builtin", "external"],
+          "internal-type",
+          "internal",
+          ["parent-type", "sibling-type", "index-type"],
+          ["parent", "sibling", "index"],
+          "object",
+          "unknown",
+        ],
+        "newlines-between": "ignore",
+        "read-tsconfig": true,
+      },
+    ],
+    "perfectionist/sort-jsx-props": [
+      "error",
+      {
+        // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L40C12-L40C12
+        "always-on-top": ["children", "dangerouslySetInnerHTML", "key", "ref"],
+        callback: "last",
+      },
+    ],
   },
   settings: {
     react: {
