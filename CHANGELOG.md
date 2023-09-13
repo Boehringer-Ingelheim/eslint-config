@@ -1,3 +1,17 @@
+# [3.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v2.0.0...v3.0.0) (2023-09-13)
+
+
+### Features
+
+* add eslint-plugin-perfectionist ([92c629b](https://github.com/Boehringer-Ingelheim/eslint-config/commit/92c629bf8c11205e2204b598eb3c951546edd9af))
+* update to eslint-plugin-perfectionist@2 ([5da0d2d](https://github.com/Boehringer-Ingelheim/eslint-config/commit/5da0d2dc1fb1c17c0da6230582d687dab60c019b))
+
+
+### BREAKING CHANGES
+
+* update to eslint-plugin-perfectionist@2
+* add eslint-plugin-perfectionist and remove eslint-plugin-sort-keys-plus
+
 # [2.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v1.1.4...v2.0.0) (2023-08-14)
 
 
