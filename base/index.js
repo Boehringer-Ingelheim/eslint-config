@@ -15,6 +15,7 @@ module.exports = {
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:perfectionist/recommended-natural",
     "plugin:sonarjs/recommended",
   ],
   overrides: [
@@ -34,9 +35,10 @@ module.exports = {
     // find the tsconfig.json nearest each source file
     project: true,
   },
-  plugins: ["@typescript-eslint", "sonarjs", "sort-keys-plus"],
+  plugins: ["@typescript-eslint", "sonarjs"],
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
+    "@typescript-eslint/adjacent-overload-signatures": "off", // disabled due to conflict with eslint-plugin-perfectionist
     "@typescript-eslint/no-floating-promises": ["error", { ignoreVoid: true }],
     "@typescript-eslint/no-misused-promises": [
       "error",
@@ -52,7 +54,7 @@ module.exports = {
         varsIgnorePattern: "^_",
       },
     ],
-    "@typescript-eslint/sort-type-constituents": "error",
+    "@typescript-eslint/sort-type-constituents": "off", // disabled due to conflict with eslint-plugin-perfectionist
 
     // eslint: https://github.com/eslint/eslint/tree/main/lib/rules
     "arrow-body-style": ["error", "as-needed"],
@@ -75,6 +77,8 @@ module.exports = {
     "prefer-const": "error",
     "prefer-rest-params": "error",
     "prefer-template": "error",
+    "sort-imports": "off", // disabled due to conflict with eslint-plugin-perfectionist
+    "sort-keys": "off", // disabled due to conflict with eslint-plugin-perfectionist
 
     // eslint-plugin-import: https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
     "import/no-cycle": "error",
@@ -86,28 +90,20 @@ module.exports = {
         unusedExports: true,
       },
     ],
-    "import/order": [
-      "error",
-      {
-        alphabetize: {
-          caseInsensitive: true,
-          order: "asc",
-          orderImportKind: "asc",
-        },
-      },
-    ],
+    "import/order": "off", // disabled due to conflict with eslint-plugin-perfectionist
     "import/prefer-default-export": "off",
 
-    /**
-     * Required to fix sort-keys automatically, since this is not done by default.
-     * See: https://github.com/forivall/eslint-plugin-sort-keys-plus
-     */
-    "sort-keys-plus/sort-keys": [
+    // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
+    "perfectionist/sort-imports": [
       "error",
-      "asc",
       {
-        caseSensitive: false,
-        natural: true,
+        "newlines-between": "ignore",
+      },
+    ],
+    "perfectionist/sort-objects": [
+      "error",
+      {
+        "partition-by-comment": true,
       },
     ],
   },
