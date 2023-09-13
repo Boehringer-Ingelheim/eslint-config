@@ -98,7 +98,6 @@ module.exports = {
       "error",
       {
         "newlines-between": "ignore",
-        "read-tsconfig": true,
       },
     ],
     "perfectionist/sort-objects": [
