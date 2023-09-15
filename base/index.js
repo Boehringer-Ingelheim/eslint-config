@@ -1,3 +1,5 @@
+const { SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
+
 /**
  * Workaround to allow ESLint to resolve plugins that were installed
  * by an external config, see https://github.com/eslint/eslint/issues/3458.
@@ -97,6 +99,7 @@ module.exports = {
     "perfectionist/sort-imports": [
       "error",
       {
+        groups: SORT_IMPORTS_GROUPS,
         "newlines-between": "ignore",
         type: "natural",
       },

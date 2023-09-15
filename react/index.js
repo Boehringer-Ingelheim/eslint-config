@@ -1,3 +1,5 @@
+const { SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
+
 /**
  * Workaround to allow ESLint to resolve plugins that were installed
  * by an external config, see https://github.com/eslint/eslint/issues/3458.
@@ -64,18 +66,7 @@ module.exports = {
             react: ["react"],
           },
         },
-        groups: [
-          "react",
-          // Groups from shared config: https://eslint-plugin-perfectionist.azat.io/rules/sort-imports#groups
-          "type",
-          ["builtin", "external"],
-          "internal-type",
-          "internal",
-          ["parent-type", "sibling-type", "index-type"],
-          ["parent", "sibling", "index"],
-          "object",
-          "unknown",
-        ],
+        groups: ["react", ...SORT_IMPORTS_GROUPS],
         "newlines-between": "ignore",
         type: "natural",
       },
