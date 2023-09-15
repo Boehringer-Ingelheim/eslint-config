@@ -77,6 +77,7 @@ module.exports = {
           "unknown",
         ],
         "newlines-between": "ignore",
+        type: "natural",
       },
     ],
     "perfectionist/sort-jsx-props": [

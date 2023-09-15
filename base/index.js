@@ -98,12 +98,22 @@ module.exports = {
       "error",
       {
         "newlines-between": "ignore",
+        type: "natural",
+      },
+    ],
+    "perfectionist/sort-named-imports": [
+      "error",
+      {
+        "ignore-case": true,
+        type: "natural",
       },
     ],
     "perfectionist/sort-objects": [
       "error",
       {
+        "ignore-case": true,
         "partition-by-comment": true,
+        type: "natural",
       },
     ],
   },
