@@ -1,3 +1,5 @@
+const { SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
+
 /**
  * Workaround to allow ESLint to resolve plugins that were installed
  * by an external config, see https://github.com/eslint/eslint/issues/3458.
@@ -64,19 +66,10 @@ module.exports = {
             react: ["react"],
           },
         },
-        groups: [
-          "react",
-          // Groups from shared config: https://eslint-plugin-perfectionist.azat.io/rules/sort-imports#groups
-          "type",
-          ["builtin", "external"],
-          "internal-type",
-          "internal",
-          ["parent-type", "sibling-type", "index-type"],
-          ["parent", "sibling", "index"],
-          "object",
-          "unknown",
-        ],
+        groups: ["react", ...SORT_IMPORTS_GROUPS],
+        "ignore-case": true,
         "newlines-between": "ignore",
+        type: "natural",
       },
     ],
     "perfectionist/sort-jsx-props": [
@@ -87,6 +80,8 @@ module.exports = {
           reservedProps: ["children", "dangerouslySetInnerHTML", "key", "ref"], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L40C12-L40C12
         },
         groups: ["reservedProps", "unknown", "callback"],
+        "ignore-case": true,
+        type: "natural",
       },
     ],
   },

@@ -1,3 +1,5 @@
+const { SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
+
 /**
  * Workaround to allow ESLint to resolve plugins that were installed
  * by an external config, see https://github.com/eslint/eslint/issues/3458.
@@ -94,18 +96,30 @@ module.exports = {
     "import/prefer-default-export": "off",
 
     // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
+    "perfectionist/sort-array-includes": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-astro-attributes": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-classes": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-enums": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-exports": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-imports": [
       "error",
       {
+        groups: SORT_IMPORTS_GROUPS,
+        "ignore-case": true,
         "newlines-between": "ignore",
+        type: "natural",
       },
     ],
-    "perfectionist/sort-objects": [
-      "error",
-      {
-        "partition-by-comment": true,
-      },
-    ],
+    "perfectionist/sort-interfaces": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-jsx-props": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-maps": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-named-exports": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-named-imports": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-object-types": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-objects": ["error", { "ignore-case": true, "partition-by-comment": true, type: "natural" }],
+    "perfectionist/sort-svelte-attributes": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-union-types": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-vue-attributes": ["error", { "ignore-case": true, type: "natural" }],
   },
   settings: {
     "import/resolver": {
