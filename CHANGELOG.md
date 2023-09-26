@@ -1,3 +1,17 @@
+# [3.1.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.0.0...v3.1.0-next.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* **perfectionist:**  update import groups configuration ([2513e42](https://github.com/Boehringer-Ingelheim/eslint-config/commit/2513e428957d7d97c20b08e26ba40af140f0c88a))
+* **perfectionist:** natural sorting for imports and objects ([2dcb782](https://github.com/Boehringer-Ingelheim/eslint-config/commit/2dcb7821fa3d3ba0366e2938c768ee962dcd23ef))
+* **perfectionist:** refine groups to sort imports ([9fd31cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9fd31cc33fd42861e99b7f7fe979bfb37a42f87e))
+
+
+### Features
+
+* **perfectionist:** extend all the rules for natural sorting with ignoring the lower/upper case ([03d7fdc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/03d7fdc346f6b5a521763ccca100612a4bf7ef06))
+
 # [3.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v2.0.0...v3.0.0) (2023-09-13)
 
 
