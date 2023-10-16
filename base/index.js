@@ -114,7 +114,7 @@ module.exports = {
     "perfectionist/sort-jsx-props": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-maps": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-named-exports": ["error", { "ignore-case": true, type: "natural" }],
-    "perfectionist/sort-named-imports": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-named-imports": ["error", { "ignore-alias": true, "ignore-case": true, type: "natural" }],
     "perfectionist/sort-object-types": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-objects": ["error", { "ignore-case": true, "partition-by-comment": true, type: "natural" }],
     "perfectionist/sort-svelte-attributes": ["error", { "ignore-case": true, type: "natural" }],
