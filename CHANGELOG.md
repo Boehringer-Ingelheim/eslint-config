@@ -1,3 +1,10 @@
+# [3.1.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.1.0-next.1...v3.1.0-next.2) (2023-10-16)
+
+
+### Features
+
+* **perfectionist:** extend rule `sort-named-imports` ([bb00813](https://github.com/Boehringer-Ingelheim/eslint-config/commit/bb008130ee5903bae626f1ef63f9e7e58e629d95))
+
 # [3.1.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.0.0...v3.1.0-next.1) (2023-09-26)
 
 
