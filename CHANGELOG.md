@@ -1,3 +1,15 @@
+# [4.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.1.0-next.2...v4.0.0-next.1) (2023-10-19)
+
+
+### Features
+
+* **typescript:** enable "@typescript-eslint/consistent-type-imports" rule ([15d5447](https://github.com/Boehringer-Ingelheim/eslint-config/commit/15d5447ee5fb3e4fc4ee2263e5e8eaff0e418308))
+
+
+### BREAKING CHANGES
+
+* **typescript:** Enforces a new import style for TypeScript types
+
 # [3.1.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.1.0-next.1...v3.1.0-next.2) (2023-10-16)
 
 
