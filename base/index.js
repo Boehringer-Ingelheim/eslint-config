@@ -41,7 +41,9 @@ module.exports = {
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
     "@typescript-eslint/adjacent-overload-signatures": "off", // disabled due to conflict with eslint-plugin-perfectionist
+    "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-floating-promises": ["error", { ignoreVoid: true }],
+    "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-misused-promises": [
       "error",
       {
@@ -83,6 +85,7 @@ module.exports = {
     "sort-keys": "off", // disabled due to conflict with eslint-plugin-perfectionist
 
     // eslint-plugin-import: https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
+    "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
     "import/no-cycle": "error",
     "import/no-unused-modules": [
       "error",
