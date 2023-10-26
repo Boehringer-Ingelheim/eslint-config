@@ -1,3 +1,10 @@
+# [4.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0-next.1...v4.0.0-next.2) (2023-10-26)
+
+
+### Features
+
+* **base:** move consistent type imports rules into strict configuration ([1c55d79](https://github.com/Boehringer-Ingelheim/eslint-config/commit/1c55d7939e6a74d4bb920edc9da780e87ee8e581))
+
 # [4.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.1.0-next.2...v4.0.0-next.1) (2023-10-19)
 
 
