@@ -6,7 +6,7 @@ const { SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
  */
 require("@rushstack/eslint-patch/modern-module-resolution");
 
-/** @type {import('eslint').ESLint.ConfigData & { parserOptions: import('eslint').ESLint.ConfigData & import('@typescript-eslint/parser').ParserOptions } }  */
+/** @type {import('eslint').ESLint.ConfigData & { parserOptions: import('eslint').ESLint.ConfigData['parserOptions'] & import('@typescript-eslint/parser').ParserOptions } }  */
 module.exports = {
   env: {
     es2022: true,
