@@ -84,6 +84,16 @@ module.exports = {
 };
 ```
 
+### `@boehringer-ingelheim/eslint-config/base/local`
+
+```js
+module.exports = {
+  extends: ["@boehringer-ingelheim/eslint-config/base/strict", "@boehringer-ingelheim/eslint-config/base/local"],
+};
+```
+
+This shared ESLint configuration configures or disables some rules for a better performance locally. With the help of [`is-ci`](https://www.npmjs.com/package/is-ci) those configs only apply to environments outside the CI pipelines.
+
 ### `@boehringer-ingelheim/eslint-config/base/strict`
 
 ```js
