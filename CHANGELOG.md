@@ -1,3 +1,10 @@
+# [4.0.0-next.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0-next.3...v4.0.0-next.4) (2023-11-09)
+
+
+### Bug Fixes
+
+* fixes wrong type hints in base config and react config ([ef60c9f](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ef60c9f8c39eee91087b4e8a4bb0e7140d55e939))
+
 # [4.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0-next.2...v4.0.0-next.3) (2023-11-09)
 
 
