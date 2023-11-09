@@ -1,3 +1,15 @@
+# [4.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0-next.2...v4.0.0-next.3) (2023-11-09)
+
+
+### Features
+
+* **local:** add shared-config for performance improvements for local development ([07dd315](https://github.com/Boehringer-Ingelheim/eslint-config/commit/07dd3158bbf02245f8d90b7e7f484be8e727fac3))
+
+
+### Performance Improvements
+
+* **base:** disable import rules recommended by typescript-eslint ([f35b2a8](https://github.com/Boehringer-Ingelheim/eslint-config/commit/f35b2a88ea619d00088574e7e3aa87f852980e31))
+
 # [4.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0-next.1...v4.0.0-next.2) (2023-10-26)
 
 
