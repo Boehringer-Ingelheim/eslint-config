@@ -95,6 +95,12 @@ module.exports = {
     "import/order": "off", // disabled due to conflict with eslint-plugin-perfectionist
     "import/prefer-default-export": "off",
 
+    // Deactivated as TypeScript provides the same checks as part of standard type checking: https://typescript-eslint.io/linting/troubleshooting/performance-troubleshooting
+    "import/default": "off",
+    "import/named": "off",
+    "import/namespace": "off",
+    "import/no-named-as-default-member": "off",
+
     // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
     "perfectionist/sort-array-includes": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-astro-attributes": ["error", { "ignore-case": true, type: "natural" }],
