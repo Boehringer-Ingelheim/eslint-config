@@ -4,21 +4,14 @@ module.exports = {
     es2022: true,
     node: true,
   },
-  extends: ["eslint:recommended"],
-  plugins: ["sort-keys-plus"],
+  extends: ["eslint:recommended", "plugin:perfectionist/recommended-natural"],
   rules: {
-    /**
-     * Required to fix sort-keys automatically, since this is not done by default.
-     * See: https://github.com/forivall/eslint-plugin-sort-keys-plus
-     */
-    "sort-keys-plus/sort-keys": [
+    "perfectionist/sort-objects": [
       "error",
-      "asc",
       {
-        allowLineSeparatedGroups: true,
-        caseSensitive: false,
-        natural: true,
+        "partition-by-comment": true,
       },
     ],
+    "sort-keys": "off", // disabled due to conflict with eslint-plugin-perfectionist
   },
 };
