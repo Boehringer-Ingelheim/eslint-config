@@ -1,4 +1,4 @@
-const { SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
+const { SORT_CLASSES_GROUPS, SORT_IMPORTS_GROUPS } = require("../lib/eslint-plugin-perfectionist");
 
 /**
  * Workaround to allow ESLint to resolve plugins that were installed
@@ -104,7 +104,7 @@ module.exports = {
     // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
     "perfectionist/sort-array-includes": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-astro-attributes": ["error", { "ignore-case": true, type: "natural" }],
-    "perfectionist/sort-classes": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-classes": ["error", { groups: SORT_CLASSES_GROUPS, "ignore-case": true, type: "natural" }],
     "perfectionist/sort-enums": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-exports": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-imports": [
