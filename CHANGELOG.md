@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0...v4.0.1) (2023-11-16)
+
+
+### Bug Fixes
+
+* **perfectionist:** reenable recommended groups configuration of perfectionist/sort-classes ([8fa1e5b](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8fa1e5b2a9cba29f05288d825d7dfe61539d00e4)), closes [#16](https://github.com/Boehringer-Ingelheim/eslint-config/issues/16)
+
 # [4.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v3.0.0...v4.0.0) (2023-11-10)
 
 
