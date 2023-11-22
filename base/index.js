@@ -124,7 +124,7 @@ module.exports = {
     "perfectionist/sort-object-types": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-objects": ["error", { "ignore-case": true, "partition-by-comment": true, type: "natural" }],
     "perfectionist/sort-svelte-attributes": ["error", { "ignore-case": true, type: "natural" }],
-    "perfectionist/sort-union-types": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-union-types": ["error", { "ignore-case": true, "nullable-last": true, type: "natural" }],
     "perfectionist/sort-vue-attributes": ["error", { "ignore-case": true, type: "natural" }],
   },
   settings: {
