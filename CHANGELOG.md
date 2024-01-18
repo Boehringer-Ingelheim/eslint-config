@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.1...v4.1.0) (2024-01-18)
+
+
+### Features
+
+* add reportUnusedDisableDirectives setting to base ([d73d2e6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/d73d2e6f6c79c1094db18e56a92843f060a3eebe))
+
 ## [4.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.0...v4.0.1) (2023-11-16)
 
 
