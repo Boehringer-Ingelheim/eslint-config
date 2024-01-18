@@ -38,6 +38,8 @@ module.exports = {
     project: true,
   },
   plugins: ["@typescript-eslint", "sonarjs"],
+  // Warn about unused eslint-disable directives
+  reportUnusedDisableDirectives: true,
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
     "@typescript-eslint/adjacent-overload-signatures": "off", // disabled due to conflict with eslint-plugin-perfectionist
