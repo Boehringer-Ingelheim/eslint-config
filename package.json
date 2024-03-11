@@ -21,7 +21,7 @@
   ],
   "main": "base/index.js",
   "scripts": {
-    "prepare": "husky install && chmod ug+x .husky/*",
+    "prepare": "husky && chmod ug+x .husky/*",
     "release": "dotenv -- semantic-release --no-ci",
     "release:ci": "semantic-release",
     "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install"
@@ -30,30 +30,30 @@
     "eslint": "^8.54.0"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.6.0",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
+    "@rushstack/eslint-patch": "^1.7.2",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-perfectionist": "^2.4.0",
-    "eslint-plugin-playwright": "^0.18.0",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-perfectionist": "^2.6.0",
+    "eslint-plugin-playwright": "^1.5.2",
+    "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-sonarjs": "^0.24.0",
     "eslint-plugin-typescript-enum": "^2.1.0",
     "is-ci": "^3.0.1"
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "1.0.0",
-    "@commitlint/cli": "18.4.3",
-    "@commitlint/config-conventional": "18.4.3",
-    "@commitlint/types": "18.4.3",
+    "@commitlint/cli": "19.0.3",
+    "@commitlint/config-conventional": "19.0.3",
+    "@commitlint/types": "19.0.3",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "dotenv-cli": "7.3.0",
-    "husky": "8.0.3",
-    "prettier": "3.1.0",
-    "semantic-release": "22.0.8"
+    "dotenv-cli": "7.4.1",
+    "husky": "9.0.11",
+    "prettier": "3.2.5",
+    "semantic-release": "23.0.2"
   }
 }
