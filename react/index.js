@@ -25,7 +25,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["jsx-a11y", "react", "react-hooks", "typescript-enum"],
+  plugins: ["jsx-a11y", "react", "react-hooks", "react-refresh", "typescript-enum"],
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
     "@typescript-eslint/ban-types": [
@@ -84,6 +84,9 @@ module.exports = {
         type: "natural",
       },
     ],
+
+    // eslint-plugin-react-refresh: https://github.com/ArnaudBarre/eslint-plugin-react-refresh
+    "react-refresh/only-export-components": "warn"
   },
   settings: {
     react: {
