@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.1.0...v4.2.0) (2024-03-14)
+
+
+### Features
+
+* updates ([a18892a](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a18892ae723a317d9bab4661a6d2b24483a0bb72))
+
 # [4.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.1...v4.1.0) (2024-01-18)
 
 
