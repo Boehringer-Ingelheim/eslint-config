@@ -27,12 +27,12 @@
     "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install"
   },
   "peerDependencies": {
-    "eslint": "^8.54.0"
+    "eslint": "^8.56.0"
   },
   "dependencies": {
     "@rushstack/eslint-patch": "^1.7.2",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
