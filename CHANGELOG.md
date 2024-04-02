@@ -1,3 +1,22 @@
+# [5.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.2.0...v5.0.0-next.1) (2024-03-14)
+
+
+### Features
+
+* update package typescript-eslint@7 ([b2990b5](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b2990b5d9df75a612ffcdc454c037152884c19ca))
+
+
+### BREAKING CHANGES
+
+* update to typescript-eslint@7
+
+# [4.2.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.1.0...v4.2.0) (2024-03-14)
+
+
+### Features
+
+* updates ([a18892a](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a18892ae723a317d9bab4661a6d2b24483a0bb72))
+
 # [4.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.0.1...v4.1.0) (2024-01-18)
 
 
