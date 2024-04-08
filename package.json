@@ -30,17 +30,17 @@
     "eslint": "^8.54.0"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.9.0",
+    "@rushstack/eslint-patch": "^1.10.1",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-perfectionist": "^2.7.0",
+    "eslint-plugin-perfectionist": "^2.8.0",
     "eslint-plugin-playwright": "^1.5.4",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sonarjs": "^0.24.0",
+    "eslint-plugin-sonarjs": "^0.25.1",
     "eslint-plugin-typescript-enum": "^2.1.0",
     "is-ci": "^3.0.1"
   },
@@ -54,6 +54,6 @@
     "dotenv-cli": "7.4.1",
     "husky": "9.0.11",
     "prettier": "3.2.5",
-    "semantic-release": "23.0.6"
+    "semantic-release": "23.0.7"
   }
 }
