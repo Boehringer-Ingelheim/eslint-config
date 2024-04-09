@@ -1,3 +1,16 @@
+# [5.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.0-next.1...v5.0.0-next.2) (2024-04-09)
+
+
+### Bug Fixes
+
+* merge brought in unintentional downgrade ([39fc2ec](https://github.com/Boehringer-Ingelheim/eslint-config/commit/39fc2ec533edc47f6eeda77d83e4b71081728f43))
+
+
+### Features
+
+* added react-refresh to react config ([8a9c441](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8a9c441b1119726462204fac46b1f11f9e647495))
+* update version ([cdfd4cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/cdfd4cc841e53be7c69229ef0d2b4525f2488358))
+
 # [5.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.2.0...v5.0.0-next.1) (2024-03-14)
 
 
