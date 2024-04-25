@@ -119,6 +119,7 @@ module.exports = {
       },
     ],
     "perfectionist/sort-interfaces": ["error", { "ignore-case": true, type: "natural" }],
+    "perfectionist/sort-intersection-types": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-jsx-props": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-maps": ["error", { "ignore-case": true, type: "natural" }],
     "perfectionist/sort-named-exports": ["error", { "ignore-case": true, type: "natural" }],
