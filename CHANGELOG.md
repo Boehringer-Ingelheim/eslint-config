@@ -1,3 +1,10 @@
+# [5.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.0-next.2...v5.0.0-next.3) (2024-04-25)
+
+
+### Features
+
+* **perfectionist:** adapt the rule configuration to sort-intersection-types ([f2a2f94](https://github.com/Boehringer-Ingelheim/eslint-config/commit/f2a2f9468759b12029f35aa489fb8609dc35d697))
+
 # [5.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.0-next.1...v5.0.0-next.2) (2024-04-09)
 
 
