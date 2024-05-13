@@ -1,3 +1,23 @@
+# [5.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.2.0...v5.0.0) (2024-05-13)
+
+
+### Bug Fixes
+
+* merge brought in unintentional downgrade ([39fc2ec](https://github.com/Boehringer-Ingelheim/eslint-config/commit/39fc2ec533edc47f6eeda77d83e4b71081728f43))
+
+
+### Features
+
+* added react-refresh to react config ([8a9c441](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8a9c441b1119726462204fac46b1f11f9e647495))
+* **perfectionist:** adapt the rule configuration to sort-intersection-types ([f2a2f94](https://github.com/Boehringer-Ingelheim/eslint-config/commit/f2a2f9468759b12029f35aa489fb8609dc35d697))
+* update package typescript-eslint@7 ([b2990b5](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b2990b5d9df75a612ffcdc454c037152884c19ca))
+* update version ([cdfd4cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/cdfd4cc841e53be7c69229ef0d2b4525f2488358))
+
+
+### BREAKING CHANGES
+
+* update to typescript-eslint@7
+
 # [5.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.0-next.2...v5.0.0-next.3) (2024-04-25)
 
 
