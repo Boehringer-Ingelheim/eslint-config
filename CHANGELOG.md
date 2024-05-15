@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.0...v5.0.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* **base:** [sonarjs] use recommended-legacy configuration ([baa1736](https://github.com/Boehringer-Ingelheim/eslint-config/commit/baa173616db5554babe303a1705c4eb1a6bd1385))
+
 # [5.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v4.2.0...v5.0.0) (2024-05-13)
 
 
