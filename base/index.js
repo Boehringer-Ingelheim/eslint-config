@@ -18,7 +18,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:perfectionist/recommended-natural",
-    "plugin:sonarjs/recommended",
+    "plugin:sonarjs/recommended-legacy",
   ],
   overrides: [
     {
