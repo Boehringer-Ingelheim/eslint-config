@@ -1,3 +1,10 @@
+## [5.0.2-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.1...v5.0.2-next.1) (2024-05-29)
+
+
+### Bug Fixes
+
+* allows number in string templates for @typescript-eslint/restrict-template-expressions ([f985ba0](https://github.com/Boehringer-Ingelheim/eslint-config/commit/f985ba014c699c22a821a297dbaa33d1eec0e962))
+
 ## [5.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.0...v5.0.1) (2024-05-15)
 
 
