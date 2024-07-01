@@ -25,7 +25,7 @@ Create or update the `.eslintrc.js` file in your projects root directory accordi
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base/strict"],
+  extends: ['@boehringer-ingelheim/eslint-config/base/strict'],
 };
 ```
 
@@ -35,9 +35,9 @@ This is not recommended as the goal is to have similar code stylings in all proj
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base/strict"],
+  extends: ['@boehringer-ingelheim/eslint-config/base/strict'],
   rules: {
-    "no-empty-function": "off",
+    'no-empty-function': 'off',
   },
 };
 ```
@@ -59,7 +59,7 @@ Opinionated Options that differ from the standard/recommended eslint configurati
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base"],
+  extends: ['@boehringer-ingelheim/eslint-config/base'],
 };
 ```
 
@@ -79,7 +79,7 @@ This configuration also sets up the TypeScript parser [`@typescript-eslint/parse
 module.exports = {
   parserOptions: {
     // Use `tsconfing.dev.json` as typescript project configuration, see: https://typescript-eslint.io/architecture/parser/#project
-    project: "./tsconfig.dev.json",
+    project: './tsconfig.dev.json',
   },
 };
 ```
@@ -88,7 +88,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base/strict", "@boehringer-ingelheim/eslint-config/base/local"],
+  extends: ['@boehringer-ingelheim/eslint-config/base/strict', '@boehringer-ingelheim/eslint-config/base/local'],
 };
 ```
 
@@ -98,7 +98,7 @@ This shared ESLint configuration configures or disables some rules for a better 
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base/strict"],
+  extends: ['@boehringer-ingelheim/eslint-config/base/strict'],
 };
 ```
 
@@ -108,7 +108,7 @@ This shared ESLint configuration extends the `@boehringer-ingelheim/eslint-confi
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base/strict", "@boehringer-ingelheim/eslint-config/react"],
+  extends: ['@boehringer-ingelheim/eslint-config/base/strict', '@boehringer-ingelheim/eslint-config/react'],
 };
 ```
 
@@ -125,7 +125,7 @@ The configuration sets several custom rules, including `@typescript-eslint/ban-t
 
 ```js
 module.exports = {
-  extends: ["@boehringer-ingelheim/eslint-config/base/strict", "@boehringer-ingelheim/eslint-config/playwright"],
+  extends: ['@boehringer-ingelheim/eslint-config/base/strict', '@boehringer-ingelheim/eslint-config/playwright'],
 };
 ```
 
