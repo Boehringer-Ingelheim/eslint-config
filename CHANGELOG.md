@@ -1,3 +1,10 @@
+## [5.0.3-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.2...v5.0.3-next.1) (2024-07-15)
+
+
+### Bug Fixes
+
+* fixes @typescript-eslint/restrict-template-expressions configuration ([9013d86](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9013d86d66b2487f5e6c6787dc82a9ff06c9fc7e))
+
 ## [5.0.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.1...v5.0.2) (2024-07-11)
 
 

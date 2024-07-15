@@ -16,7 +16,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       {
-        ...typescriptEslintPlugin.rules['restrict-template-expressions'].meta.docs.recommended.strict,
+        ...typescriptEslintPlugin.rules['restrict-template-expressions'].meta.docs.recommended.strict[0],
         allowNumber: true,
       },
     ],
