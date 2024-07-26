@@ -1,3 +1,10 @@
+# [5.1.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.3...v5.1.0-next.1) (2024-07-24)
+
+
+### Features
+
+* **deps:** update dependencies ([9166ce6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9166ce676ce982d4332309a0f441c9013533b502))
+
 ## [5.0.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.2...v5.0.3) (2024-07-15)
 
 
