@@ -1,3 +1,15 @@
+# [6.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.1...v6.0.0-next.2) (2024-08-07)
+
+
+### Features
+
+* **deps:** update eslint-plugin-perfectionist@3 ([1ca8eac](https://github.com/Boehringer-Ingelheim/eslint-config/commit/1ca8eacb1add6099f86b7abee1e7da7e5bad05a7))
+
+
+### BREAKING CHANGES
+
+* **deps:** update to eslint-plugin-perfectionist@3
+
 # [6.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.1.0-next.1...v6.0.0-next.1) (2024-08-07)
 
 
