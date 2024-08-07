@@ -1,10 +1,15 @@
-const { SORT_CLASSES_GROUPS, SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist');
+const {
+  SORT_CLASSES_GROUPS,
+  SORT_IMPORTS_GROUPS,
+  SORT_INTERSECTION_TYPES_GROUPS,
+} = require('../lib/eslint-plugin-perfectionist');
 
 /**
  * Workaround to allow ESLint to resolve plugins that were installed
  * by an external config, see https://github.com/eslint/eslint/issues/3458.
  */
 require('@rushstack/eslint-patch/modern-module-resolution');
+const eslintPluginPerfectionist = require('eslint-plugin-perfectionist');
 
 /** @type {import('eslint').ESLint.ConfigData & { parserOptions: import('eslint').ESLint.ConfigData['parserOptions'] & import('@typescript-eslint/parser').ParserOptions } }  */
 module.exports = {
@@ -18,7 +23,7 @@ module.exports = {
     'plugin:deprecation/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:perfectionist/recommended-natural',
+    'plugin:perfectionist/recommended-natural-legacy',
     'plugin:sonarjs/recommended-legacy',
   ],
   overrides: [
@@ -105,31 +110,44 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
 
     // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
-    'perfectionist/sort-array-includes': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-astro-attributes': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-classes': ['error', { groups: SORT_CLASSES_GROUPS, 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-enums': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-exports': ['error', { 'ignore-case': true, type: 'natural' }],
+    'perfectionist/sort-classes': [
+      'error',
+      {
+        ...eslintPluginPerfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-classes'][1],
+        groups: SORT_CLASSES_GROUPS,
+      },
+    ],
     'perfectionist/sort-imports': [
       'error',
       {
+        ...eslintPluginPerfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-imports'][1],
         groups: SORT_IMPORTS_GROUPS,
-        'ignore-case': true,
-        'newlines-between': 'ignore',
-        type: 'natural',
+        newlinesBetween: 'ignore',
       },
     ],
-    'perfectionist/sort-interfaces': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-intersection-types': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-jsx-props': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-maps': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-named-exports': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-named-imports': ['error', { 'ignore-alias': true, 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-object-types': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-objects': ['error', { 'ignore-case': true, 'partition-by-comment': true, type: 'natural' }],
-    'perfectionist/sort-svelte-attributes': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-union-types': ['error', { 'ignore-case': true, type: 'natural' }],
-    'perfectionist/sort-vue-attributes': ['error', { 'ignore-case': true, type: 'natural' }],
+    'perfectionist/sort-intersection-types': [
+      'error',
+      {
+        ...eslintPluginPerfectionist.configs['recommended-natural-legacy'].rules[
+          'perfectionist/sort-intersection-types'
+        ][1],
+        groups: SORT_INTERSECTION_TYPES_GROUPS,
+      },
+    ],
+    'perfectionist/sort-named-imports': [
+      'error',
+      {
+        ...eslintPluginPerfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-named-imports'][1],
+        ignoreAlias: true,
+      },
+    ],
+    'perfectionist/sort-objects': [
+      'error',
+      {
+        ...eslintPluginPerfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-objects'][1],
+        partitionByComment: true,
+      },
+    ],
   },
   settings: {
     'import/resolver': {
