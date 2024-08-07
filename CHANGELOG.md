@@ -1,3 +1,15 @@
+# [6.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.1.0-next.1...v6.0.0-next.1) (2024-08-07)
+
+
+### Features
+
+* **base:** add 'eslint-plugin-deprecation' to report usage of deprecated code ([00939c6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/00939c646965d72a93b7716d610166ed90f3bd60))
+
+
+### BREAKING CHANGES
+
+* **base:** add 'eslint-plugin-deprecation' to base configuration
+
 # [5.1.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.3...v5.1.0-next.1) (2024-07-24)
 
 
