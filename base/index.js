@@ -67,11 +67,11 @@ module.exports = {
     '@typescript-eslint/sort-type-constituents': 'off', // disabled due to conflict with eslint-plugin-perfectionist
 
     // eslint: https://github.com/eslint/eslint/tree/main/lib/rules
+    '@typescript-eslint/dot-notation': ['error', { allowPattern: '^[a-z]+(_[a-z]+)+$' }],
     'arrow-body-style': ['error', 'as-needed'],
     camelcase: 'warn',
     curly: 'error',
     'default-case': 'error',
-    'dot-notation': ['error', { allowPattern: '^[a-z]+(_[a-z]+)+$' }],
     eqeqeq: 'error',
     'logical-assignment-operators': ['error', 'never'],
     'no-console': ['warn', { allow: ['warn', 'error'] }],
