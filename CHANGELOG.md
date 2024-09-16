@@ -1,3 +1,10 @@
+# [6.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.2...v6.0.0-next.3) (2024-09-16)
+
+
+### Bug Fixes
+
+* **typescript:** switch from eslint dot-notation to @typescript-eslint/do-notation ([0327e74](https://github.com/Boehringer-Ingelheim/eslint-config/commit/0327e74b727e7417ad595ae3d0ac674dcf930f0b))
+
 # [6.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.1...v6.0.0-next.2) (2024-08-07)
 
 
