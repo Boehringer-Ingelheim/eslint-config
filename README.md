@@ -136,6 +136,26 @@ This shared ESLint configuration is designed to enforce best practices and recom
 - [`playwright/prefer-to-have-length`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/prefer-to-have-length.md): enforces the use of `.toHaveLength()` instead of `.toEqual(n)` when testing the length of an object.
 - [`playwright/require-top-level-describe`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/require-top-level-describe.md): requires tests to be organized into top-level `describe()` blocks.
 
+### `@boehringer-ingelheim/eslint-config/prettier-disable`
+
+```js
+module.exports = {
+  extends: [
+    '@boehringer-ingelheim/eslint-config/base/strict',
+    // Following needs eslint-plugin-prettier to be installed as described by https://github.com/prettier/eslint-plugin-prettier
+    // Should be second to last
+    'plugin:prettier/recommended',
+    // Should be last
+    '@boehringer-ingelheim/eslint-config/prettier-disable'
+  ],
+};
+```
+
+This shared ESLint configuration is wrapper around [`eslint-config-disable`](https://github.com/prettier/eslint-config-prettier), which is used to turn off all rules that are unnecessary or might conflict with Prettier. This wrapper reenables a few rules that can be used with our shared configurations as we are using specific options of those rules which are compatible with Prettier (see [Special Rules](https://github.com/prettier/eslint-config-prettier#special-rules)). Following rules are reenabled:
+
+- [`curly`](https://github.com/eslint/eslint/blob/main/docs/src/rules/curly.md) with the (default) option "all": Enforce consistent brace style for all control statements
+- [`no-confusing-arrow`](https://github.com/eslint/eslint/blob/main/docs/src/rules/no-confusing-arrow.md) with allowParens `false` and onlyOneSimpleParam `true`: Disallow arrow functions where they could be confused with comparisons.
+
 ## Local Development
 
 ### Install Dependencies
