@@ -6,6 +6,11 @@ module.exports = {
       name: 'next',
       prerelease: true,
     },
+    {
+      name: 'feature/**',
+      prerelease: '${name.replace(/^feature\\//g, "").replace(/\\/-/g, "")}',
+      channel: '${name.replace(/^feature\\//g, "").replace(/\\/-/g, "")}',
+    },
   ],
   plugins: [
     '@semantic-release/commit-analyzer',
