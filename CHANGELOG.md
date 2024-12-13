@@ -1,3 +1,24 @@
+# [6.0.0-next.6](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.5...v6.0.0-next.6) (2024-12-13)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-deprecation as this is handled by sonarjs and typescript-eslint now ([931e781](https://github.com/Boehringer-Ingelheim/eslint-config/commit/931e7815f581ba6d8ed55346fbe77c7bfada487c))
+
+
+### chore
+
+* **deps:** update major release of eslint-plugin-perfectionist ([56b26af](https://github.com/Boehringer-Ingelheim/eslint-config/commit/56b26af104fd3a696774502fee964df64849beb5))
+* **deps:** update majore release of typescript-eslint ([c929b6e](https://github.com/Boehringer-Ingelheim/eslint-config/commit/c929b6e17d07746c932185cf5d796e15711c6d64))
+* **deps:** update some major versions ([bd583e3](https://github.com/Boehringer-Ingelheim/eslint-config/commit/bd583e33ae25adc18110ff57c7308963453d9626))
+
+
+### BREAKING CHANGES
+
+* **deps:** update major release of typescript-eslint with new rules enabled
+* **deps:** major update and rule changes of eslint perfectionist
+* **deps:** major updates for eslint-sonarjs with new rules enabled
+
 # [6.0.0-next.5](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.4...v6.0.0-next.5) (2024-12-13)
 
 
