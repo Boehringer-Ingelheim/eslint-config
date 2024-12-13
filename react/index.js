@@ -28,7 +28,7 @@ module.exports = {
   plugins: ['jsx-a11y', 'react', 'react-hooks', 'react-refresh', 'typescript-enum'],
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
-    '@typescript-eslint/ban-types': [
+    '@typescript-eslint/no-restricted-types': [
       'error',
       {
         types: {
