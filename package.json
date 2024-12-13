@@ -27,36 +27,36 @@
     "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^8.57.1"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.10.3",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.17.0",
+    "@rushstack/eslint-patch": "^1.10.4",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-deprecation": "^3.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-perfectionist": "^3.0.0",
-    "eslint-plugin-playwright": "^1.6.2",
-    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-playwright": "^1.8.3",
+    "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-sonarjs": "^1.0.4",
     "eslint-plugin-typescript-enum": "^2.1.0",
-    "is-ci": "^3.0.1"
+    "is-ci": "^4.1.0"
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
-    "@commitlint/cli": "19.3.0",
-    "@commitlint/config-conventional": "19.2.2",
-    "@commitlint/types": "19.0.3",
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
+    "@commitlint/types": "19.5.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "dotenv-cli": "7.4.2",
-    "husky": "9.1.1",
-    "prettier": "3.3.3",
-    "semantic-release": "24.0.0"
+    "dotenv-cli": "7.4.4",
+    "husky": "9.1.7",
+    "prettier": "3.4.2",
+    "semantic-release": "24.2.0"
   }
 }
