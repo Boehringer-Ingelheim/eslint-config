@@ -1,3 +1,35 @@
+# [6.0.0-flat-config.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.3...v6.0.0-flat-config.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-deprecation as this is handled by sonarjs and typescript-eslint now ([475751d](https://github.com/Boehringer-Ingelheim/eslint-config/commit/475751d416b7a24a2eee48573910150cfb92d4fc))
+* **typescript:** switch from eslint dot-notation to @typescript-eslint/do-notation ([0327e74](https://github.com/Boehringer-Ingelheim/eslint-config/commit/0327e74b727e7417ad595ae3d0ac674dcf930f0b))
+
+
+### chore
+
+* **deps:** update major release of eslint-plugin-perfectionist ([a4fbda5](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a4fbda5a14542d404f3d514f9e553f1d43cbfb01))
+* **deps:** update majore release of typescript-eslint ([eb1cd7f](https://github.com/Boehringer-Ingelheim/eslint-config/commit/eb1cd7f5e5ff31bd95cc38688b56b98f3d6352b4))
+* **deps:** update some major versions ([c48958b](https://github.com/Boehringer-Ingelheim/eslint-config/commit/c48958b442ef2795930591f0bbfd8fb6a029d75d))
+
+
+### Features
+
+* **base:** add 'eslint-plugin-deprecation' to report usage of deprecated code ([00939c6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/00939c646965d72a93b7716d610166ed90f3bd60))
+* **deps:** update dependencies ([9166ce6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9166ce676ce982d4332309a0f441c9013533b502))
+* **deps:** update eslint-plugin-perfectionist@3 ([1ca8eac](https://github.com/Boehringer-Ingelheim/eslint-config/commit/1ca8eacb1add6099f86b7abee1e7da7e5bad05a7))
+* **prettier-disable:** adds a prettier-disable shared config ([4e8000c](https://github.com/Boehringer-Ingelheim/eslint-config/commit/4e8000c543f629b6eb452181f230924c0b4e6f58))
+
+
+### BREAKING CHANGES
+
+* **deps:** update major release of typescript-eslint with new rules enabled
+* **deps:** major update and rule changes of eslint perfectionist
+* **deps:** major updates for eslint-sonarjs with new rules enabled
+* **base:** add 'eslint-plugin-deprecation' to base configuration
+* **deps:** update to eslint-plugin-perfectionist@3
+
 # [6.0.0-next.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.3...v6.0.0-next.4) (2024-12-13)
 
 
