@@ -21,25 +21,35 @@ npm install --save-dev @boehringer-ingelheim/eslint-config
 
 ### Add the configuration
 
-Create or update the `.eslintrc.js` file in your projects root directory accordingly.
+Create or update the `eslint.config.mjs` (`eslint.config.cjs` is also possible if commonjs is preferred) file in your projects root directory accordingly.
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base/strict'],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict
+)
 ```
+
+#### `boehringer.config(...)`
+
+This function is a re-export for the config-helper of typescript eslint (See [docs](https://github.com/typescript-eslint/typescript-eslint/blob/a383d5022b81eaf65ce7b0946491444c6eaa28e3/docs/packages/TypeScript_ESLint.mdx#config)).
 
 #### Extend or Override configuration
 
 This is not recommended as the goal is to have similar code stylings in all projects, but if for some reason you need to add or change the configuration, it is possible in the following way:
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base/strict'],
-  rules: {
-    'no-empty-function': 'off',
-  },
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict, 
+  {
+    rules: {
+      'no-empty-function': 'off',
+    },
+  }
+);
 ```
 
 More Information: [ESLint - Configuration Files
@@ -55,12 +65,14 @@ npx eslint .
 
 Opinionated Options that differ from the standard/recommended eslint configurations.
 
-### `@boehringer-ingelheim/eslint-config/base`
+### Base
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base'],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.base
+)
 ```
 
 This shared ESLint configuration is set up for TypeScript projects that adhere to modern JavaScript standards. It uses the latest version of TypeScript (ES2022) and extends several plugins and recommended rules to enforce best practices and catch potential errors.
@@ -76,57 +88,74 @@ Additionally, the [`eslint-plugin-perfectionist`](https://github.com/azat-io/esl
 This configuration also sets up the TypeScript parser [`@typescript-eslint/parser`](https://typescript-eslint.io/architecture/parser) and [`eslint-import-resolver-typescript`](https://github.com/import-js/eslint-import-resolver-typescript). The TypeScript project file `./tsconfig.json` is set as default value for the project option in the parser configuration. If this is not the case, this must be changed accordingly:
 
 ```js
-module.exports = {
-  parserOptions: {
-    // Use `tsconfing.dev.json` as typescript project configuration, see: https://typescript-eslint.io/architecture/parser/#project
-    project: './tsconfig.dev.json',
-  },
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.base,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.dev.json'],
+      },
+    },
+  }
+);
 ```
 
-### `@boehringer-ingelheim/eslint-config/base/local`
+### Local
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base/strict', '@boehringer-ingelheim/eslint-config/base/local'],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.base,
+  boehringer.configs.local
+);
 ```
 
 This shared ESLint configuration configures or disables some rules for a better performance locally. With the help of [`is-ci`](https://www.npmjs.com/package/is-ci) those configs only apply to environments outside the CI pipelines.
 
-### `@boehringer-ingelheim/eslint-config/base/strict`
+### Strict
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base/strict'],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict
+);
 ```
 
-This shared ESLint configuration extends the `@boehringer-ingelheim/eslint-config/base` configuration and adds additional strict linting rules from the `@typescript-eslint/eslint-plugin` plugin. These strict rules aim to enforce a high standard of code quality and improve code maintainability.
+This shared ESLint configuration extends the [base configuration](#base) and adds additional strict linting rules from the typescript-eslint plugin. These strict rules aim to enforce a high standard of code quality and improve code maintainability.
 
-### `@boehringer-ingelheim/eslint-config/react`
+### React
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base/strict', '@boehringer-ingelheim/eslint-config/react'],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict,
+  boehringer.configs.react
+);
 ```
 
-This shared ESLint configuration is specifically tailored for [React](https://reactjs.org/) projects, and extends `@boehringer-ingelheim/eslint-config/base`. It uses the browser environment, and includes recommended configurations for the following plugins:
+This shared ESLint configuration is specifically tailored for [React](https://reactjs.org/) projects, and extends the [base configuration](#base). It uses the browser environment, and includes recommended configurations for the following plugins:
 
 - [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 - [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react)
 - [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
-- [`eslint-plugin-typescript-enum`](https://github.com/shian15810/eslint-plugin-typescript-enum)
 
-The configuration sets several custom rules, including `@typescript-eslint/ban-types` and `@typescript-eslint/consistent-type-definitions`, as well as rules for organizing and formatting import statements.
+The configuration sets several custom rules, including [`@typescript-eslint/no-restricted-types`](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-restricted-types.mdx) and [`@typescript-eslint/consistent-type-definitions`](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-definitions.mdx), as well as rules for organizing and formatting import statements.
+Additionally in restricts the usage of enums using [`no-restricted-syntax`](https://github.com/eslint/eslint/blob/main/docs/src/rules/no-restricted-syntax.md).
 
-### `@boehringer-ingelheim/eslint-config/playwright`
+### Playwright
 
 ```js
-module.exports = {
-  extends: ['@boehringer-ingelheim/eslint-config/base/strict', '@boehringer-ingelheim/eslint-config/playwright'],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict,
+  boehringer.configs.playwright
+);
 ```
 
 This shared ESLint configuration is designed to enforce best practices and recommendations when writing tests with Playwright. It extends the [`eslint-plugin-playwright`](https://github.com/playwright-community/eslint-plugin-playwright) configuration and adds the following rules:
@@ -135,19 +164,20 @@ This shared ESLint configuration is designed to enforce best practices and recom
 - [`playwright/prefer-to-have-length`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/prefer-to-have-length.md): enforces the use of `.toHaveLength()` instead of `.toEqual(n)` when testing the length of an object.
 - [`playwright/require-top-level-describe`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/require-top-level-describe.md): requires tests to be organized into top-level `describe()` blocks.
 
-### `@boehringer-ingelheim/eslint-config/prettier-disable`
+### Prettier-disable
 
 ```js
-module.exports = {
-  extends: [
-    '@boehringer-ingelheim/eslint-config/base/strict',
-    // Following needs eslint-plugin-prettier to be installed as described by https://github.com/prettier/eslint-plugin-prettier
-    // Should be second to last
-    'plugin:prettier/recommended',
-    // Should be last
-    '@boehringer-ingelheim/eslint-config/prettier-disable'
-  ],
-};
+import boehringer from '@boehringer-ingelheim/eslint-config';
+import prettier from 'eslint-plugin-prettier/recommended';
+
+export default boehringer.config(
+  boehringer.configs.strict,
+  // Following needs eslint-plugin-prettier to be installed as described by https://github.com/prettier/eslint-plugin-prettier
+  // Should be second to last
+  prettier,
+  // Should be last
+  boehringer.configs.prettierDisable,
+);
 ```
 
 This shared ESLint configuration is wrapper around [`eslint-config-disable`](https://github.com/prettier/eslint-config-prettier), which is used to turn off all rules that are unnecessary or might conflict with Prettier. This wrapper reenables a few rules that can be used with our shared configurations as we are using specific options of those rules which are compatible with Prettier (see [Special Rules](https://github.com/prettier/eslint-config-prettier#special-rules)). Following rules are reenabled:
@@ -202,7 +232,7 @@ npm run release
 - [ ] Shared configuration: Angular
 - [ ] Shared configuration: Node.js
 - [ ] Test Cases
-- [ ] "[Flat](https://eslint.org/docs/latest/use/configure/configuration-files-new)" Config
+- [x] "[Flat](https://eslint.org/docs/latest/use/configure/configuration-files-new)" Config
 
 ## Show your support
 
