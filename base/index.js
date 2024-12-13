@@ -20,7 +20,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
-    'plugin:deprecation/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:perfectionist/recommended-natural-legacy',
