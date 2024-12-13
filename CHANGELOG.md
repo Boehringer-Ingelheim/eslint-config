@@ -1,3 +1,10 @@
+# [6.0.0-next.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.3...v6.0.0-next.4) (2024-12-13)
+
+
+### Features
+
+* **prettier-disable:** adds a prettier-disable shared config ([4e8000c](https://github.com/Boehringer-Ingelheim/eslint-config/commit/4e8000c543f629b6eb452181f230924c0b4e6f58))
+
 # [6.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.2...v6.0.0-next.3) (2024-09-16)
 
 
