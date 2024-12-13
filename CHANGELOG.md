@@ -1,3 +1,40 @@
+# [6.0.0-flat-config.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.3...v6.0.0-flat-config.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* **prettier-disable:** add prettier-disable to npm release ([617691f](https://github.com/Boehringer-Ingelheim/eslint-config/commit/617691fdc9d6181bfd263c7884bd0a8ad070f4d2))
+* remove eslint-plugin-deprecation as this is handled by sonarjs and typescript-eslint now ([931e781](https://github.com/Boehringer-Ingelheim/eslint-config/commit/931e7815f581ba6d8ed55346fbe77c7bfada487c))
+* **typescript:** switch from eslint dot-notation to @typescript-eslint/do-notation ([0327e74](https://github.com/Boehringer-Ingelheim/eslint-config/commit/0327e74b727e7417ad595ae3d0ac674dcf930f0b))
+
+
+### chore
+
+* **deps:** update major release of eslint-plugin-perfectionist ([56b26af](https://github.com/Boehringer-Ingelheim/eslint-config/commit/56b26af104fd3a696774502fee964df64849beb5))
+* **deps:** update majore release of typescript-eslint ([c929b6e](https://github.com/Boehringer-Ingelheim/eslint-config/commit/c929b6e17d07746c932185cf5d796e15711c6d64))
+* **deps:** update some major versions ([bd583e3](https://github.com/Boehringer-Ingelheim/eslint-config/commit/bd583e33ae25adc18110ff57c7308963453d9626))
+
+
+### Features
+
+* add basic typing to the index.js ([f3ab0ff](https://github.com/Boehringer-Ingelheim/eslint-config/commit/f3ab0ff6fdb21b5461e6e98bfe5964ec6f1980f5))
+* **base:** add 'eslint-plugin-deprecation' to report usage of deprecated code ([00939c6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/00939c646965d72a93b7716d610166ed90f3bd60))
+* **deps:** update dependencies ([9166ce6](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9166ce676ce982d4332309a0f441c9013533b502))
+* **deps:** update eslint-plugin-perfectionist@3 ([1ca8eac](https://github.com/Boehringer-Ingelheim/eslint-config/commit/1ca8eacb1add6099f86b7abee1e7da7e5bad05a7))
+* migrates to flat-config ([dd8c240](https://github.com/Boehringer-Ingelheim/eslint-config/commit/dd8c240fd363c92d4d0422970edc46c28301038b))
+* **prettier-disable:** adds a prettier-disable shared config ([4e8000c](https://github.com/Boehringer-Ingelheim/eslint-config/commit/4e8000c543f629b6eb452181f230924c0b4e6f58))
+
+
+### BREAKING CHANGES
+
+* migrate to flat config
+* drop support for legacy config
+* **deps:** update major release of typescript-eslint with new rules enabled
+* **deps:** major update and rule changes of eslint perfectionist
+* **deps:** major updates for eslint-sonarjs with new rules enabled
+* **base:** add 'eslint-plugin-deprecation' to base configuration
+* **deps:** update to eslint-plugin-perfectionist@3
+
 # [6.0.0-next.6](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.5...v6.0.0-next.6) (2024-12-13)
 
 
