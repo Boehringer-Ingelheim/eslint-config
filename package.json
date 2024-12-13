@@ -17,7 +17,8 @@
     "base",
     "lib",
     "react",
-    "playwright"
+    "playwright",
+    "prettier-disable"
   ],
   "main": "base/index.js",
   "scripts": {
