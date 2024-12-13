@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "6.0.0-flat-config.1",
+  "version": "6.0.0-flat-config.2",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
     "boehringer",

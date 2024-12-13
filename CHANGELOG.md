@@ -1,3 +1,16 @@
+# [6.0.0-flat-config.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-flat-config.1...v6.0.0-flat-config.2) (2024-12-13)
+
+
+### Features
+
+* migrates to flat-config ([7f0967c](https://github.com/Boehringer-Ingelheim/eslint-config/commit/7f0967cb6f6a88712a1d00a1ba3f6b776b781bfc))
+
+
+### BREAKING CHANGES
+
+* migrate to flat config
+* drop support for legacy config
+
 # [6.0.0-flat-config.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.3...v6.0.0-flat-config.1) (2024-12-13)
 
 
