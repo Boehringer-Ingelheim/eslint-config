@@ -7,9 +7,9 @@ module.exports = {
       prerelease: true,
     },
     {
+      channel: '${name.replace(/^feature\\//g, "").replace(/\\/-/g, "")}',
       name: 'feature/**',
       prerelease: '${name.replace(/^feature\\//g, "").replace(/\\/-/g, "")}',
-      channel: '${name.replace(/^feature\\//g, "").replace(/\\/-/g, "")}',
     },
   ],
   plugins: [
