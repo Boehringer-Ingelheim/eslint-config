@@ -28,7 +28,7 @@ module.exports = {
   plugins: ['jsx-a11y', 'react', 'react-hooks', 'react-refresh', 'typescript-enum'],
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
-    '@typescript-eslint/ban-types': [
+    '@typescript-eslint/no-restricted-types': [
       'error',
       {
         types: {
@@ -58,7 +58,7 @@ module.exports = {
     'perfectionist/sort-imports': [
       'error',
       {
-        'custom-groups': {
+        customGroups: {
           type: {
             react: ['react'],
           },
@@ -67,20 +67,20 @@ module.exports = {
           },
         },
         groups: ['react', ...SORT_IMPORTS_GROUPS],
-        'ignore-case': true,
-        'newlines-between': 'ignore',
+        ignoreCase: true,
+        newlinesBetween: 'ignore',
         type: 'natural',
       },
     ],
     'perfectionist/sort-jsx-props': [
       'error',
       {
-        'custom-groups': {
+        customGroups: {
           callback: 'on*',
           reservedProps: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L40C12-L40C12
         },
         groups: ['reservedProps', 'unknown', 'callback'],
-        'ignore-case': true,
+        ignoreCase: true,
         type: 'natural',
       },
     ],
