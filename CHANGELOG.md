@@ -1,3 +1,10 @@
+# [6.0.0-next.5](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.4...v6.0.0-next.5) (2024-12-13)
+
+
+### Bug Fixes
+
+* **prettier-disable:** add prettier-disable to npm release ([617691f](https://github.com/Boehringer-Ingelheim/eslint-config/commit/617691fdc9d6181bfd263c7884bd0a8ad070f4d2))
+
 # [6.0.0-next.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.3...v6.0.0-next.4) (2024-12-13)
 
 
