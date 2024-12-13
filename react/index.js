@@ -58,7 +58,7 @@ module.exports = {
     'perfectionist/sort-imports': [
       'error',
       {
-        'custom-groups': {
+        customGroups: {
           type: {
             react: ['react'],
           },
@@ -67,20 +67,20 @@ module.exports = {
           },
         },
         groups: ['react', ...SORT_IMPORTS_GROUPS],
-        'ignore-case': true,
-        'newlines-between': 'ignore',
+        ignoreCase: true,
+        newlinesBetween: 'ignore',
         type: 'natural',
       },
     ],
     'perfectionist/sort-jsx-props': [
       'error',
       {
-        'custom-groups': {
+        customGroups: {
           callback: 'on*',
           reservedProps: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L40C12-L40C12
         },
         groups: ['reservedProps', 'unknown', 'callback'],
-        'ignore-case': true,
+        ignoreCase: true,
         type: 'natural',
       },
     ],
