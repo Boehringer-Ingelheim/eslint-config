@@ -1,3 +1,22 @@
+# [6.0.0-next.7](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.6...v6.0.0-next.7) (2024-12-17)
+
+
+### Features
+
+* **deps:** update eslint-plugin-playwright to ^2.1.0 ([6f75084](https://github.com/Boehringer-Ingelheim/eslint-config/commit/6f750849246916b44032771f1ffa3a8afa2232c6))
+* **deps:** update eslint-plugin-react-hooks to ^5.1.0 ([76cd621](https://github.com/Boehringer-Ingelheim/eslint-config/commit/76cd6214c3c6df2c34c6d61856322852d5782b47))
+
+
+### Reverts
+
+* "chore(deps): update some major versions" ([28b4c17](https://github.com/Boehringer-Ingelheim/eslint-config/commit/28b4c178296b60ed97236be8fd9c19b0a25da17d))
+
+
+### BREAKING CHANGES
+
+* **deps:** major update for eslint-plugin-react-hooks to ^5.1.0
+* **deps:** major update for eslint-plugin-playwright to ^2.1.0
+
 # [6.0.0-next.6](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0-next.5...v6.0.0-next.6) (2024-12-13)
 
 
