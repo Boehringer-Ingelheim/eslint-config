@@ -41,7 +41,7 @@
     "eslint-plugin-perfectionist": "^4.3.0",
     "eslint-plugin-playwright": "^2.1.0",
     "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-sonarjs": "^1.0.4",
     "eslint-plugin-typescript-enum": "^2.1.0",
