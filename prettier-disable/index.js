@@ -9,6 +9,5 @@ module.exports = {
   extends: ['prettier'],
   rules: {
     curly: 'error',
-    'no-confusing-arrow': ['error', { allowParens: false, onlyOneSimpleParam: false }],
   },
 };
