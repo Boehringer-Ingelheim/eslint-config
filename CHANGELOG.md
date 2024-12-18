@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0...v6.0.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* **prettier-disable:** disable accidentally activated deprecated rule ([0ea3bfb](https://github.com/Boehringer-Ingelheim/eslint-config/commit/0ea3bfb76c327c67cdfd2d1b56f73258ca1654d9))
+
 # [6.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v5.0.3...v6.0.0) (2024-12-18)
 
 
