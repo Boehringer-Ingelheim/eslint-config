@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "6.0.1",
+  "version": "7.0.0-migrate-flat-config.1",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
     "boehringer",
@@ -14,26 +14,22 @@
   ],
   "license": "MIT",
   "files": [
-    "base",
-    "lib",
-    "react",
-    "playwright",
-    "prettier-disable"
+    "configs",
+    "lib"
   ],
-  "main": "base/index.js",
+  "main": "index.js",
   "scripts": {
     "prepare": "husky",
     "release": "dotenv -- semantic-release --no-ci",
     "release:ci": "semantic-release",
-    "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install"
+    "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install",
+    "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": ">= 8"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.10.4",
-    "@typescript-eslint/eslint-plugin": "^8.18.0",
-    "@typescript-eslint/parser": "^8.18.0",
+    "@eslint/js": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
@@ -44,8 +40,9 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-sonarjs": "^1.0.4",
-    "eslint-plugin-typescript-enum": "^2.1.0",
-    "is-ci": "^4.1.0"
+    "globals": "^15.14.0",
+    "is-ci": "^4.1.0",
+    "typescript-eslint": "^8.18.1"
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
