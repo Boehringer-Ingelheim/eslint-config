@@ -1,3 +1,17 @@
+# [7.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-next.1) (2024-12-19)
+
+
+### Features
+
+* add basic typing to the index.js ([ce3fbb0](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ce3fbb063150a162085df2f6e110460670612bb1))
+* migrates to flat-config ([b22a872](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b22a872a1589516d571c8907e6ec30bb2b529f94))
+
+
+### BREAKING CHANGES
+
+* migrate to flat config
+* drop support for legacy config
+
 # [7.0.0-migrate-flat-config.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-migrate-flat-config.1) (2024-12-18)
 
 
