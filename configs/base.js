@@ -95,14 +95,14 @@ module.exports = tseslint.config(
       'perfectionist/sort-classes': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-classes'][1],
+          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-classes'][1],
           groups: SORT_CLASSES_GROUPS,
         },
       ],
       'perfectionist/sort-imports': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-imports'][1],
+          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-imports'][1],
           groups: SORT_IMPORTS_GROUPS,
           newlinesBetween: 'ignore',
         },
@@ -110,21 +110,21 @@ module.exports = tseslint.config(
       'perfectionist/sort-intersection-types': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-intersection-types'][1],
+          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-intersection-types'][1],
           groups: SORT_INTERSECTION_TYPES_GROUPS,
         },
       ],
       'perfectionist/sort-named-imports': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-named-imports'][1],
+          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-named-imports'][1],
           ignoreAlias: true,
         },
       ],
       'perfectionist/sort-objects': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural-legacy'].rules['perfectionist/sort-objects'][1],
+          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-objects'][1],
           partitionByComment: true,
         },
       ],
