@@ -1,3 +1,10 @@
+# [7.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.1...v7.0.0-next.2) (2024-12-20)
+
+
+### Bug Fixes
+
+* **base:** switch some perfectionist references to flatconfig ([a6697cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a6697cc2c6c11ff717732abe741d1300c6d3a608))
+
 # [7.0.0-next.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-next.1) (2024-12-19)
 
 
