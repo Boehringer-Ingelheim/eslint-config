@@ -22,7 +22,7 @@ module.exports = tseslint.config(
     languageOptions: {
       parserOptions: {
         // find the tsconfig.json nearest each source file
-        project: true,
+        projectService: true,
       },
     },
     linterOptions: {
