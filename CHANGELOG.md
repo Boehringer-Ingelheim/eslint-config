@@ -1,3 +1,23 @@
+# [7.0.0-typescript-eslint-parser-options.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-typescript-eslint-parser-options.1) (2025-01-07)
+
+
+### Bug Fixes
+
+* **base:** switch some perfectionist references to flatconfig ([a6697cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a6697cc2c6c11ff717732abe741d1300c6d3a608))
+
+
+### Features
+
+* add basic typing to the index.js ([ce3fbb0](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ce3fbb063150a162085df2f6e110460670612bb1))
+* **base:** [typescript-eslint] update parserOptions to use projectService instead of project ([02ac930](https://github.com/Boehringer-Ingelheim/eslint-config/commit/02ac930eca6f1d9da4f2c724c1febebd9f3c2524))
+* migrates to flat-config ([b22a872](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b22a872a1589516d571c8907e6ec30bb2b529f94))
+
+
+### BREAKING CHANGES
+
+* migrate to flat config
+* drop support for legacy config
+
 # [7.0.0-next.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.1...v7.0.0-next.2) (2024-12-20)
 
 
