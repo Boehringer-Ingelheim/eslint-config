@@ -22,7 +22,7 @@
     "prepare": "husky",
     "release": "dotenv -- semantic-release --no-ci",
     "release:ci": "semantic-release",
-    "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install",
+    "repair": "npx --no rimraf@6 .git/hooks node_modules package-lock.json && npm install",
     "lint": "eslint ."
   },
   "peerDependencies": {
