@@ -158,7 +158,9 @@ export default boehringer.config(
 );
 ```
 
-This shared ESLint configuration is specifically tailored for [Next.js](https://nextjs.org/) projects. It extends the [react configuration](#react) and includes the [`@next/eslint-plugin-next`](https://nextjs.org/docs/app/api-reference/config/eslint) plugin with the recommended and [`core-web-vital`](https://nextjs.org/docs/app/api-reference/config/eslint#with-core-web-vitals) rule set.
+This shared ESLint configuration is specifically tailored for [Next.js](https://nextjs.org/) projects. It extends the [react configuration](#react) and includes the [`@next/eslint-plugin-next`](https://nextjs.org/docs/app/api-reference/config/eslint) plugin with the recommended and [`core-web-vital`](https://nextjs.org/docs/app/api-reference/config/eslint#with-core-web-vitals) rule set. The configuration also adapts the rule `react-refresh/only-export-components` to be compatible with Next.js.
+
+It
 
 ### Playwright
 
