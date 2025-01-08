@@ -1,3 +1,26 @@
+# [7.0.0-shared-configuration-nextjs.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-shared-configuration-nextjs.1) (2025-01-08)
+
+
+### Bug Fixes
+
+* **base:** switch some perfectionist references to flatconfig ([a6697cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a6697cc2c6c11ff717732abe741d1300c6d3a608))
+* **scripts:** [repair] use exact rimraf version to not use a local and possible incompatible version ([059835d](https://github.com/Boehringer-Ingelheim/eslint-config/commit/059835d26311ea30a6dd5e837eb1a040dcad2b69))
+
+
+### Features
+
+* add basic typing to the index.js ([ce3fbb0](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ce3fbb063150a162085df2f6e110460670612bb1))
+* **base:** [typescript-eslint] update parserOptions to use projectService instead of project ([02ac930](https://github.com/Boehringer-Ingelheim/eslint-config/commit/02ac930eca6f1d9da4f2c724c1febebd9f3c2524))
+* **deps:** update dependencies ([dfed600](https://github.com/Boehringer-Ingelheim/eslint-config/commit/dfed60091dfc8be82b1290841fbb864eda982762))
+* migrates to flat-config ([b22a872](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b22a872a1589516d571c8907e6ec30bb2b529f94))
+* **shared-configurations:** add next.js configuration ([ca94532](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ca9453226d898196c576073adc7af47869b551a4))
+
+
+### BREAKING CHANGES
+
+* migrate to flat config
+* drop support for legacy config
+
 # [7.0.0-next.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.3...v7.0.0-next.4) (2025-01-08)
 
 
