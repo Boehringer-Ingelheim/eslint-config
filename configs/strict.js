@@ -1,6 +1,6 @@
 const tseslint = require('typescript-eslint');
 
-const { DISABLE_TYPE_CHECKING_FILES } = require('../lib/typescript-eslint.js');
+const { DISABLE_TYPE_CHECKED_FILES } = require('../lib/typescript-eslint.js');
 const base = require('./base.js');
 
 module.exports = tseslint.config(
@@ -26,6 +26,6 @@ module.exports = tseslint.config(
   // Needs to be the last config to disable type checking for specific files
   {
     extends: [tseslint.configs.disableTypeChecked],
-    files: DISABLE_TYPE_CHECKING_FILES,
+    files: DISABLE_TYPE_CHECKED_FILES,
   },
 );
