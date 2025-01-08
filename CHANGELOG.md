@@ -1,3 +1,15 @@
+# [7.0.0-shared-configuration-nextjs.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-shared-configuration-nextjs.2...v7.0.0-shared-configuration-nextjs.3) (2025-01-08)
+
+
+### Bug Fixes
+
+* **shared-configurations:** [react] remove redefined jsx-a11y plugin ([76e7fc4](https://github.com/Boehringer-Ingelheim/eslint-config/commit/76e7fc4f06caf252cc5bbcdbeb8fb4848c748e93))
+
+
+### Features
+
+* **shared-configurations:** [nextjs] enhance compatibility with react-refresh ([ba20ebd](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ba20ebdced704db40602aa25d270496c06d18d7d))
+
 # [7.0.0-shared-configuration-nextjs.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-shared-configuration-nextjs.1...v7.0.0-shared-configuration-nextjs.2) (2025-01-08)
 
 
