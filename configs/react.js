@@ -25,7 +25,6 @@ module.exports = tseslint.config(
       },
     },
     plugins: {
-      'jsx-a11y': jsxA11y,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
