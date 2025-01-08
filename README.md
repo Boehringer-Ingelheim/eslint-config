@@ -146,6 +146,19 @@ This shared ESLint configuration is specifically tailored for [React](https://re
 The configuration sets several custom rules, including [`@typescript-eslint/no-restricted-types`](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-restricted-types.mdx) and [`@typescript-eslint/consistent-type-definitions`](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-definitions.mdx), as well as rules for organizing and formatting import statements.
 Additionally in restricts the usage of enums using [`no-restricted-syntax`](https://github.com/eslint/eslint/blob/main/docs/src/rules/no-restricted-syntax.md).
 
+### Next.js
+
+```js
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict,
+  boehringer.configs.nextjs
+);
+```
+
+This shared ESLint configuration is specifically tailored for [Next.js](https://nextjs.org/) projects. It extends the [react configuration](#react) and includes the [`@next/eslint-plugin-next`](https://nextjs.org/docs/app/api-reference/config/eslint) plugin with the recommended and [`core-web-vital`](https://nextjs.org/docs/app/api-reference/config/eslint#with-core-web-vitals) rule set.
+
 ### Playwright
 
 ```js
