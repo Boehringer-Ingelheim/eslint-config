@@ -2,6 +2,7 @@ const tseslint = require('typescript-eslint');
 
 const base = require('./configs/base.js');
 const local = require('./configs/local.js');
+const nextjs = require('./configs/nextjs.js');
 const playwright = require('./configs/playwright.js');
 const prettierDisable = require('./configs/prettier-disable.js');
 const react = require('./configs/react.js');
@@ -12,6 +13,7 @@ module.exports = {
   configs: {
     base,
     local,
+    nextjs,
     playwright,
     prettierDisable,
     react,
