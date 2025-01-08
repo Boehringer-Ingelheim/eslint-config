@@ -9,6 +9,7 @@ const {
   SORT_IMPORTS_GROUPS,
   SORT_INTERSECTION_TYPES_GROUPS,
 } = require('../lib/eslint-plugin-perfectionist.js');
+const { DISABLE_TYPE_CHECKING_FILES } = require('../lib/typescript-eslint.js');
 
 module.exports = tseslint.config(
   eslint.configs.recommended,
@@ -144,5 +145,10 @@ module.exports = tseslint.config(
     rules: {
       'import/no-unused-modules': 'off',
     },
+  },
+  // Needs to be the last config to disable type checking for specific files
+  {
+    extends: [tseslint.configs.disableTypeChecked],
+    files: DISABLE_TYPE_CHECKING_FILES,
   },
 );
