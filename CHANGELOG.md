@@ -1,3 +1,15 @@
+# [7.0.0-next.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.3...v7.0.0-next.4) (2025-01-08)
+
+
+### Bug Fixes
+
+* **scripts:** [repair] use exact rimraf version to not use a local and possible incompatible version ([059835d](https://github.com/Boehringer-Ingelheim/eslint-config/commit/059835d26311ea30a6dd5e837eb1a040dcad2b69))
+
+
+### Features
+
+* **deps:** update dependencies ([dfed600](https://github.com/Boehringer-Ingelheim/eslint-config/commit/dfed60091dfc8be82b1290841fbb864eda982762))
+
 # [7.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.2...v7.0.0-next.3) (2025-01-08)
 
 
