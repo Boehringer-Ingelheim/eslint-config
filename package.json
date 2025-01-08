@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "7.0.0-shared-configuration-nextjs.1",
+  "version": "7.0.0-shared-configuration-nextjs.2",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
     "boehringer",

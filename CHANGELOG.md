@@ -1,3 +1,10 @@
+# [7.0.0-shared-configuration-nextjs.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-shared-configuration-nextjs.1...v7.0.0-shared-configuration-nextjs.2) (2025-01-08)
+
+
+### Bug Fixes
+
+* **shared-configurations:** make next.js configuration importable ([c6ca951](https://github.com/Boehringer-Ingelheim/eslint-config/commit/c6ca95150866af2c045a73b706ac3f034f34d7b6))
+
 # [7.0.0-shared-configuration-nextjs.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-shared-configuration-nextjs.1) (2025-01-08)
 
 
