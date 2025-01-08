@@ -1,3 +1,10 @@
+# [7.0.0-next.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.2...v7.0.0-next.3) (2025-01-08)
+
+
+### Features
+
+* **base:** [typescript-eslint] update parserOptions to use projectService instead of project ([02ac930](https://github.com/Boehringer-Ingelheim/eslint-config/commit/02ac930eca6f1d9da4f2c724c1febebd9f3c2524))
+
 # [7.0.0-typescript-eslint-parser-options.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-typescript-eslint-parser-options.1) (2025-01-07)
 
 
