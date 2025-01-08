@@ -1,3 +1,10 @@
+# [7.0.0-shared-configuration-nextjs.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-shared-configuration-nextjs.3...v7.0.0-shared-configuration-nextjs.4) (2025-01-08)
+
+
+### Bug Fixes
+
+* **shared-configurations:** [nextjs] ignore .next folder per default ([2f51caa](https://github.com/Boehringer-Ingelheim/eslint-config/commit/2f51caaf8b7ead38db9d753586f930ae91a8e3e5))
+
 # [7.0.0-shared-configuration-nextjs.3](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-shared-configuration-nextjs.2...v7.0.0-shared-configuration-nextjs.3) (2025-01-08)
 
 
