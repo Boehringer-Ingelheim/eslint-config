@@ -13,6 +13,7 @@ module.exports = tseslint.config(
   jsxA11y.flatConfigs.recommended,
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],
+  reactRefresh.configs.recommended,
   {
     languageOptions: {
       globals: {
@@ -25,9 +26,7 @@ module.exports = tseslint.config(
       },
     },
     plugins: {
-      'jsx-a11y': jsxA11y,
       'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
     },
     rules: {
       // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
