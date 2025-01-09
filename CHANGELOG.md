@@ -1,3 +1,18 @@
+# [7.0.0-next.5](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.4...v7.0.0-next.5) (2025-01-09)
+
+
+### Bug Fixes
+
+* **shared-configurations:** [nextjs] ignore .next folder per default ([2f51caa](https://github.com/Boehringer-Ingelheim/eslint-config/commit/2f51caaf8b7ead38db9d753586f930ae91a8e3e5))
+* **shared-configurations:** [react] remove redefined jsx-a11y plugin ([76e7fc4](https://github.com/Boehringer-Ingelheim/eslint-config/commit/76e7fc4f06caf252cc5bbcdbeb8fb4848c748e93))
+* **shared-configurations:** make next.js configuration importable ([c6ca951](https://github.com/Boehringer-Ingelheim/eslint-config/commit/c6ca95150866af2c045a73b706ac3f034f34d7b6))
+
+
+### Features
+
+* **shared-configurations:** [nextjs] enhance compatibility with react-refresh ([ba20ebd](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ba20ebdced704db40602aa25d270496c06d18d7d))
+* **shared-configurations:** add next.js configuration ([ca94532](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ca9453226d898196c576073adc7af47869b551a4))
+
 # [7.0.0-shared-configuration-nextjs.4](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-shared-configuration-nextjs.3...v7.0.0-shared-configuration-nextjs.4) (2025-01-08)
 
 
