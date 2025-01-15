@@ -76,8 +76,8 @@ module.exports = {
       'error',
       {
         customGroups: {
-          callback: 'on*',
-          reservedProps: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L40C12-L40C12
+          callback: '^on.+',
+          reservedProps: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L41-L46
         },
         groups: ['reservedProps', 'unknown', 'callback'],
         ignoreCase: true,
