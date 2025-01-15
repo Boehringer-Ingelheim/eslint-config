@@ -1,3 +1,15 @@
+# [7.0.0-next.6](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.5...v7.0.0-next.6) (2025-01-15)
+
+
+### Bug Fixes
+
+* **react:** [sort-jsx-props] use regex pattern for custom groups ([720df19](https://github.com/Boehringer-Ingelheim/eslint-config/commit/720df196a0b6f1e0c480f95b7e6c6fa47e82bac0))
+
+
+### Features
+
+* **deps:** update dependencies ([564b3ba](https://github.com/Boehringer-Ingelheim/eslint-config/commit/564b3ba9aec9ad1dbc80477438abfdfd82f69c6a))
+
 # [7.0.0-next.5](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.4...v7.0.0-next.5) (2025-01-09)
 
 
