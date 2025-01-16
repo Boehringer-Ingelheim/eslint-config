@@ -61,6 +61,31 @@ More Information: [ESLint - Configuration Files
 npx eslint .
 ```
 
+### Known issues
+
+EsLint may throw the following error for some files (even for its own eslint.config.js): `ESLint was configured to run ... However, that TSConfig does not / none of those TSConfigs include this file`.
+
+This error is caused by including the respective file in the scope of EsLint but not in the scope of TypeScript. For more information about this error and more suggestions how to solve it you can check the [FAQ of typescript-eslint](https://typescript-eslint.io/troubleshooting/typed-linting/#i-get-errors-telling-me-eslint-was-configured-to-run--however-that-tsconfig-does-not--none-of-those-tsconfigs-include-this-file).
+
+Our recommendation is to keep type-aware linting of those files. This can either be done by including `.(c|m)?js` files in your main `tsconfig.json` or by extending your main `tsconfig.json` in a `tsconfig.eslint.json` (or similar) which includes those files and ensures `allowJs` is set to `true`.
+The latter appriach is used in a similar way by typescript-eslint in [their own repo](https://github.com/typescript-eslint/typescript-eslint/tree/v8.20.0). In this case you have to overwrite the configured tsconfig file (like shown below).
+
+```js
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  // other configs,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.eslint.json',
+        tsconfigRootDir: __dirname,
+      },
+    },
+  },
+)
+```
+
 ## Shared Configurations
 
 Opinionated Options that differ from the standard/recommended eslint configurations.
