@@ -1,3 +1,10 @@
+# [7.0.0-next.9](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.8...v7.0.0-next.9) (2025-01-17)
+
+
+### Features
+
+* **naming-convention:** adds a new shared configuration for enforcing naming conventions ([8f2fdf2](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8f2fdf2afee4aed0a26ab4f3a98d22627daefe5b))
+
 # [7.0.0-naming-convetion-configuration.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-naming-convetion-configuration.1...v7.0.0-naming-convetion-configuration.2) (2025-01-17)
 
 
