@@ -1,3 +1,10 @@
+# [7.0.0-next.7](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.6...v7.0.0-next.7) (2025-01-17)
+
+
+### Bug Fixes
+
+* **base:** turn off import/no-unused-modules for now ([a8f15dc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a8f15dc3a35fc6e6d774d8e766985772009862f0))
+
 # [7.0.0-next.6](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.5...v7.0.0-next.6) (2025-01-15)
 
 
