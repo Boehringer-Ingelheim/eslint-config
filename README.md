@@ -84,21 +84,7 @@ The following plugins are used in this configuration:
 
 Additionally, the [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) is used to automatically fix sorting issues.
 
-This configuration also sets up the TypeScript parser [`@typescript-eslint/parser`](https://typescript-eslint.io/packages/parser/) and [`eslint-import-resolver-typescript`](https://github.com/import-js/eslint-import-resolver-typescript). The TypeScript project configuration file `./tsconfig.json` is set as default value in the parser configuration. If this is not the case, this must be changed accordingly:
-
-```js
-import boehringer from '@boehringer-ingelheim/eslint-config';
-
-export default boehringer.config(boehringer.configs.base, {
-  languageOptions: {
-    parserOptions: {
-      projectService: {
-        defaultProject: ['./tsconfig.dev.json'],
-      },
-    },
-  },
-});
-```
+This configuration also sets up the TypeScript parser [`@typescript-eslint/parser`](https://typescript-eslint.io/packages/parser/) and [`eslint-import-resolver-typescript`](https://github.com/import-js/eslint-import-resolver-typescript).
 
 ### Local
 
@@ -201,9 +187,12 @@ This shared ESLint configuration is wrapper around [`eslint-config-disable`](htt
 
 ### Parsing error
 
-ESLint may throw the following error for some files (even for its own eslint.config.js): `ESLint was configured to run ... However, that TSConfig does not / none of those TSConfigs include this file`.
+ESLint may throw one of the following errors for some files (even for its own eslint.config.js):
 
-This error is caused by including the respective file in the scope of ESLint but not in the scope of TypeScript. For more information about this error and more suggestions how to solve it you can check the [FAQ of typescript-eslint](https://typescript-eslint.io/troubleshooting/typed-linting/#i-get-errors-telling-me-eslint-was-configured-to-run--however-that-tsconfig-does-not--none-of-those-tsconfigs-include-this-file).
+- `ESLint was configured to run ... However, that TSConfig does not / none of those TSConfigs include this file`.
+- `... was not found by the project service. Consider either including it in the tsconfig.json or including it in allowDefaultProject`
+
+This error is caused by including the respective file in the scope of ESLint but not in the scope of TypeScript. For more information about this error and more suggestions how to solve it you can check the [troubleshooting of typescript-eslint](https://typescript-eslint.io/troubleshooting/typed-linting/#i-get-errors-telling-me--was-not-found-by-the-project-service-consider-either-including-it-in-the-tsconfigjson-or-including-it-in-allowdefaultproject).
 
 Our recommendation is to keep type-aware linting of those files.
 
@@ -211,7 +200,7 @@ Our recommendation is to keep type-aware linting of those files.
 
 Include the .(c|m)?js files in your main tsconfig.json:
 
-```json
+```jsonc
 {
   "include": [
     // your existing includes
@@ -224,25 +213,7 @@ Include the .(c|m)?js files in your main tsconfig.json:
 
 #### Solution 2
 
-Extend your main tsconfig.json in a tsconfig.eslint.json (or similar) which includes those files and ensures allowJs is set to true, which is used in a similar way by typescript-eslint in [their own repo](https://github.com/typescript-eslint/typescript-eslint/tree/v8.20.0):
-
-```json
-{
-  "compilerOptions": {
-    "noEmit": true,
-    "allowJs": true
-  },
-  "extends": "./tsconfig.json",
-  "include": [
-    // you have to add here all the items from your original tsconfig.json as it overwrites the whole array
-    "*.*js", // this will include all .js, .cjs, .mjs files and similar in your project root
-    "*.ts", // this will include all .ts files and similar in your project root
-    // Add all other files/folders in which this error occurs
-  ]
-}
-```
-
-In this case you have to overwrite the configured tsconfig file:
+You can use the new [`allowDefaultProject`](https://typescript-eslint.io/packages/parser#allowdefaultproject) option, which works perfectly with our [`projectService` configuration](./configs/base.js#L25):
 
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
@@ -252,8 +223,14 @@ export default boehringer.config(
   {
     languageOptions: {
       parserOptions: {
-        project: './tsconfig.eslint.json',
-        tsconfigRootDir: __dirname,
+        projectService: {
+          allowDefaultProject: [
+            '*.*js', 
+            '.*.*js',
+          ],
+          // defaultProject can be used to specify separate tsconfig options for "out-of-project" files included by allowDefaultProject
+          // defaultProject: 'tsconfig.eslint.json',
+        },
       },
     },
   },
