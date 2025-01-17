@@ -74,14 +74,11 @@ module.exports = tseslint.config(
 
       // eslint-plugin-import: https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
       'import/no-cycle': 'error',
-      'import/no-unused-modules': [
-        'error',
-        {
-          missingExports: true,
-          src: ['.'],
-          unusedExports: true,
-        },
-      ],
+      // We have to deactive this rule (import/no-unused-modules) for now as it is not compatible with flat-configs (without adding an artifical .eslint file.
+      // See: https://github.com/import-js/eslint-plugin-import/issues/3079#issuecomment-2557191925
+      // As soon this is resolved, we should activate this rule again as seen here:
+      // https://github.com/Boehringer-Ingelheim/eslint-config/blob/9f028ed43bb5db11082a2982f249ddfe7eaf5c13/configs/base.js#L77
+      'import/no-unused-modules': 'off',
       'import/order': 'off', // disabled due to conflict with eslint-plugin-perfectionist
       'import/prefer-default-export': 'off',
 
