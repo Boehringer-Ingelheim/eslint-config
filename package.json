@@ -15,9 +15,12 @@
   "license": "MIT",
   "files": [
     "configs",
-    "lib"
+    "lib",
+    "index.js",
+    "index.d.ts"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "prepare": "husky",
     "release": "dotenv -- semantic-release --no-ci",

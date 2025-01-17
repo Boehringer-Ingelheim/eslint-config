@@ -1,6 +1,6 @@
 import { Config } from 'typescript-eslint';
 
-type Configs = 'base' | 'local' | 'playwright' | 'prettier-disable' | 'react' | 'strict';
+type Configs = 'base' | 'local' | 'nextjs' | 'playwright' | 'prettierDisable' | 'react' | 'strict';
 
 declare module './index' {
   const config: typeof import('typescript-eslint').config;
