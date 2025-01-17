@@ -162,6 +162,20 @@ This shared ESLint configuration is designed to enforce best practices and recom
 - [`playwright/prefer-to-have-length`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/prefer-to-have-length.md): enforces the use of `.toHaveLength()` instead of `.toEqual(n)` when testing the length of an object.
 - [`playwright/require-top-level-describe`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/require-top-level-describe.md): requires tests to be organized into top-level `describe()` blocks.
 
+### (experimental) Naming Convention
+
+```js
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict,
+  // possibly other configs,
+  boehringer.configs.experimentalNamingConvention
+);
+```
+
+This shared ESLint configuration is designed to enforce some naming conventions. It uses the [`@typescript-eslint/naming-convention`](https://typescript-eslint.io/rules/naming-convention/) rule for enforcing the naming conventions. The enforced conventions can be found in [configs/naming-convention.js](./configs/naming-convention.js#L7-L65)
+
 ### Prettier-disable
 
 ```js
