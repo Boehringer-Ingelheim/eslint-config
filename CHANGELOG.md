@@ -1,3 +1,33 @@
+# [7.0.0-naming-convetion-configuration.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-naming-convetion-configuration.1) (2025-01-17)
+
+
+### Bug Fixes
+
+* **base:** switch some perfectionist references to flatconfig ([a6697cc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a6697cc2c6c11ff717732abe741d1300c6d3a608))
+* **react:** [sort-jsx-props] use regex pattern for custom groups ([720df19](https://github.com/Boehringer-Ingelheim/eslint-config/commit/720df196a0b6f1e0c480f95b7e6c6fa47e82bac0))
+* **scripts:** [repair] use exact rimraf version to not use a local and possible incompatible version ([059835d](https://github.com/Boehringer-Ingelheim/eslint-config/commit/059835d26311ea30a6dd5e837eb1a040dcad2b69))
+* **shared-configurations:** [nextjs] ignore .next folder per default ([2f51caa](https://github.com/Boehringer-Ingelheim/eslint-config/commit/2f51caaf8b7ead38db9d753586f930ae91a8e3e5))
+* **shared-configurations:** [react] remove redefined jsx-a11y plugin ([76e7fc4](https://github.com/Boehringer-Ingelheim/eslint-config/commit/76e7fc4f06caf252cc5bbcdbeb8fb4848c748e93))
+* **shared-configurations:** make next.js configuration importable ([c6ca951](https://github.com/Boehringer-Ingelheim/eslint-config/commit/c6ca95150866af2c045a73b706ac3f034f34d7b6))
+
+
+### Features
+
+* add basic typing to the index.js ([ce3fbb0](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ce3fbb063150a162085df2f6e110460670612bb1))
+* **base:** [typescript-eslint] update parserOptions to use projectService instead of project ([02ac930](https://github.com/Boehringer-Ingelheim/eslint-config/commit/02ac930eca6f1d9da4f2c724c1febebd9f3c2524))
+* **deps:** update dependencies ([564b3ba](https://github.com/Boehringer-Ingelheim/eslint-config/commit/564b3ba9aec9ad1dbc80477438abfdfd82f69c6a))
+* **deps:** update dependencies ([dfed600](https://github.com/Boehringer-Ingelheim/eslint-config/commit/dfed60091dfc8be82b1290841fbb864eda982762))
+* migrates to flat-config ([b22a872](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b22a872a1589516d571c8907e6ec30bb2b529f94))
+* **naming-convention:** adds a new shared configuration for enforcing naming conventions ([8f2fdf2](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8f2fdf2afee4aed0a26ab4f3a98d22627daefe5b))
+* **shared-configurations:** [nextjs] enhance compatibility with react-refresh ([ba20ebd](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ba20ebdced704db40602aa25d270496c06d18d7d))
+* **shared-configurations:** add next.js configuration ([ca94532](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ca9453226d898196c576073adc7af47869b551a4))
+
+
+### BREAKING CHANGES
+
+* migrate to flat config
+* drop support for legacy config
+
 # [7.0.0-next.6](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.5...v7.0.0-next.6) (2025-01-15)
 
 
