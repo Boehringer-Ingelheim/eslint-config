@@ -1,3 +1,10 @@
+# [7.0.0-next.8](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.7...v7.0.0-next.8) (2025-01-17)
+
+
+### Bug Fixes
+
+* publishes type declarations ([a410e8e](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a410e8eed04e5bde28eb6aa14be19858bb685cc9))
+
 # [7.0.0-next.7](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.6...v7.0.0-next.7) (2025-01-17)
 
 
