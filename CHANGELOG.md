@@ -1,3 +1,11 @@
+# [7.0.0-naming-convetion-configuration.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-naming-convetion-configuration.1...v7.0.0-naming-convetion-configuration.2) (2025-01-17)
+
+
+### Bug Fixes
+
+* **base:** turn off import/no-unused-modules for now ([a8f15dc](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a8f15dc3a35fc6e6d774d8e766985772009862f0))
+* publishes type declarations ([a410e8e](https://github.com/Boehringer-Ingelheim/eslint-config/commit/a410e8eed04e5bde28eb6aa14be19858bb685cc9))
+
 # [7.0.0-naming-convetion-configuration.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v7.0.0-naming-convetion-configuration.1) (2025-01-17)
 
 
