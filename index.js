@@ -1,8 +1,8 @@
 const tseslint = require('typescript-eslint');
 
 const base = require('./configs/base.js');
+const experimentalNamingConvention = require('./configs/experimental-naming-convention.js');
 const local = require('./configs/local.js');
-const namingConvention = require('./configs/naming-convention.js');
 const nextjs = require('./configs/nextjs.js');
 const playwright = require('./configs/playwright.js');
 const prettierDisable = require('./configs/prettier-disable.js');
@@ -13,8 +13,8 @@ module.exports = {
   config: tseslint.config,
   configs: {
     base,
+    experimentalNamingConvention,
     local,
-    namingConvention,
     nextjs,
     playwright,
     prettierDisable,
