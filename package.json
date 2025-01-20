@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "6.0.2",
+  "version": "7.0.0-next.10",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
     "boehringer",
@@ -14,49 +14,50 @@
   ],
   "license": "MIT",
   "files": [
-    "base",
+    "configs",
     "lib",
-    "react",
-    "playwright",
-    "prettier-disable"
+    "index.js",
+    "index.d.ts"
   ],
-  "main": "base/index.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "prepare": "husky",
     "release": "dotenv -- semantic-release --no-ci",
     "release:ci": "semantic-release",
-    "repair": "npx --no rimraf .git/hooks node_modules package-lock.json && npm install"
+    "repair": "npx --no rimraf@6 .git/hooks node_modules package-lock.json && npm install",
+    "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": ">= 8"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.10.4",
-    "@typescript-eslint/eslint-plugin": "^8.18.0",
-    "@typescript-eslint/parser": "^8.18.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@eslint/js": "^9.18.0",
+    "@next/eslint-plugin-next": "^15.1.4",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-perfectionist": "^4.3.0",
+    "eslint-plugin-perfectionist": "^4.6.0",
     "eslint-plugin-playwright": "^2.1.0",
-    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-react-refresh": "^0.4.18",
     "eslint-plugin-sonarjs": "^1.0.4",
-    "eslint-plugin-typescript-enum": "^2.1.0",
-    "is-ci": "^4.1.0"
+    "globals": "^15.14.0",
+    "is-ci": "^4.1.0",
+    "typescript-eslint": "^8.20.0"
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
-    "@commitlint/cli": "19.6.0",
+    "@commitlint/cli": "19.6.1",
     "@commitlint/config-conventional": "19.6.0",
     "@commitlint/types": "19.5.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "dotenv-cli": "7.4.4",
+    "dotenv-cli": "8.0.0",
     "husky": "9.1.7",
     "prettier": "3.4.2",
-    "semantic-release": "24.2.0"
+    "semantic-release": "24.2.1"
   }
 }
