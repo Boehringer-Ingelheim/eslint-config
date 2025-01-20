@@ -46,6 +46,13 @@
 
 * **deps:** update dependencies ([564b3ba](https://github.com/Boehringer-Ingelheim/eslint-config/commit/564b3ba9aec9ad1dbc80477438abfdfd82f69c6a))
 
+# [6.0.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.1...v6.0.2) (2025-01-15)
+
+
+### Bug Fixes
+
+* **react:** [sort-jsx-props] use regex pattern for custom groups ([8625bbd](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8625bbde24df50944fd661b70d50e2ae9cfe4217))
+
 # [7.0.0-next.5](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0-next.4...v7.0.0-next.5) (2025-01-09)
 
 
@@ -184,7 +191,7 @@
 * migrate to flat config
 * drop support for legacy config
 
-## [6.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0...v6.0.1) (2024-12-18)
+# [6.0.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.0...v6.0.1) (2024-12-18)
 
 
 ### Bug Fixes
