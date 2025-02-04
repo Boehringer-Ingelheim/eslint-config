@@ -1,3 +1,15 @@
+# [7.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0...v7.1.0) (2025-02-04)
+
+
+### Bug Fixes
+
+* **config:** [base] update test file patterns to only match javascript files ([478ec71](https://github.com/Boehringer-Ingelheim/eslint-config/commit/478ec71409ba0fbb41e11bab55cd6dfafefcdf22))
+
+
+### Features
+
+* **deps:** update dependencies ([8bc20e7](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8bc20e7ea884dd195f6874ec67b58bdcbbd2843c))
+
 # [7.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v6.0.2...v7.0.0) (2025-01-20)
 
 
