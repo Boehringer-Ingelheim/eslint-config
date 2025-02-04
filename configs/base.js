@@ -137,7 +137,7 @@ module.exports = tseslint.config(
   {
     files: [
       '**/*.d.ts', // TypeScript declaration files
-      '**/*.{spec,test}.*', // Usually test files
+      '**/*.{spec,test}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}', // Usually test files
       './*.{js,cjs,mjs,ts,cts,mts}', // Mostly configuration files on root level
     ],
     rules: {
