@@ -156,6 +156,20 @@ export default boehringer.config(
 );
 ```
 
+or for specific files only:
+
+```js
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.configs.strict,
+  {
+    files: ['src/**/*.test.{ts,tsx}'],
+    ...(await boehringer.configs.playwright)[0],
+  },
+);
+```
+
 This shared ESLint configuration is designed to enforce best practices and recommendations when writing tests with Playwright. It extends the [`eslint-plugin-playwright`](https://github.com/playwright-community/eslint-plugin-playwright) configuration and adds the following rules:
 
 - [`playwright/prefer-to-be`](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/prefer-to-be.md): enforces the use of `.toBe()` instead of `.toEqual()` when testing for equality.
