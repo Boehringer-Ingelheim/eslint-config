@@ -1,3 +1,10 @@
+# [7.2.0-support-playwright-ct.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.1.0...v7.2.0-support-playwright-ct.1) (2025-02-14)
+
+
+### Features
+
+* **playwright:** disable unbound-method rule for component testing compatibility ([47349c9](https://github.com/Boehringer-Ingelheim/eslint-config/commit/47349c9c9eae8ec6d93e6da51fd62acf3359a12a))
+
 # [7.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.0.0...v7.1.0) (2025-02-04)
 
 
