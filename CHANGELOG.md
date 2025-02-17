@@ -1,3 +1,11 @@
+# [7.3.0-include-ignore-file.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.2.0...v7.3.0-include-ignore-file.1) (2025-02-17)
+
+
+### Features
+
+* **deps:** update dependencies ([8a670a7](https://github.com/Boehringer-Ingelheim/eslint-config/commit/8a670a78dec735be91ccf6f3b79bdd1797c8a350))
+* **lib:** add includeIgnoreFile to support including .gitignore in ESLint configuration ([e78806a](https://github.com/Boehringer-Ingelheim/eslint-config/commit/e78806a070649993c6c30ab1a5a7fb09cfeed75b))
+
 # [7.2.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.1.0...v7.2.0) (2025-02-14)
 
 
