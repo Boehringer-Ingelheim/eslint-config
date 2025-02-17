@@ -1,3 +1,10 @@
+# [7.3.0-include-ignore-file.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.3.0-include-ignore-file.1...v7.3.0-include-ignore-file.2) (2025-02-17)
+
+
+### Bug Fixes
+
+* destructure includeIgnoreFile import ([ae75bc5](https://github.com/Boehringer-Ingelheim/eslint-config/commit/ae75bc560920aba6f8a516271dee775a5188afb0))
+
 # [7.3.0-include-ignore-file.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.2.0...v7.3.0-include-ignore-file.1) (2025-02-17)
 
 
