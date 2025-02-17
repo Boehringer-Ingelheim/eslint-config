@@ -8,6 +8,7 @@ const playwright = require('./configs/playwright.js');
 const prettierDisable = require('./configs/prettier-disable.js');
 const react = require('./configs/react.js');
 const strict = require('./configs/strict.js');
+const includeIgnoreFile = require('./lib/include-ignore-file.js');
 
 module.exports = {
   config: tseslint.config,
@@ -21,4 +22,5 @@ module.exports = {
     react,
     strict,
   },
+  includeIgnoreFile,
 };
