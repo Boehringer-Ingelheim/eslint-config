@@ -35,7 +35,7 @@ export default boehringer.config(
 
 This function is a re-export for the config-helper of typescript eslint (See [docs](https://github.com/typescript-eslint/typescript-eslint/blob/a383d5022b81eaf65ce7b0946491444c6eaa28e3/docs/packages/TypeScript_ESLint.mdx#config)).
 
-#### Extend or Override configuration
+##### Extend or Override configuration
 
 This is not recommended as the goal is to have similar code stylings in all projects, but if for some reason you need to add or change the configuration, it is possible in the following way:
 
@@ -49,6 +49,33 @@ export default boehringer.config(
       'no-empty-function': 'off',
     },
   }
+);
+```
+
+#### `boehringer.includeIgnoreFile()`
+
+The `includeIgnoreFile` function allows you to include `.gitignore` files in your ESLint configuration using a relative path.
+This is an adjusted version of the same function from ESLint ([Ignore Files](https://eslint.org/docs/latest/use/configure/ignore#including-gitignore-files)).
+It is recommended to use this function to ensure that your `.gitignore` file is properly included in your ESLint setup.
+
+```js
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.includeIgnoreFile(), // default value '.gitignore'
+  boehringer.configs.strict,
+);
+```
+
+or in case you have a different paths to your `.gitignore` file(s):
+
+```js
+import boehringer from '@boehringer-ingelheim/eslint-config';
+
+export default boehringer.config(
+  boehringer.includeIgnoreFile('./backend/.gitignore'),
+  boehringer.includeIgnoreFile('./frontend/.gitignore'),
+  boehringer.configs.strict,
 );
 ```
 
