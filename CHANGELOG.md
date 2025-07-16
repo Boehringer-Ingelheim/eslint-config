@@ -1,3 +1,10 @@
+## [7.3.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.3.0...v7.3.1) (2025-07-16)
+
+
+### Bug Fixes
+
+* **base:** remove redundant no-empty-function rule from base config ([afdfd62](https://github.com/Boehringer-Ingelheim/eslint-config/commit/afdfd622a8c0ed4fc80e98fbca9c318a0533a777))
+
 # [7.3.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.2.0...v7.3.0) (2025-02-19)
 
 
