@@ -58,7 +58,6 @@ module.exports = tseslint.config(
       'logical-assignment-operators': ['error', 'never'],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-else-return': ['error', { allowElseIf: false }],
-      'no-empty-function': 'error',
       'no-lonely-if': 'error',
       'no-negated-condition': 'error',
       'no-nested-ternary': 'error',
@@ -66,8 +65,6 @@ module.exports = tseslint.config(
       'no-unneeded-ternary': 'error',
       'no-useless-concat': 'error',
       'operator-assignment': ['error', 'never'],
-      'prefer-const': 'error',
-      'prefer-rest-params': 'error',
       'prefer-template': 'error',
       'sort-imports': 'off', // disabled due to conflict with eslint-plugin-perfectionist
       'sort-keys': 'off', // disabled due to conflict with eslint-plugin-perfectionist
