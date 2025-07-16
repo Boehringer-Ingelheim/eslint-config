@@ -65,8 +65,6 @@ module.exports = tseslint.config(
       'no-unneeded-ternary': 'error',
       'no-useless-concat': 'error',
       'operator-assignment': ['error', 'never'],
-      'prefer-const': 'error',
-      'prefer-rest-params': 'error',
       'prefer-template': 'error',
       'sort-imports': 'off', // disabled due to conflict with eslint-plugin-perfectionist
       'sort-keys': 'off', // disabled due to conflict with eslint-plugin-perfectionist
