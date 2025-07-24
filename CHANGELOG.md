@@ -1,3 +1,10 @@
+# [7.4.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.3.1...v7.4.0) (2025-07-24)
+
+
+### Features
+
+* **deps:** update dependencies ([1e896ba](https://github.com/Boehringer-Ingelheim/eslint-config/commit/1e896bac9b5296e0903ac65527eea73b09212250))
+
 ## [7.3.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.3.0...v7.3.1) (2025-07-16)
 
 
