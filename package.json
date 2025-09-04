@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "8.0.0-defineConfig.1",
+  "version": "8.0.0-defineConfig.2",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
     "boehringer",
