@@ -26,14 +26,14 @@ Create or update the `eslint.config.mjs` (`eslint.config.cjs` is also possible i
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict
 )
 ```
 
-#### `boehringer.defineConfig(...)`
+#### `boehringer.config(...)`
 
-This function is a re-export for the config-helper of eslint (See [docs](https://eslint.org/blog/2025/03/flat-config-extends-define-config-global-ignores/#introducing-defineconfig()-for-eslint)).
+This function is a re-export for the config-helper of typescript eslint (See [docs](https://github.com/typescript-eslint/typescript-eslint/blob/a383d5022b81eaf65ce7b0946491444c6eaa28e3/docs/packages/TypeScript_ESLint.mdx#config)).
 
 ##### Extend or Override configuration
 
@@ -42,7 +42,7 @@ This is not recommended as the goal is to have similar code stylings in all proj
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict, 
   {
     rules: {
@@ -61,7 +61,7 @@ It is recommended to use this function to ensure that your `.gitignore` file is 
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.includeIgnoreFile(), // default value '.gitignore'
   boehringer.configs.strict,
 );
@@ -72,7 +72,7 @@ or in case you have a different paths to your `.gitignore` file(s):
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.includeIgnoreFile('./backend/.gitignore'),
   boehringer.includeIgnoreFile('./frontend/.gitignore'),
   boehringer.configs.strict,
@@ -96,7 +96,7 @@ Opinionated Options that differ from the standard/recommended ESLint configurati
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.base
 )
 ```
@@ -118,7 +118,7 @@ This configuration also sets up the TypeScript parser [`@typescript-eslint/parse
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.base,
   boehringer.configs.local
 );
@@ -131,7 +131,7 @@ This shared ESLint configuration configures or disables some rules for a better 
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict
 );
 ```
@@ -143,7 +143,7 @@ This shared ESLint configuration extends the [base configuration](#base) and add
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict,
   boehringer.configs.react
 );
@@ -164,7 +164,7 @@ Additionally in restricts the usage of enums using [`no-restricted-syntax`](http
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict,
   boehringer.configs.nextjs
 );
@@ -177,7 +177,7 @@ This shared ESLint configuration is specifically tailored for [Next.js](https://
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict,
   boehringer.configs.playwright
 );
@@ -188,7 +188,7 @@ or for specific files only:
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict,
   {
     files: ['src/**/*.test.{ts,tsx}'],
@@ -208,7 +208,7 @@ This shared ESLint configuration is designed to enforce best practices and recom
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict,
   // possibly other configs,
   boehringer.configs.experimentalNamingConvention
@@ -223,7 +223,7 @@ This shared ESLint configuration is designed to enforce some naming conventions.
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import prettier from 'eslint-plugin-prettier/recommended';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   boehringer.configs.strict,
   // Following needs eslint-plugin-prettier to be installed as described by https://github.com/prettier/eslint-plugin-prettier
   // Should be second to last
@@ -273,7 +273,7 @@ You can use the new [`allowDefaultProject`](https://typescript-eslint.io/package
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
 
-export default boehringer.defineConfig(
+export default boehringer.config(
   // other configs,
   {
     languageOptions: {
@@ -347,7 +347,7 @@ Give a ⭐️ if this project helped you!
 
 ## License
 
-Copyright © 2025 [Boehringer Ingelheim](https://github.com/boehringer-ingelheim).  
+Copyright © 2023 [Boehringer Ingelheim](https://github.com/boehringer-ingelheim).  
 This project is [MIT](https://github.com/boehringer-ingelheim/eslint-config/blob/master/LICENSE) licensed.
 
 ## Resources

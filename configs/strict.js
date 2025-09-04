@@ -1,9 +1,8 @@
-const { defineConfig } = require('eslint/config');
 const tseslint = require('typescript-eslint');
 
 const base = require('./base.js');
 
-module.exports = defineConfig(...base, tseslint.configs.strictTypeChecked, {
+module.exports = tseslint.config(...base, tseslint.configs.strictTypeChecked, {
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
     '@typescript-eslint/consistent-type-imports': 'error',

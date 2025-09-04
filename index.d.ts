@@ -1,4 +1,6 @@
-type Config = import('eslint').Linter.Config;
+import { FlatConfig } from '@eslint/compat';
+import { Config } from 'typescript-eslint';
+
 type Configs =
   | 'base'
   | 'experimentalNamingConvention'
@@ -9,18 +11,18 @@ type Configs =
   | 'react'
   | 'strict';
 
-declare module '@boehringer-ingelheim/eslint-config' {
+declare module './index' {
+  const config: typeof import('typescript-eslint').config;
   const configs: Record<Configs, Config>;
-  const defineConfig: typeof import('eslint/config').defineConfig;
   /**
    * Reads an ignore file (e.g. `.gitignore`) and returns an object with the ignore patterns.
    *
    * @param {string} [ignoreFilePath='.gitignore'] - The path to the ignore file. Defaults to `.gitignore`.
    * @throws {TypeError} If the provided path is not a string.
    * @throws {Error} If the provided path is an empty string.
-   * @returns {Config} The result of including the ignore file at the resolved absolute path.
+   * @returns {FlatConfig} The result of including the ignore file at the resolved absolute path.
    */
-  const includeIgnoreFile: (ignoreFilePath?: string) => Config;
+  const includeIgnoreFile: (ignoreFilePath = '.gitignore') => FlatConfig;
 
-  export { configs, defineConfig, includeIgnoreFile };
+  export { config, configs, includeIgnoreFile };
 }

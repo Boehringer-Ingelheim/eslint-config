@@ -2,13 +2,13 @@ const jsxA11y = require('eslint-plugin-jsx-a11y');
 const react = require('eslint-plugin-react');
 const reactHooks = require('eslint-plugin-react-hooks');
 const reactRefresh = require('eslint-plugin-react-refresh');
-const { defineConfig } = require('eslint/config');
 const globals = require('globals');
+const tseslint = require('typescript-eslint');
 
 const { SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
 const base = require('./base.js');
 
-module.exports = defineConfig(
+module.exports = tseslint.config(
   ...base,
   jsxA11y.flatConfigs.recommended,
   react.configs.flat.recommended,

@@ -1,9 +1,9 @@
 const nextPlugin = require('@next/eslint-plugin-next');
-const { defineConfig } = require('eslint/config');
+const tseslint = require('typescript-eslint');
 
 const react = require('./react.js');
 
-module.exports = defineConfig(
+module.exports = tseslint.config(
   ...react,
   {
     plugins: {
