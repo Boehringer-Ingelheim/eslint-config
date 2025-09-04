@@ -1,7 +1,7 @@
 const playwright = require('eslint-plugin-playwright');
-const tseslint = require('typescript-eslint');
+const { defineConfig } = require('eslint/config');
 
-module.exports = tseslint.config({
+module.exports = defineConfig({
   ...playwright.configs['flat/recommended'],
   rules: {
     /**

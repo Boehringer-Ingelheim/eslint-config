@@ -1,6 +1,6 @@
-const tseslint = require('typescript-eslint');
+const { defineConfig } = require('eslint/config');
 
-module.exports = tseslint.config({
+module.exports = defineConfig({
   rules: {
     '@typescript-eslint/naming-convention': [
       'error',

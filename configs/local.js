@@ -1,7 +1,7 @@
+const { defineConfig } = require('eslint/config');
 const isCI = require('is-ci');
-const tseslint = require('typescript-eslint');
 
-module.exports = tseslint.config(
+module.exports = defineConfig(
   isCI
     ? {}
     : {
