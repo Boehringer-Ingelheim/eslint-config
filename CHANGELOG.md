@@ -1,3 +1,17 @@
+# [8.0.0-defineConfig.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.4.0...v8.0.0-defineConfig.1) (2025-09-04)
+
+
+### Features
+
+* **deps:** update dependencies ([b699e7a](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b699e7a0984cf2cc64a36f75cf128b6cb39165b2))
+* **eslint:** migrate from `tseslint.config` to `eslint.defineConfig` ([9afc0c4](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9afc0c401781bef59a7957a01d45f9bc0b307863))
+
+
+### BREAKING CHANGES
+
+* **eslint:** The `config(...)` utility function has been removed in favor of ESLint core’s `defineConfig(...)`. Replace `boehringer.config(...)` with `boehringer.defineConfig(...)`
+* **deps:** Remove support for ESLint `v8`; minimum required version is now ESLint `v9.34.0`. Update your dependencies to use ESLint `9.34.0` or newer.
+
 # [7.4.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.3.1...v7.4.0) (2025-07-24)
 
 
