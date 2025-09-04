@@ -1,9 +1,9 @@
 import eslint from '@eslint/js';
 import perfectionist from 'eslint-plugin-perfectionist';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
-import tseslint from 'typescript-eslint';
 
-export default tseslint.config(eslint.configs.recommended, perfectionist.configs['recommended-natural'], {
+export default defineConfig(eslint.configs.recommended, perfectionist.configs['recommended-natural'], {
   languageOptions: {
     globals: {
       ...globals.node,

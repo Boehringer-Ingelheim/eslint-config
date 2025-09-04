@@ -2,6 +2,7 @@ const eslint = require('@eslint/js');
 const importPlugin = require('eslint-plugin-import');
 const perfectionist = require('eslint-plugin-perfectionist');
 const sonarjs = require('eslint-plugin-sonarjs');
+const { defineConfig } = require('eslint/config');
 const tseslint = require('typescript-eslint');
 
 const {
@@ -10,7 +11,7 @@ const {
   SORT_INTERSECTION_TYPES_GROUPS,
 } = require('../lib/eslint-plugin-perfectionist.js');
 
-module.exports = tseslint.config(
+module.exports = defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylisticTypeChecked,

@@ -1,4 +1,4 @@
-const tseslint = require('typescript-eslint');
+const { defineConfig } = require('eslint/config');
 
 const base = require('./configs/base.js');
 const experimentalNamingConvention = require('./configs/experimental-naming-convention.js');
@@ -11,7 +11,6 @@ const strict = require('./configs/strict.js');
 const { includeIgnoreFile } = require('./lib/include-ignore-file.js');
 
 module.exports = {
-  config: tseslint.config,
   configs: {
     base,
     experimentalNamingConvention,
@@ -22,5 +21,6 @@ module.exports = {
     react,
     strict,
   },
+  defineConfig,
   includeIgnoreFile,
 };
