@@ -1,3 +1,49 @@
+# [8.0.0-defineConfig.2](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.0.0-defineConfig.1...v8.0.0-defineConfig.2) (2025-09-04)
+
+
+### Features
+
+* **eslint:** migrate from `tseslint.config` to `eslint.defineConfig` ([fa25e0c](https://github.com/Boehringer-Ingelheim/eslint-config/commit/fa25e0cb93fefbda4177c15e041be5d18c0e94f9))
+
+
+### Reverts
+
+* "feat(eslint): migrate from `tseslint.config` to `eslint.defineConfig`" ([2017fbd](https://github.com/Boehringer-Ingelheim/eslint-config/commit/2017fbda7ec1d23ec3e57297c48644e70f11de8b))
+
+
+### BREAKING CHANGES
+
+* **eslint:** The `boehringer.config(...)` utility function has been removed in favor of ESLint core’s `defineConfig(...)`. Replace `boehringer.config(...)` with `defineConfig(...)` from `eslint/config`
+
+```diff
+import boehringer from '@boehringer-ingelheim/eslint-config';
++ import { defineConfig } from 'eslint/config';
+
+- export default boehringer.config(
++ export default defineConfig(
+  boehringer.configs.strict,
+  {
+    rules: {
+      'no-empty-function': 'off',
+    },
+  }
+);
+```
+
+# [8.0.0-defineConfig.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.4.0...v8.0.0-defineConfig.1) (2025-09-04)
+
+
+### Features
+
+* **deps:** update dependencies ([b699e7a](https://github.com/Boehringer-Ingelheim/eslint-config/commit/b699e7a0984cf2cc64a36f75cf128b6cb39165b2))
+* **eslint:** migrate from `tseslint.config` to `eslint.defineConfig` ([9afc0c4](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9afc0c401781bef59a7957a01d45f9bc0b307863))
+
+
+### BREAKING CHANGES
+
+* **eslint:** The `config(...)` utility function has been removed in favor of ESLint core’s `defineConfig(...)`. Replace `boehringer.config(...)` with `boehringer.defineConfig(...)`
+* **deps:** Remove support for ESLint `v8`; minimum required version is now ESLint `v9.34.0`. Update your dependencies to use ESLint `9.34.0` or newer.
+
 # [7.4.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v7.3.1...v7.4.0) (2025-07-24)
 
 

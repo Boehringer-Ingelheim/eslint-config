@@ -1,7 +1,7 @@
 const prettier = require('eslint-config-prettier');
-const tseslint = require('typescript-eslint');
+const { defineConfig } = require('eslint/config');
 
-module.exports = tseslint.config({
+module.exports = defineConfig({
   ...prettier,
   rules: {
     ...prettier.rules,
