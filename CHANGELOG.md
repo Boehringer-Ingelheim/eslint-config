@@ -1,3 +1,11 @@
+# [8.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.0.0...v8.1.0) (2025-09-12)
+
+
+### Features
+
+* **deps:** update dependencies ([9e138cd](https://github.com/Boehringer-Ingelheim/eslint-config/commit/9e138cd2b80cbd5d8595847f299e72b8a54b39cb))
+* **eslint:** adjust and fine-tune the rule set on file level ([832484d](https://github.com/Boehringer-Ingelheim/eslint-config/commit/832484d24659536e25607b424cbe25aba06fd7a2))
+
 # [8.1.0-adjust-nextjs.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.0.0...v8.1.0-adjust-nextjs.1) (2025-09-11)
 
 
