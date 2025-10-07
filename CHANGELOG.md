@@ -1,3 +1,10 @@
+# [8.2.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.1.0...v8.2.0) (2025-10-07)
+
+
+### Features
+
+* **deps:** upgrade deps ([7f95247](https://github.com/Boehringer-Ingelheim/eslint-config/commit/7f95247faaebec8be215ff9eeaf439b2ac1045fc))
+
 # [8.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.0.0...v8.1.0) (2025-09-12)
 
 
