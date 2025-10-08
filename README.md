@@ -108,7 +108,7 @@ The following plugins are used in this configuration:
 
 - [`@typescript-eslint/eslint-plugin`](https://typescript-eslint.io/rules/)
 - [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
-- [`eslint-plugin-sonarjs`](https://github.com/SonarSource/eslint-plugin-sonarjs)
+- [`eslint-plugin-sonarjs`](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 
 Additionally, the [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) is used to automatically fix sorting issues.
 
