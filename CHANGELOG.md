@@ -1,3 +1,15 @@
+# [9.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.2.0...v9.0.0) (2025-10-08)
+
+
+### Features
+
+* **deps:** update eslint-plugin-sonarjs dependency ([d7688db](https://github.com/Boehringer-Ingelheim/eslint-config/commit/d7688db39ee0f1894a2f2e419fb2ea14eac1d16e)), closes [#85](https://github.com/Boehringer-Ingelheim/eslint-config/issues/85)
+
+
+### BREAKING CHANGES
+
+* **deps:** The new major version of `eslint-plugin-sonarjs` makes all SonarJS rules available to ESLint which may lead to new linting errors in your codebase. Please review the `eslint-plugin-sonarjs` documentation: https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md
+
 # [9.0.0-sonarjs-v3.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.2.0...v9.0.0-sonarjs-v3.1) (2025-10-07)
 
 
