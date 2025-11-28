@@ -32,22 +32,22 @@
     "eslint": ">= 9.34.0"
   },
   "dependencies": {
-    "@eslint/compat": "^1.4.0",
-    "@eslint/js": "^9.37.0",
-    "@next/eslint-plugin-next": "^15.5.4",
+    "@eslint/compat": "^2.0.0",
+    "@eslint/js": "^9.39.1",
+    "@next/eslint-plugin-next": "^16.0.5",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-perfectionist": "^4.15.1",
-    "eslint-plugin-playwright": "^2.2.2",
+    "eslint-plugin-playwright": "^2.3.0",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^6.1.1",
-    "eslint-plugin-react-refresh": "^0.4.23",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
     "eslint-plugin-sonarjs": "^3.0.5",
-    "globals": "^16.4.0",
+    "globals": "^16.5.0",
     "is-ci": "^4.1.0",
-    "typescript-eslint": "^8.46.0"
+    "typescript-eslint": "^8.48.0"
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
@@ -56,9 +56,9 @@
     "@commitlint/types": "20.0.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "dotenv-cli": "10.0.0",
+    "dotenv-cli": "11.0.0",
     "husky": "9.1.7",
-    "prettier": "3.6.2",
-    "semantic-release": "24.2.9"
+    "prettier": "3.7.1",
+    "semantic-release": "25.0.2"
   }
 }
