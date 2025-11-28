@@ -66,6 +66,32 @@ module.exports = defineConfig(
     },
   },
   {
+    files: [`{instrumentation,src/instrumentation}.{ts,tsx}`],
+    rules: {
+      'import/no-unused-modules': ['off'],
+
+      // eslint-plugin-react-refresh: https://github.com/ArnaudBarre/eslint-plugin-react-refresh
+      'react-refresh/only-export-components': [
+        'warn',
+        {
+          allowExportNames: [
+            /**
+             * Next.js allows exporting the following exports in instrumentation files
+             *
+             * @link https://nextjs.org/docs/app/guides/instrumentation#convention
+             */
+            'register',
+          ],
+        },
+      ],
+    },
+  },
+  {
+    /**
+     * Next.js 'middleware' files are beeing deprecated in favor of the new proxy files with v16+
+     *
+     * @link https://nextjs.org/blog/next-16#proxyts-formerly-middlewarets
+     */
     files: [`{middleware,src/middleware}.{ts,tsx}`],
     rules: {
       'import/no-unused-modules': ['off'],
@@ -87,6 +113,25 @@ module.exports = defineConfig(
     },
   },
   {
-    ignores: ['.next/*'],
+    files: [`{proxy,src/proxy}.{ts,tsx}`],
+    rules: {
+      'import/no-unused-modules': ['off'],
+
+      // eslint-plugin-react-refresh: https://github.com/ArnaudBarre/eslint-plugin-react-refresh
+      'react-refresh/only-export-components': [
+        'warn',
+        {
+          allowExportNames: [
+            /**
+             * Next.js allows exporting the following exports in proxy files
+             *
+             * @link https://nextjs.org/docs/app/api-reference/file-conventions/proxy#config-object-optional
+             */
+            'config',
+            'proxy',
+          ],
+        },
+      ],
+    },
   },
 );
