@@ -1,3 +1,10 @@
+# [9.1.0-nextjs-refinements.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v9.0.0...v9.1.0-nextjs-refinements.1) (2025-11-28)
+
+
+### Features
+
+* **next.js:** add rules for instrumentation and proxy files ([bce221b](https://github.com/Boehringer-Ingelheim/eslint-config/commit/bce221befca9d73e3a52e5d115d9a956459803a3))
+
 # [9.0.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v8.2.0...v9.0.0) (2025-10-08)
 
 
