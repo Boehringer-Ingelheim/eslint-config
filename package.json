@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "9.0.0",
+  "version": "9.1.0-nextjs-refinements.1",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
     "boehringer",
