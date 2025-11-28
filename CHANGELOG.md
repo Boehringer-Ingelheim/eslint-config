@@ -1,3 +1,11 @@
+# [9.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v9.0.0...v9.1.0) (2025-11-28)
+
+
+### Features
+
+* **deps:** update dependencies ([46dc08b](https://github.com/Boehringer-Ingelheim/eslint-config/commit/46dc08b98e1c5909dd24069123da5492662568f5))
+* **next.js:** add rules for instrumentation and proxy files ([bce221b](https://github.com/Boehringer-Ingelheim/eslint-config/commit/bce221befca9d73e3a52e5d115d9a956459803a3))
+
 # [9.1.0-nextjs-refinements.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v9.0.0...v9.1.0-nextjs-refinements.1) (2025-11-28)
 
 
