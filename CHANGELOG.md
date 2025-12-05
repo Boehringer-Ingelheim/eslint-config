@@ -1,3 +1,10 @@
+## [9.1.1-typescript-eslint-performance.1](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v9.1.0...v9.1.1-typescript-eslint-performance.1) (2025-12-05)
+
+
+### Bug Fixes
+
+* disable import/no-unresolved for better performance as suggested by typescript-eslint ([913aad9](https://github.com/Boehringer-Ingelheim/eslint-config/commit/913aad908da1fd478a8eac6cb6d2a80e86114538))
+
 # [9.1.0](https://github.com/Boehringer-Ingelheim/eslint-config/compare/v9.0.0...v9.1.0) (2025-11-28)
 
 
