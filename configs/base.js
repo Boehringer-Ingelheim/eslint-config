@@ -87,6 +87,7 @@ module.exports = defineConfig(
       'import/named': 'off',
       'import/namespace': 'off',
       'import/no-named-as-default-member': 'off',
+      'import/no-unresolved': 'off',
 
       // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
       'perfectionist/sort-classes': [
