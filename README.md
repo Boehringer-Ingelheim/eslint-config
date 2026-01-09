@@ -326,19 +326,11 @@ npm run repair
 
 ### Release
 
-Fully automated version management and package publishing via [semantic-release](https://github.com/semantic-release). It bumps the version according to conventional commits, publishes the package to npm and release a new version to GitHub.
+> [!IMPORTANT]  
+> Manual releases are not supported to ensure consistency and security, see: <https://docs.npmjs.com/trusted-publishers>
 
-#### Automatic Release (GitHub Action) [Recommended]
-
-Make sure that the secrets `GITHUB_TOKEN` and `NPM_TOKEN` are available in GitHub repository.
-
-```sh
-npm run release:ci
-```
-
-#### Manual Release
-
-Make sure that the environment variables `GITHUB_TOKEN` and `NPM_TOKEN` are set or declared in `.env` and a productive build was previously created via `npm run build`.
+Releases are automated through GitHub Actions using [semantic-release](https://github.com/semantic-release).
+It bumps the version according to conventional commits, publishes the package to npm and release a new version to GitHub.
 
 ```sh
 npm run release
@@ -357,7 +349,7 @@ Give a ⭐️ if this project helped you!
 
 ## License
 
-Copyright © 2025 [Boehringer Ingelheim](https://github.com/boehringer-ingelheim).  
+Copyright © 2026 [Boehringer Ingelheim](https://github.com/boehringer-ingelheim).  
 This project is [MIT](https://github.com/boehringer-ingelheim/eslint-config/blob/master/LICENSE) licensed.
 
 ## Resources

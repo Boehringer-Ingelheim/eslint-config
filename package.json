@@ -31,8 +31,7 @@
   "types": "index.d.ts",
   "scripts": {
     "prepare": "husky",
-    "release": "dotenv -- semantic-release --no-ci",
-    "release:ci": "semantic-release",
+    "release": "semantic-release",
     "repair": "npx --yes rimraf@6 .git/hooks node_modules package-lock.json && npm install",
     "lint": "eslint ."
   },
