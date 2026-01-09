@@ -102,6 +102,7 @@ module.exports = defineConfig(
         {
           ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-imports'][1],
           groups: SORT_IMPORTS_GROUPS,
+          newlinesBetween: 0,
         },
       ],
       'perfectionist/sort-intersection-types': [

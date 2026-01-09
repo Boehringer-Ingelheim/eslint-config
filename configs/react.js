@@ -68,6 +68,7 @@ module.exports = defineConfig(
           ],
           groups: ['react', ...SORT_IMPORTS_GROUPS],
           ignoreCase: true,
+          newlinesBetween: 0,
           type: 'natural',
         },
       ],
