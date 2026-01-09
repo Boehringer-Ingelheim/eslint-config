@@ -60,27 +60,30 @@ module.exports = defineConfig(
       'perfectionist/sort-imports': [
         'error',
         {
-          customGroups: {
-            type: {
-              react: ['react'],
+          customGroups: [
+            {
+              elementNamePattern: ['^react$'],
+              groupName: 'react',
             },
-            value: {
-              react: ['react'],
-            },
-          },
+          ],
           groups: ['react', ...SORT_IMPORTS_GROUPS],
           ignoreCase: true,
-          newlinesBetween: 'ignore',
           type: 'natural',
         },
       ],
       'perfectionist/sort-jsx-props': [
         'error',
         {
-          customGroups: {
-            callback: '^on.+',
-            reservedProps: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L41-L46
-          },
+          customGroups: [
+            {
+              elementNamePattern: '^on.+',
+              groupName: 'callback',
+            },
+            {
+              elementNamePattern: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L41-L46
+              groupName: 'reservedProps',
+            },
+          ],
           groups: ['reservedProps', 'unknown', 'callback'],
           ignoreCase: true,
           type: 'natural',
