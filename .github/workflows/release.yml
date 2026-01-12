@@ -38,4 +38,4 @@ jobs:
       - name: Release package to npm and GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run release:ci
+        run: npm run release
