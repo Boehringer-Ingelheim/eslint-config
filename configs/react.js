@@ -4,8 +4,7 @@ const reactHooks = require('eslint-plugin-react-hooks');
 const reactRefresh = require('eslint-plugin-react-refresh');
 const { defineConfig } = require('eslint/config');
 const globals = require('globals');
-
-const { SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
+const { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
 const base = require('./base.js');
 
 module.exports = defineConfig(
@@ -60,30 +59,30 @@ module.exports = defineConfig(
       'perfectionist/sort-imports': [
         'error',
         {
-          customGroups: {
-            type: {
-              react: ['react'],
+          customGroups: [
+            {
+              elementNamePattern: ['^react$'],
+              groupName: 'react',
             },
-            value: {
-              react: ['react'],
-            },
-          },
+          ],
           groups: ['react', ...SORT_IMPORTS_GROUPS],
-          ignoreCase: true,
-          newlinesBetween: 'ignore',
-          type: 'natural',
+          newlinesBetween: 0, // No newlines are allowed between groups
         },
       ],
       'perfectionist/sort-jsx-props': [
         'error',
         {
-          customGroups: {
-            callback: '^on.+',
-            reservedProps: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L41-L46
-          },
+          customGroups: [
+            {
+              elementNamePattern: '^on.+',
+              groupName: 'callback',
+            },
+            {
+              elementNamePattern: ['children', 'dangerouslySetInnerHTML', 'key', 'ref'], // Reserved props from: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/lib/rules/jsx-sort-props.js#L41-L46
+              groupName: 'reservedProps',
+            },
+          ],
           groups: ['reservedProps', 'unknown', 'callback'],
-          ignoreCase: true,
-          type: 'natural',
         },
       ],
 
@@ -100,6 +99,9 @@ module.exports = defineConfig(
       ],
     },
     settings: {
+      perfectionist: {
+        ...PERFECTIONIST_SETTINGS,
+      },
       react: {
         version: 'detect',
       },

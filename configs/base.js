@@ -6,6 +6,7 @@ const { defineConfig } = require('eslint/config');
 const tseslint = require('typescript-eslint');
 
 const {
+  PERFECTIONIST_SETTINGS,
   SORT_CLASSES_GROUPS,
   SORT_IMPORTS_GROUPS,
   SORT_INTERSECTION_TYPES_GROUPS,
@@ -93,36 +94,31 @@ module.exports = defineConfig(
       'perfectionist/sort-classes': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-classes'][1],
           groups: SORT_CLASSES_GROUPS,
         },
       ],
       'perfectionist/sort-imports': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-imports'][1],
           groups: SORT_IMPORTS_GROUPS,
-          newlinesBetween: 'ignore',
+          newlinesBetween: 0, // No newlines are allowed between groups
         },
       ],
       'perfectionist/sort-intersection-types': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-intersection-types'][1],
           groups: SORT_INTERSECTION_TYPES_GROUPS,
         },
       ],
       'perfectionist/sort-named-imports': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-named-imports'][1],
           ignoreAlias: true,
         },
       ],
       'perfectionist/sort-objects': [
         'error',
         {
-          ...perfectionist.configs['recommended-natural'].rules['perfectionist/sort-objects'][1],
           partitionByComment: true,
         },
       ],
@@ -130,6 +126,9 @@ module.exports = defineConfig(
     settings: {
       'import/resolver': {
         typescript: true,
+      },
+      perfectionist: {
+        ...PERFECTIONIST_SETTINGS,
       },
     },
   },
