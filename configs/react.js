@@ -4,8 +4,7 @@ const reactHooks = require('eslint-plugin-react-hooks');
 const reactRefresh = require('eslint-plugin-react-refresh');
 const { defineConfig } = require('eslint/config');
 const globals = require('globals');
-
-const { SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
+const { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
 const base = require('./base.js');
 
 module.exports = defineConfig(
@@ -67,9 +66,7 @@ module.exports = defineConfig(
             },
           ],
           groups: ['react', ...SORT_IMPORTS_GROUPS],
-          ignoreCase: true,
-          newlinesBetween: 0,
-          type: 'natural',
+          newlinesBetween: 0, // No newlines are allowed between groups
         },
       ],
       'perfectionist/sort-jsx-props': [
@@ -86,8 +83,6 @@ module.exports = defineConfig(
             },
           ],
           groups: ['reservedProps', 'unknown', 'callback'],
-          ignoreCase: true,
-          type: 'natural',
         },
       ],
 
@@ -104,6 +99,9 @@ module.exports = defineConfig(
       ],
     },
     settings: {
+      perfectionist: {
+        ...PERFECTIONIST_SETTINGS,
+      },
       react: {
         version: 'detect',
       },
