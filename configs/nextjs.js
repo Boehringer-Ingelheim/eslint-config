@@ -1,10 +1,10 @@
-const nextPlugin = require('@next/eslint-plugin-next');
-const { defineConfig } = require('eslint/config');
+import nextPlugin from '@next/eslint-plugin-next';
+import { defineConfig } from 'eslint/config';
 
-const { NEXTJS_ROUTING_FILES } = require('../lib/nextjs.utils.js');
-const react = require('./react.js');
+import { NEXTJS_ROUTING_FILES } from '../lib/nextjs.utils.js';
+import react from './react.js';
 
-module.exports = defineConfig(
+export default defineConfig(
   ...react,
   {
     plugins: {
