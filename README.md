@@ -21,7 +21,7 @@ npm install --save-dev @boehringer-ingelheim/eslint-config
 
 ### Add the configuration
 
-Create or update the `eslint.config.mjs` (`eslint.config.cjs` is also possible if commonjs is preferred) file in your projects root directory accordingly.
+Create or update the `eslint.config.mjs` file in your projects root directory accordingly.
 
 ```js
 import boehringer from '@boehringer-ingelheim/eslint-config';
@@ -223,7 +223,7 @@ export default defineConfig(
 );
 ```
 
-This shared ESLint configuration is designed to enforce some naming conventions. It uses the [`@typescript-eslint/naming-convention`](https://typescript-eslint.io/rules/naming-convention/) rule for enforcing the naming conventions. The enforced conventions can be found in [configs/naming-convention.js](./configs/naming-convention.js#L7-L65)
+This shared ESLint configuration is designed to enforce some naming conventions. It uses the [`@typescript-eslint/naming-convention`](https://typescript-eslint.io/rules/naming-convention/) rule for enforcing the naming conventions. The enforced conventions can be found in [configs/experimental-naming-convention.js](./configs/experimental-naming-convention.js#L7-L65)
 
 ### Prettier-disable
 
