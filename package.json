@@ -1,6 +1,6 @@
 {
   "name": "@boehringer-ingelheim/eslint-config",
-  "version": "9.1.0",
+  "version": "0.0.0-semantically-released",
   "type": "module",
   "description": "Shared eslint configuration used at Boehringer Ingelheim for code styling",
   "keywords": [
