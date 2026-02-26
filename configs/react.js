@@ -1,13 +1,14 @@
-const jsxA11y = require('eslint-plugin-jsx-a11y');
-const react = require('eslint-plugin-react');
-const reactHooks = require('eslint-plugin-react-hooks');
-const reactRefresh = require('eslint-plugin-react-refresh');
-const { defineConfig } = require('eslint/config');
-const globals = require('globals');
-const { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
-const base = require('./base.js');
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import { defineConfig } from 'eslint/config';
+import globals from 'globals';
 
-module.exports = defineConfig(
+import { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } from '../lib/eslint-plugin-perfectionist.js';
+import base from './base.js';
+
+export default defineConfig(
   ...base,
   jsxA11y.flatConfigs.recommended,
   react.configs.flat.recommended,

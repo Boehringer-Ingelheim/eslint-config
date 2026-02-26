@@ -1,7 +1,7 @@
-const playwright = require('eslint-plugin-playwright');
-const { defineConfig } = require('eslint/config');
+import playwright from 'eslint-plugin-playwright';
+import { defineConfig } from 'eslint/config';
 
-module.exports = defineConfig({
+export default defineConfig({
   ...playwright.configs['flat/recommended'],
   rules: {
     /**

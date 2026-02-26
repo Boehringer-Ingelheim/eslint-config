@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint';
+import type tseslint from 'typescript-eslint';
 
 type Configs =
   | 'base'
@@ -10,8 +11,9 @@ type Configs =
   | 'react'
   | 'strict';
 
-declare module './index.js' {
-  export const configs: Record<Configs, Linter.Config[]>;
+declare const boehringerConfig: {
+  config: typeof tseslint.config;
+  configs: Record<Configs, Linter.Config[]>;
   /**
    * Reads an ignore file (e.g. `.gitignore`) and returns an object with the ignore patterns.
    *
@@ -20,5 +22,7 @@ declare module './index.js' {
    * @throws {Error} If the provided path is an empty string.
    * @returns {Linter.Config} The result of including the ignore file at the resolved absolute path.
    */
-  export const includeIgnoreFile: (ignoreFilePath?: string) => Linter.Config;
-}
+  includeIgnoreFile: (ignoreFilePath?: string) => Linter.Config;
+};
+
+export default boehringerConfig;

@@ -1,16 +1,16 @@
-const tseslint = require('typescript-eslint');
+import tseslint from 'typescript-eslint';
 
-const base = require('./configs/base.js');
-const experimentalNamingConvention = require('./configs/experimental-naming-convention.js');
-const local = require('./configs/local.js');
-const nextjs = require('./configs/nextjs.js');
-const playwright = require('./configs/playwright.js');
-const prettierDisable = require('./configs/prettier-disable.js');
-const react = require('./configs/react.js');
-const strict = require('./configs/strict.js');
-const { includeIgnoreFile } = require('./lib/include-ignore-file.js');
+import base from './configs/base.js';
+import experimentalNamingConvention from './configs/experimental-naming-convention.js';
+import local from './configs/local.js';
+import nextjs from './configs/nextjs.js';
+import playwright from './configs/playwright.js';
+import prettierDisable from './configs/prettier-disable.js';
+import react from './configs/react.js';
+import strict from './configs/strict.js';
+import { includeIgnoreFile } from './lib/include-ignore-file.js';
 
-module.exports = {
+export default {
   config: tseslint.config,
   configs: {
     base,

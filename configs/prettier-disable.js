@@ -1,7 +1,7 @@
-const prettier = require('eslint-config-prettier');
-const { defineConfig } = require('eslint/config');
+import prettier from 'eslint-config-prettier';
+import { defineConfig } from 'eslint/config';
 
-module.exports = defineConfig({
+export default defineConfig({
   ...prettier,
   rules: {
     ...prettier.rules,
