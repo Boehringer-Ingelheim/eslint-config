@@ -58,9 +58,9 @@
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
-    "@commitlint/cli": "20.3.1",
-    "@commitlint/config-conventional": "20.3.1",
-    "@commitlint/types": "20.3.1",
+    "@commitlint/cli": "21.0.1",
+    "@commitlint/config-conventional": "21.0.1",
+    "@commitlint/types": "21.0.1",
     "dotenv-cli": "11.0.0",
     "husky": "9.1.7",
     "prettier": "3.8.3",
