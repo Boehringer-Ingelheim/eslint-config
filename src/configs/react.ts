@@ -1,18 +1,33 @@
-import { defineConfig } from 'eslint/config';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
-
 import { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } from '../lib/eslint-plugin-perfectionist.js';
 import base from './base.js';
+
+const reactRecommendedConfig = react.configs.flat.recommended;
+
+if (!reactRecommendedConfig) {
+  throw new Error(
+    'Expected to find the "flat/recommended" configuration in the eslint-plugin-react plugin, but it was not found.',
+  );
+}
+
+const reactJsxRuntimeConfig = react.configs.flat['jsx-runtime'];
+
+if (!reactJsxRuntimeConfig) {
+  throw new Error(
+    'Expected to find the "flat/jsx-runtime" configuration in the eslint-plugin-react plugin, but it was not found.',
+  );
+}
 
 export default defineConfig(
   ...base,
   jsxA11y.flatConfigs.recommended,
-  react.configs.flat.recommended!,
-  react.configs.flat['jsx-runtime']!,
+  reactRecommendedConfig,
+  reactJsxRuntimeConfig,
   reactRefresh.configs.recommended,
   {
     languageOptions: {

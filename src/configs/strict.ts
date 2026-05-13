@@ -1,13 +1,18 @@
 import { defineConfig } from 'eslint/config';
 import * as tseslint from 'typescript-eslint';
-
 import base from './base.js';
 
 const strictTemplateExpressionsRule = (
   tseslint.plugin as typeof tseslint.plugin & {
     rules: Record<string, { meta: { docs: { recommended: { strict: [Record<string, unknown>] } } } }>;
   }
-).rules['restrict-template-expressions']!;
+).rules['restrict-template-expressions'];
+
+if (!strictTemplateExpressionsRule) {
+  throw new Error(
+    'Expected to find the "restrict-template-expressions" rule in the typescript-eslint plugin, but it was not found.',
+  );
+}
 
 export default defineConfig(...base, tseslint.configs.strictTypeChecked, {
   rules: {

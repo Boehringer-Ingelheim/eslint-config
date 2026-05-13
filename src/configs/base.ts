@@ -1,10 +1,9 @@
 import * as eslint from '@eslint/js';
-import { defineConfig } from 'eslint/config';
 import * as importPlugin from 'eslint-plugin-import';
 import * as perfectionist from 'eslint-plugin-perfectionist';
 import * as sonarjs from 'eslint-plugin-sonarjs';
+import { defineConfig } from 'eslint/config';
 import * as tseslint from 'typescript-eslint';
-
 import {
   PERFECTIONIST_SETTINGS,
   SORT_CLASSES_GROUPS,

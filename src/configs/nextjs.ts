@@ -1,6 +1,5 @@
 import * as nextPlugin from '@next/eslint-plugin-next';
 import { defineConfig } from 'eslint/config';
-
 import { NEXTJS_ROUTING_FILES } from '../lib/nextjs.utils.js';
 import react from './react.js';
 
