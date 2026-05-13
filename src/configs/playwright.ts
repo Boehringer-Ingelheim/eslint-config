@@ -1,8 +1,16 @@
-const playwright = require('eslint-plugin-playwright');
-const { defineConfig } = require('eslint/config');
+import { defineConfig } from 'eslint/config';
+import * as playwright from 'eslint-plugin-playwright';
 
-module.exports = defineConfig({
-  ...playwright.configs['flat/recommended'],
+const playwrightPlugin = playwright as typeof playwright & {
+  configs: {
+    'flat/recommended': {
+      rules: Record<string, unknown>;
+    };
+  };
+};
+
+export default defineConfig({
+  ...playwrightPlugin.configs['flat/recommended'],
   rules: {
     /**
      * At the moment, `eslint-plugin-playwright` does not fully support component testing with type information.
@@ -18,7 +26,7 @@ module.exports = defineConfig({
     '@typescript-eslint/unbound-method': 'off',
 
     // eslint-plugin-playwright: https://github.com/playwright-community/eslint-plugin-playwright
-    ...playwright.configs['flat/recommended'].rules,
+    ...playwrightPlugin.configs['flat/recommended'].rules,
     'playwright/prefer-to-be': 'error',
     'playwright/prefer-to-have-length': 'error',
     'playwright/require-top-level-describe': 'error',

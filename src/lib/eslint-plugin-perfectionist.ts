@@ -2,8 +2,8 @@
  * Opinionated 'default' settings for eslint-plugin-perfectionist.
  * @see https://perfectionist.dev/guide/getting-started#settings
  */
-const PERFECTIONIST_SETTINGS = {
-  ignoreCase: true, // Ignore case when sorting
+export const PERFECTIONIST_SETTINGS = {
+  ignoreCase: true,
   type: 'natural',
 };
 
@@ -13,7 +13,7 @@ const PERFECTIONIST_SETTINGS = {
  * as it feels more natural.
  * The following group names are available for configuration: https://eslint-plugin-perfectionist.azat.io/rules/sort-imports#groups
  */
-const SORT_IMPORTS_GROUPS = [
+export const SORT_IMPORTS_GROUPS = [
   ['value-builtin', 'named-type-builtin'],
   ['value-external', 'named-type-external'],
   ['value-internal', 'named-type-internal'],
@@ -34,7 +34,7 @@ const SORT_IMPORTS_GROUPS = [
  * - https://eslint-plugin-perfectionist.azat.io/rules/sort-classes#groups
  * - https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/index.ts#L61
  */
-const SORT_CLASSES_GROUPS = [
+export const SORT_CLASSES_GROUPS = [
   'index-signature',
   ['static-property', 'static-accessor-property'],
   ['static-get-method', 'static-set-method'],
@@ -63,7 +63,7 @@ const SORT_CLASSES_GROUPS = [
  * Customized configuration to configure the perfectionist/sort-intersection-types rule.
  * The following group names are available for configuration: https://perfectionist.dev/rules/sort-intersection-types#groups
  */
-const SORT_INTERSECTION_TYPES_GROUPS = [
+export const SORT_INTERSECTION_TYPES_GROUPS = [
   'conditional',
   'function',
   'import',
@@ -78,10 +78,3 @@ const SORT_INTERSECTION_TYPES_GROUPS = [
   'nullish',
   'unknown',
 ];
-
-module.exports = {
-  PERFECTIONIST_SETTINGS,
-  SORT_CLASSES_GROUPS,
-  SORT_IMPORTS_GROUPS,
-  SORT_INTERSECTION_TYPES_GROUPS,
-};

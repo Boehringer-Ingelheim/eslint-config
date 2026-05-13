@@ -1,5 +1,5 @@
 /** @type {import('semantic-release').Options}  */
-module.exports = {
+export default {
   branches: [
     'master',
     {
