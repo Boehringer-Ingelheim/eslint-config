@@ -6,6 +6,7 @@ import playwright from './configs/playwright.js';
 import prettierDisable from './configs/prettier-disable.js';
 import react from './configs/react.js';
 import strict from './configs/strict.js';
+import { includeIgnoreFile } from './lib/include-ignore-file.js';
 
 export const configs = {
   base,
@@ -19,3 +20,8 @@ export const configs = {
 };
 
 export { includeIgnoreFile } from './lib/include-ignore-file.js';
+
+export default {
+  configs,
+  includeIgnoreFile,
+};

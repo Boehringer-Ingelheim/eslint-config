@@ -24,28 +24,32 @@
   "files": [
     "dist"
   ],
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "main": "./dist/main.mjs",
+  "types": "./dist/main.d.mts",
   "exports": {
     ".": {
-      "default": "./dist/main.js",
-      "types": "./dist/main.d.ts"
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs",
+      "types": "./dist/main.d.mts"
     },
     "./configs/*": {
-      "default": "./dist/configs/*.js",
-      "types": "./dist/configs/*.d.ts"
+      "import": "./dist/configs/*.mjs",
+      "require": "./dist/configs/*.cjs",
+      "types": "./dist/configs/*.d.mts"
     },
     "./lib/*": {
-      "default": "./dist/lib/*.js",
-      "types": "./dist/lib/*.d.ts"
-    }
+      "import": "./dist/lib/*.mjs",
+      "require": "./dist/lib/*.cjs",
+      "types": "./dist/lib/*.d.mts"
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "prepare": "husky",
     "release": "semantic-release",
     "repair": "npx --yes rimraf@6 .git/hooks node_modules package-lock.json && npm install",
     "lint": "eslint .",
-    "build": "tsc"
+    "build": "tsdown"
   },
   "peerDependencies": {
     "eslint": ">= 9.34.0"
@@ -79,6 +83,7 @@
     "husky": "9.1.7",
     "prettier": "3.7.4",
     "semantic-release": "25.0.2",
+    "tsdown": "^0.22.0",
     "typescript": "^5.9.3"
   },
   "type": "module"
