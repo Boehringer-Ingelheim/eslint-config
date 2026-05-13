@@ -1,5 +1,5 @@
 import { defineConfig } from 'eslint/config';
-import * as tseslint from 'typescript-eslint';
+import tseslint from 'typescript-eslint';
 import base from './base.js';
 
 const strictTemplateExpressionsRule = (

@@ -1,4 +1,4 @@
-import * as path from 'node:path';
+import path from 'node:path';
 import { cwd } from 'node:process';
 import { includeIgnoreFile as includeIgnoreFileAbsolute } from '@eslint/compat';
 

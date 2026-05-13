@@ -1,4 +1,4 @@
-import * as playwright from 'eslint-plugin-playwright';
+import playwright from 'eslint-plugin-playwright';
 import { defineConfig } from 'eslint/config';
 
 const playwrightPlugin = playwright as typeof playwright & {
