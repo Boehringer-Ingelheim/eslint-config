@@ -1,17 +1,18 @@
-const jsxA11y = require('eslint-plugin-jsx-a11y');
-const react = require('eslint-plugin-react');
-const reactHooks = require('eslint-plugin-react-hooks');
-const reactRefresh = require('eslint-plugin-react-refresh');
-const { defineConfig } = require('eslint/config');
-const globals = require('globals');
-const { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
-const base = require('./base.js');
+import { defineConfig } from 'eslint/config';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
 
-module.exports = defineConfig(
+import { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } from '../lib/eslint-plugin-perfectionist.js';
+import base from './base.js';
+
+export default defineConfig(
   ...base,
   jsxA11y.flatConfigs.recommended,
-  react.configs.flat.recommended,
-  react.configs.flat['jsx-runtime'],
+  react.configs.flat.recommended!,
+  react.configs.flat['jsx-runtime']!,
   reactRefresh.configs.recommended,
   {
     languageOptions: {
@@ -25,6 +26,7 @@ module.exports = defineConfig(
       },
     },
     plugins: {
+      // @ts-expect-error -- This is as per documentation of eslint-plugin-react, see: https://www.npmjs.com/package/eslint-plugin-react-hooks
       'react-hooks': reactHooks,
     },
     rules: {

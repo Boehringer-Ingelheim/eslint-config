@@ -1,9 +1,15 @@
-const { defineConfig } = require('eslint/config');
-const tseslint = require('typescript-eslint');
+import { defineConfig } from 'eslint/config';
+import * as tseslint from 'typescript-eslint';
 
-const base = require('./base.js');
+import base from './base.js';
 
-module.exports = defineConfig(...base, tseslint.configs.strictTypeChecked, {
+const strictTemplateExpressionsRule = (
+  tseslint.plugin as typeof tseslint.plugin & {
+    rules: Record<string, { meta: { docs: { recommended: { strict: [Record<string, unknown>] } } } }>;
+  }
+).rules['restrict-template-expressions']!;
+
+export default defineConfig(...base, tseslint.configs.strictTypeChecked, {
   rules: {
     // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
     '@typescript-eslint/consistent-type-imports': 'error',
@@ -11,7 +17,7 @@ module.exports = defineConfig(...base, tseslint.configs.strictTypeChecked, {
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       {
-        ...tseslint.plugin.rules['restrict-template-expressions'].meta.docs.recommended.strict[0],
+        ...strictTemplateExpressionsRule.meta.docs.recommended.strict[0],
         allowNumber: true,
       },
     ],

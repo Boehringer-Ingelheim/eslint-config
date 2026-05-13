@@ -1,18 +1,18 @@
-const eslint = require('@eslint/js');
-const importPlugin = require('eslint-plugin-import');
-const perfectionist = require('eslint-plugin-perfectionist');
-const sonarjs = require('eslint-plugin-sonarjs');
-const { defineConfig } = require('eslint/config');
-const tseslint = require('typescript-eslint');
+import * as eslint from '@eslint/js';
+import { defineConfig } from 'eslint/config';
+import * as importPlugin from 'eslint-plugin-import';
+import * as perfectionist from 'eslint-plugin-perfectionist';
+import * as sonarjs from 'eslint-plugin-sonarjs';
+import * as tseslint from 'typescript-eslint';
 
-const {
+import {
   PERFECTIONIST_SETTINGS,
   SORT_CLASSES_GROUPS,
   SORT_IMPORTS_GROUPS,
   SORT_INTERSECTION_TYPES_GROUPS,
-} = require('../lib/eslint-plugin-perfectionist.js');
+} from '../lib/eslint-plugin-perfectionist.js';
 
-module.exports = defineConfig(
+export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylisticTypeChecked,

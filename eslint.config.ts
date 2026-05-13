@@ -8,6 +8,11 @@ export default defineConfig(eslint.configs.recommended, perfectionist.configs['r
     globals: {
       ...globals.node,
     },
+    parserOptions: {
+      projectService: {
+        allowDefaultProject: ['*.js', '*.ts'],
+      },
+    },
   },
   rules: {
     'perfectionist/sort-objects': [

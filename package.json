@@ -22,18 +22,30 @@
     "url": "https://github.com/Boehringer-Ingelheim/eslint-config/issues"
   },
   "files": [
-    "configs",
-    "lib",
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/main.js",
+      "types": "./dist/main.d.ts"
+    },
+    "./configs/*": {
+      "default": "./dist/configs/*.js",
+      "types": "./dist/configs/*.d.ts"
+    },
+    "./lib/*": {
+      "default": "./dist/lib/*.js",
+      "types": "./dist/lib/*.d.ts"
+    }
+  },
   "scripts": {
     "prepare": "husky",
     "release": "semantic-release",
     "repair": "npx --yes rimraf@6 .git/hooks node_modules package-lock.json && npm install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "tsc"
   },
   "peerDependencies": {
     "eslint": ">= 9.34.0"
@@ -61,9 +73,13 @@
     "@commitlint/cli": "20.3.1",
     "@commitlint/config-conventional": "20.3.1",
     "@commitlint/types": "20.3.1",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
+    "@types/node": "^25.7.0",
     "dotenv-cli": "11.0.0",
     "husky": "9.1.7",
     "prettier": "3.7.4",
-    "semantic-release": "25.0.2"
-  }
+    "semantic-release": "25.0.2",
+    "typescript": "^5.9.3"
+  },
+  "type": "module"
 }
