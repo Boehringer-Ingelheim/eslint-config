@@ -1,7 +1,7 @@
 import eslint from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
 import perfectionist from 'eslint-plugin-perfectionist';
-import sonarjs from 'eslint-plugin-sonarjs';
+import { configs as sonarjsConfigs } from 'eslint-plugin-sonarjs';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import {
@@ -18,7 +18,7 @@ export default defineConfig(
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
   perfectionist.configs['recommended-natural'],
-  sonarjs.configs.recommended,
+  sonarjsConfigs.recommended,
   {
     languageOptions: {
       parserOptions: {
