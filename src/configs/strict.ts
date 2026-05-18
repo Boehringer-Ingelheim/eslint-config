@@ -2,11 +2,13 @@ import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import base from './base.js';
 
-const strictTemplateExpressionsRule = (
-  tseslint.plugin as typeof tseslint.plugin & {
-    rules: Record<string, { meta: { docs: { recommended: { strict: [Record<string, unknown>] } } } }>;
-  }
-).rules['restrict-template-expressions'];
+type CompatiblePluginWithRules = typeof tseslint.plugin & {
+  rules: Record<string, { meta: { docs: { recommended: { strict: [Record<string, unknown>] } } } }>;
+};
+
+const strictTemplateExpressionsRule = (tseslint.plugin as CompatiblePluginWithRules).rules[
+  'restrict-template-expressions'
+];
 
 if (!strictTemplateExpressionsRule) {
   throw new Error(

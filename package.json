@@ -78,7 +78,7 @@
     "@commitlint/config-conventional": "20.3.1",
     "@commitlint/types": "20.3.1",
     "@types/eslint-plugin-jsx-a11y": "^6.10.1",
-    "@types/node": "^25.7.0",
+    "@types/node": "^24.12.4",
     "dotenv-cli": "11.0.0",
     "husky": "9.1.7",
     "prettier": "3.7.4",

@@ -7,7 +7,7 @@ import globals from 'globals';
 import { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } from '../lib/eslint-plugin-perfectionist.js';
 import base from './base.js';
 
-const reactRecommendedConfig = react.configs.flat.recommended;
+const reactRecommendedConfig = react.configs.flat['recommended'];
 
 if (!reactRecommendedConfig) {
   throw new Error(
@@ -41,7 +41,7 @@ export default defineConfig(
       },
     },
     plugins: {
-      // @ts-expect-error -- This is as per documentation of eslint-plugin-react, see: https://www.npmjs.com/package/eslint-plugin-react-hooks
+      // @ts-expect-error -- This is configured as per documentation of eslint-plugin-react, see: https://github.com/facebook/react/blob/b91823e21434ac665450e67ddc6f816710255938/packages/eslint-plugin-react-hooks/README.md#flat-config-eslintconfigjsts-1
       'react-hooks': reactHooks,
     },
     rules: {
