@@ -41,8 +41,13 @@ export default defineConfig(
       },
     },
     plugins: {
-      // @ts-expect-error -- This is configured as per documentation of eslint-plugin-react, see: https://github.com/facebook/react/blob/b91823e21434ac665450e67ddc6f816710255938/packages/eslint-plugin-react-hooks/README.md#flat-config-eslintconfigjsts-1
-      'react-hooks': reactHooks,
+      'react-hooks': {
+        ...reactHooks,
+        // the eslint-plugin-react-hooks package has some issues with the configs property as it offers the flat configs as a subproperty,
+        // which makes the config property type incompatible with the ESLint plugin definition.
+        // We just need the rules, so we can ignore the configs property.
+        configs: undefined,
+      },
     },
     rules: {
       // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
