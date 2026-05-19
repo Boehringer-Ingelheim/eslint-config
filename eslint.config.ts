@@ -1,8 +1,9 @@
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import strict from './src/configs/strict.js';
+import { includeIgnoreFile } from './src/main.js';
 
-export default defineConfig(strict, {
+export default defineConfig(includeIgnoreFile(), strict, {
   languageOptions: {
     globals: {
       ...globals.node,
