@@ -1,17 +1,33 @@
-const jsxA11y = require('eslint-plugin-jsx-a11y');
-const react = require('eslint-plugin-react');
-const reactHooks = require('eslint-plugin-react-hooks');
-const reactRefresh = require('eslint-plugin-react-refresh');
-const { defineConfig } = require('eslint/config');
-const globals = require('globals');
-const { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } = require('../lib/eslint-plugin-perfectionist.js');
-const base = require('./base.js');
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import { defineConfig } from 'eslint/config';
+import globals from 'globals';
+import { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } from '../lib/eslint-plugin-perfectionist.js';
+import base from './base.js';
 
-module.exports = defineConfig(
+const reactRecommendedConfig = react.configs.flat['recommended'];
+
+if (!reactRecommendedConfig) {
+  throw new Error(
+    'Expected to find the "flat/recommended" configuration in the eslint-plugin-react plugin, but it was not found.',
+  );
+}
+
+const reactJsxRuntimeConfig = react.configs.flat['jsx-runtime'];
+
+if (!reactJsxRuntimeConfig) {
+  throw new Error(
+    'Expected to find the "flat/jsx-runtime" configuration in the eslint-plugin-react plugin, but it was not found.',
+  );
+}
+
+export default defineConfig(
   ...base,
   jsxA11y.flatConfigs.recommended,
-  react.configs.flat.recommended,
-  react.configs.flat['jsx-runtime'],
+  reactRecommendedConfig,
+  reactJsxRuntimeConfig,
   reactRefresh.configs.recommended,
   {
     languageOptions: {
@@ -25,7 +41,13 @@ module.exports = defineConfig(
       },
     },
     plugins: {
-      'react-hooks': reactHooks,
+      'react-hooks': {
+        ...reactHooks,
+        // the eslint-plugin-react-hooks package has some issues with the configs property as it offers the flat configs as a subproperty,
+        // which makes the config property type incompatible with the ESLint plugin definition.
+        // We just need the rules, so we can ignore the configs property.
+        configs: undefined,
+      },
     },
     rules: {
       // @typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules

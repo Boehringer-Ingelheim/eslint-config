@@ -1,12 +1,17 @@
-import eslint from '@eslint/js';
-import perfectionist from 'eslint-plugin-perfectionist';
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
+import strict from './src/configs/strict.js';
+import { includeIgnoreFile } from './src/main.js';
 
-export default defineConfig(eslint.configs.recommended, perfectionist.configs['recommended-natural'], {
+export default defineConfig(includeIgnoreFile(), strict, {
   languageOptions: {
     globals: {
       ...globals.node,
+    },
+    parserOptions: {
+      projectService: {
+        allowDefaultProject: ['*.*js', '*.*ts'],
+      },
     },
   },
   rules: {
@@ -16,6 +21,7 @@ export default defineConfig(eslint.configs.recommended, perfectionist.configs['r
         partitionByComment: true,
       },
     ],
+    'sonarjs/todo-tag': 'warn',
     'sort-keys': 'off', // disabled due to conflict with eslint-plugin-perfectionist
   },
 });

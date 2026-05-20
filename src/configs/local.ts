@@ -1,7 +1,7 @@
-const { defineConfig } = require('eslint/config');
-const isCI = require('is-ci');
+import { defineConfig } from 'eslint/config';
+import isCI from 'is-ci';
 
-module.exports = defineConfig(
+export default defineConfig(
   isCI
     ? {}
     : {
