@@ -1,0 +1,4 @@
+# sample gitignore used by include-ignore-file tests
+node_modules/
+dist/
+*.log
