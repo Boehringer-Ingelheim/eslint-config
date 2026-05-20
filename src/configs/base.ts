@@ -121,6 +121,9 @@ export default defineConfig(
           partitionByComment: true,
         },
       ],
+
+      // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
+      'sonarjs/todo-tag': 'warn',
     },
     settings: {
       'import/resolver': {
