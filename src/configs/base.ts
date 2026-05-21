@@ -4,6 +4,7 @@ import perfectionist from 'eslint-plugin-perfectionist';
 import { configs as sonarjsConfigs } from 'eslint-plugin-sonarjs';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
+import { TEST_FILE_GLOBS } from '../lib/constants.js';
 import {
   PERFECTIONIST_SETTINGS,
   SORT_CLASSES_GROUPS,
@@ -139,11 +140,19 @@ export default defineConfig(
   {
     files: [
       '**/*.d.ts', // TypeScript declaration files
-      '**/*.{spec,test}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}', // Usually test files
+      ...TEST_FILE_GLOBS,
       './*.{js,cjs,mjs,ts,cts,mts}', // Mostly configuration files on root level
     ],
     rules: {
       'import/no-unused-modules': 'off',
+    },
+  },
+  {
+    files: [...TEST_FILE_GLOBS],
+    rules: {
+      // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
+      'sonarjs/no-duplicate-string': 'off',
+      'sonarjs/slow-regex': 'off',
     },
   },
 );

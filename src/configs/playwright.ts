@@ -30,5 +30,9 @@ export default defineConfig({
     'playwright/prefer-to-be': 'error',
     'playwright/prefer-to-have-length': 'error',
     'playwright/require-top-level-describe': 'error',
+
+    // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
+    'sonarjs/no-duplicate-string': 'off',
+    'sonarjs/slow-regex': 'off',
   },
 });
