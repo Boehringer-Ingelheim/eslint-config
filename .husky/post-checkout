@@ -1,0 +1,4 @@
+set +e
+# Install any missing dependencies since package-lock.json changed
+git diff-tree -r --name-only --no-commit-id "$1" "$2" | grep --quiet package-lock.json && npm ci
+set -e
