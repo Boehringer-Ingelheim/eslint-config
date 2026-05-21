@@ -21,7 +21,6 @@ export default defineConfig(includeIgnoreFile(), strict, {
         partitionByComment: true,
       },
     ],
-    'sonarjs/todo-tag': 'warn',
     'sort-keys': 'off', // disabled due to conflict with eslint-plugin-perfectionist
   },
 });
