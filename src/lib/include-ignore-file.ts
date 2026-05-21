@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { cwd } from 'node:process';
-import { includeIgnoreFile as includeIgnoreFileAbsolute } from '@eslint/compat';
+import { includeIgnoreFile as includeIgnoreFileAbsolute } from '@eslint/config-helpers';
 
 /**
  * Reads an ignore file (e.g. `.gitignore`) and returns an object with the ignore patterns.
@@ -8,7 +8,7 @@ import { includeIgnoreFile as includeIgnoreFileAbsolute } from '@eslint/compat';
  * @param {string} [ignoreFilePath='.gitignore'] - The path to the ignore file. Defaults to `.gitignore`.
  * @throws {TypeError} If the provided path is not a string.
  * @throws {Error} If the provided path is an empty string.
- * @returns {import('@eslint/compat').FlatConfig} The result of including the ignore file at the resolved absolute path.
+ * @returns {import('@eslint/config-helpers').FlatConfig} The result of including the ignore file at the resolved absolute path.
  */
 export const includeIgnoreFile = (ignoreFilePath = '.gitignore') => {
   if (typeof ignoreFilePath !== 'string') {
