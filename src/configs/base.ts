@@ -123,8 +123,9 @@ export default defineConfig(
       ],
 
       // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
-      'sonarjs/todo-tag': 'warn',
+      'sonarjs/deprecation': 'off', // disable rule in favor of @typescript-eslint/no-deprecated
       'sonarjs/no-unused-vars': 'off', // disabled due to overlap with @typescript-eslint/no-unused-vars
+      'sonarjs/todo-tag': 'warn',
     },
     settings: {
       'import/resolver': {
