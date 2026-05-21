@@ -1,7 +1,7 @@
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
+import { reactRefresh } from 'eslint-plugin-react-refresh';
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import { PERFECTIONIST_SETTINGS, SORT_IMPORTS_GROUPS } from '../lib/eslint-plugin-perfectionist.js';
@@ -28,7 +28,7 @@ export default defineConfig(
   jsxA11y.flatConfigs.recommended,
   reactRecommendedConfig,
   reactJsxRuntimeConfig,
-  reactRefresh.configs.recommended,
+  reactRefresh.configs.recommended(),
   {
     languageOptions: {
       globals: {

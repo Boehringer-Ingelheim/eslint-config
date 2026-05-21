@@ -8,7 +8,7 @@ import react from './configs/react.js';
 import strict from './configs/strict.js';
 import { includeIgnoreFile } from './lib/include-ignore-file.js';
 
-export const configs = {
+const configs = {
   base,
   experimentalNamingConvention,
   local,
@@ -19,9 +19,11 @@ export const configs = {
   strict,
 };
 
-export { includeIgnoreFile } from './lib/include-ignore-file.js';
+export { configs, includeIgnoreFile };
 
-export default {
+const defaultExport: { configs: typeof configs; includeIgnoreFile: typeof includeIgnoreFile } = {
   configs,
   includeIgnoreFile,
 };
+
+export default defaultExport;
