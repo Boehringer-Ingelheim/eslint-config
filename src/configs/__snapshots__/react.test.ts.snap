@@ -1011,6 +1011,7 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   ],
   "react-refresh/only-export-components": [
     1,
+    {},
   ],
   "react/display-name": [
     2,
@@ -1159,7 +1160,7 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/class-name": [
     2,
     {
-      "format": "^[A-Z][a-zA-Z0-9]*$",
+      "format": "^\\$?[A-Z][a-zA-Z0-9]*$",
     },
   ],
   "sonarjs/code-eval": [
@@ -1200,9 +1201,6 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/csrf": [
     2,
   ],
-  "sonarjs/deprecation": [
-    2,
-  ],
   "sonarjs/different-types-comparison": [
     2,
   ],
@@ -1215,7 +1213,13 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/disabled-timeout": [
     2,
   ],
+  "sonarjs/dompurify-unsafe-config": [
+    2,
+  ],
   "sonarjs/duplicates-in-character-class": [
+    2,
+  ],
+  "sonarjs/dynamically-constructed-templates": [
     2,
   ],
   "sonarjs/empty-string-repetition": [
@@ -1252,6 +1256,9 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
     2,
   ],
   "sonarjs/generator-without-yield": [
+    2,
+  ],
+  "sonarjs/hardcoded-secret-signatures": [
     2,
   ],
   "sonarjs/hashing": [
@@ -1531,6 +1538,9 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/no-selector-parameter": [
     2,
   ],
+  "sonarjs/no-session-cookies-on-static-assets": [
+    2,
+  ],
   "sonarjs/no-skipped-tests": [
     2,
   ],
@@ -1552,16 +1562,10 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/no-uniq-key": [
     2,
   ],
-  "sonarjs/no-unsafe-unzip": [
-    2,
-  ],
   "sonarjs/no-unthrown-error": [
     2,
   ],
   "sonarjs/no-unused-collection": [
-    2,
-  ],
-  "sonarjs/no-unused-vars": [
     2,
   ],
   "sonarjs/no-use-of-empty-return-value": [
@@ -1645,6 +1649,9 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
       "threshold": 20,
     },
   ],
+  "sonarjs/review-blockchain-mnemonic": [
+    2,
+  ],
   "sonarjs/session-regeneration": [
     2,
   ],
@@ -1669,9 +1676,6 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/strict-transport-security": [
     2,
   ],
-  "sonarjs/super-invocation": [
-    2,
-  ],
   "sonarjs/table-header": [
     2,
   ],
@@ -1682,7 +1686,7 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
     2,
   ],
   "sonarjs/todo-tag": [
-    2,
+    1,
   ],
   "sonarjs/unused-import": [
     2,
