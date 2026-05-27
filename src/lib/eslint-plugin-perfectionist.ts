@@ -1,11 +1,65 @@
+import type {
+  SortArrayIncludesOptions,
+  SortArraysOptions,
+  SortClassesOptions,
+  SortDecoratorsOptions,
+  SortEnumsOptions,
+  SortExportAttributesOptions,
+  SortExportsOptions,
+  SortHeritageClausesOptions,
+  SortImportAttributesOptions,
+  SortImportsOptions,
+  SortInterfacesOptions,
+  SortIntersectionTypesOptions,
+  SortJsxPropsOptions,
+  SortMapsOptions,
+  SortModulesOptions,
+  SortNamedExportsOptions,
+  SortNamedImportsOptions,
+  SortObjectsOptions,
+  SortObjectTypesOptions,
+  SortSetsOptions,
+  SortSwitchCaseOptions,
+  SortUnionTypesOptions,
+  SortVariableDeclarationsOptions,
+} from 'eslint-plugin-perfectionist';
+
+/* eslint-disable @typescript-eslint/no-duplicate-type-constituents -- disable this rule to include all options. Some are just re-exported. Including the re-exported types ensures they will be available even if there implementation changes */
+type CommonOption = (
+  | SortArrayIncludesOptions
+  | SortArraysOptions
+  | SortClassesOptions
+  | SortDecoratorsOptions
+  | SortEnumsOptions
+  | SortExportAttributesOptions
+  | SortExportsOptions
+  | SortHeritageClausesOptions
+  | SortImportAttributesOptions
+  | SortImportsOptions
+  | SortInterfacesOptions
+  | SortIntersectionTypesOptions
+  | SortJsxPropsOptions
+  | SortMapsOptions
+  | SortModulesOptions
+  | SortNamedExportsOptions
+  | SortNamedImportsOptions
+  | SortObjectsOptions
+  | SortObjectTypesOptions
+  | SortSetsOptions
+  | SortSwitchCaseOptions
+  | SortUnionTypesOptions
+  | SortVariableDeclarationsOptions
+)[number];
+/* eslint-enable @typescript-eslint/no-duplicate-type-constituents */
+
 /**
  * Opinionated 'default' settings for eslint-plugin-perfectionist.
  * @see https://perfectionist.dev/guide/getting-started#settings
  */
-const PERFECTIONIST_SETTINGS = {
-  ignoreCase: true, // Ignore case when sorting
+export const PERFECTIONIST_SETTINGS = {
+  ignoreCase: true,
   type: 'natural',
-};
+} as const satisfies CommonOption;
 
 /**
  * While the sorting of imports is done by `eslint-plugin-perfectionist/sort-imports`,
@@ -13,7 +67,7 @@ const PERFECTIONIST_SETTINGS = {
  * as it feels more natural.
  * The following group names are available for configuration: https://eslint-plugin-perfectionist.azat.io/rules/sort-imports#groups
  */
-const SORT_IMPORTS_GROUPS = [
+export const SORT_IMPORTS_GROUPS = [
   ['value-builtin', 'named-type-builtin'],
   ['value-external', 'named-type-external'],
   ['value-internal', 'named-type-internal'],
@@ -24,7 +78,7 @@ const SORT_IMPORTS_GROUPS = [
   ['value-side-effect-style', 'value-side-effect'],
   'value-ts-equals-import',
   'unknown',
-];
+] as const satisfies SortImportsOptions[number]['groups'];
 
 /**
  * This is the the default groups configuration of all the recommended configs by eslint-plugin-perfectionist.
@@ -34,7 +88,7 @@ const SORT_IMPORTS_GROUPS = [
  * - https://eslint-plugin-perfectionist.azat.io/rules/sort-classes#groups
  * - https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/index.ts#L61
  */
-const SORT_CLASSES_GROUPS = [
+export const SORT_CLASSES_GROUPS = [
   'index-signature',
   ['static-property', 'static-accessor-property'],
   ['static-get-method', 'static-set-method'],
@@ -57,13 +111,13 @@ const SORT_CLASSES_GROUPS = [
   ['protected-method', 'protected-function-property'],
   ['private-method', 'private-function-property'],
   'unknown',
-];
+] as const satisfies SortClassesOptions[number]['groups'];
 
 /**
  * Customized configuration to configure the perfectionist/sort-intersection-types rule.
  * The following group names are available for configuration: https://perfectionist.dev/rules/sort-intersection-types#groups
  */
-const SORT_INTERSECTION_TYPES_GROUPS = [
+export const SORT_INTERSECTION_TYPES_GROUPS = [
   'conditional',
   'function',
   'import',
@@ -77,11 +131,4 @@ const SORT_INTERSECTION_TYPES_GROUPS = [
   'object',
   'nullish',
   'unknown',
-];
-
-module.exports = {
-  PERFECTIONIST_SETTINGS,
-  SORT_CLASSES_GROUPS,
-  SORT_IMPORTS_GROUPS,
-  SORT_INTERSECTION_TYPES_GROUPS,
-};
+] as const satisfies SortIntersectionTypesOptions[number]['groups'];

@@ -22,48 +22,71 @@
     "url": "https://github.com/Boehringer-Ingelheim/eslint-config/issues"
   },
   "files": [
-    "configs",
-    "lib",
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "./dist/esm/main.js",
+  "types": "./dist/esm/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/main.js",
+      "require": "./dist/cjs/main.js",
+      "types": "./dist/esm/main.d.ts"
+    },
+    "./configs/*": {
+      "import": "./dist/esm/configs/*.js",
+      "require": "./dist/cjs/configs/*.js",
+      "types": "./dist/esm/configs/*.d.ts"
+    },
+    "./lib/*": {
+      "import": "./dist/esm/lib/*.js",
+      "require": "./dist/cjs/lib/*.js",
+      "types": "./dist/esm/lib/*.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "prepare": "husky",
     "release": "semantic-release",
     "repair": "npx --yes rimraf@6 .git/hooks node_modules package-lock.json && npm install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "npm run build:esm && npm run build:cjs"
   },
   "peerDependencies": {
     "eslint": ">= 9.34.0"
   },
   "dependencies": {
-    "@eslint/compat": "^2.0.1",
-    "@eslint/js": "^9.39.2",
-    "@next/eslint-plugin-next": "^16.1.1",
+    "@eslint/config-helpers": "^0.6.0",
+    "@eslint/js": "^9.39.4",
+    "@next/eslint-plugin-next": "^16.2.6",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-perfectionist": "^5.3.1",
-    "eslint-plugin-playwright": "^2.5.0",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "eslint-plugin-playwright": "^2.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.26",
-    "eslint-plugin-sonarjs": "^3.0.5",
-    "globals": "^17.0.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "eslint-plugin-sonarjs": "^4.0.3",
+    "globals": "^17.6.0",
     "is-ci": "^4.1.0",
-    "typescript-eslint": "^8.53.0"
+    "typescript-eslint": "^8.59.3"
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
-    "@commitlint/cli": "20.3.1",
-    "@commitlint/config-conventional": "20.3.1",
-    "@commitlint/types": "20.3.1",
+    "@commitlint/cli": "21.0.1",
+    "@commitlint/config-conventional": "21.0.1",
+    "@commitlint/types": "21.0.1",
+    "@types/eslint-plugin-jsx-a11y": "6.10.1",
+    "@types/node": "24.12.4",
     "dotenv-cli": "11.0.0",
     "husky": "9.1.7",
-    "prettier": "3.7.4",
-    "semantic-release": "25.0.2"
-  }
+    "lint-staged": "17.0.4",
+    "prettier": "3.8.3",
+    "semantic-release": "25.0.3",
+    "typescript": "6.0.3"
+  },
+  "type": "module"
 }

@@ -7,7 +7,7 @@
  * @type {string[]}
  * @see {@link https://nextjs.org/docs/app/getting-started/project-structure#routing-files}
  */
-const NEXTJS_ROUTING_FILES = [
+export const NEXTJS_ROUTING_FILES = [
   'default',
   'error',
   'global-error',
@@ -18,7 +18,3 @@ const NEXTJS_ROUTING_FILES = [
   'route',
   'template',
 ];
-
-module.exports = {
-  NEXTJS_ROUTING_FILES,
-};

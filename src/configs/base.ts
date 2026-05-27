@@ -1,25 +1,25 @@
-const eslint = require('@eslint/js');
-const importPlugin = require('eslint-plugin-import');
-const perfectionist = require('eslint-plugin-perfectionist');
-const sonarjs = require('eslint-plugin-sonarjs');
-const { defineConfig } = require('eslint/config');
-const tseslint = require('typescript-eslint');
-
-const {
+import eslint from '@eslint/js';
+import importPlugin from 'eslint-plugin-import';
+import perfectionist from 'eslint-plugin-perfectionist';
+import { configs as sonarjsConfigs } from 'eslint-plugin-sonarjs';
+import { defineConfig } from 'eslint/config';
+import tseslint from 'typescript-eslint';
+import { TEST_FILE_GLOBS } from '../lib/constants.js';
+import {
   PERFECTIONIST_SETTINGS,
   SORT_CLASSES_GROUPS,
   SORT_IMPORTS_GROUPS,
   SORT_INTERSECTION_TYPES_GROUPS,
-} = require('../lib/eslint-plugin-perfectionist.js');
+} from '../lib/eslint-plugin-perfectionist.js';
 
-module.exports = defineConfig(
+export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylisticTypeChecked,
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
   perfectionist.configs['recommended-natural'],
-  sonarjs.configs.recommended,
+  sonarjsConfigs.recommended,
   {
     languageOptions: {
       parserOptions: {
@@ -122,6 +122,11 @@ module.exports = defineConfig(
           partitionByComment: true,
         },
       ],
+
+      // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
+      'sonarjs/deprecation': 'off', // disable rule in favor of @typescript-eslint/no-deprecated
+      'sonarjs/no-unused-vars': 'off', // disabled due to overlap with @typescript-eslint/no-unused-vars
+      'sonarjs/todo-tag': 'warn',
     },
     settings: {
       'import/resolver': {
@@ -135,11 +140,19 @@ module.exports = defineConfig(
   {
     files: [
       '**/*.d.ts', // TypeScript declaration files
-      '**/*.{spec,test}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}', // Usually test files
+      ...TEST_FILE_GLOBS,
       './*.{js,cjs,mjs,ts,cts,mts}', // Mostly configuration files on root level
     ],
     rules: {
       'import/no-unused-modules': 'off',
+    },
+  },
+  {
+    files: [...TEST_FILE_GLOBS],
+    rules: {
+      // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
+      'sonarjs/no-duplicate-string': 'off',
+      'sonarjs/slow-regex': 'off',
     },
   },
 );
