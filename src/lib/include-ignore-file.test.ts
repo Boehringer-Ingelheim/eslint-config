@@ -11,7 +11,7 @@ const compatMock = vi.hoisted(() => ({
   })),
 }));
 
-vi.mock('@eslint/compat', () => compatMock);
+vi.mock('@eslint/config-helpers', () => compatMock);
 
 const FIXTURES_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../__tests__/fixtures');
 
@@ -34,7 +34,7 @@ describe('lib/include-ignore-file', () => {
     expect(compatMock.includeIgnoreFile).toHaveBeenCalledWith(path.resolve(cwd(), './backend/.gitignore'));
   });
 
-  it('returns whatever @eslint/compat returns', async () => {
+  it('returns whatever @eslint/config-helpers returns', async () => {
     const { includeIgnoreFile } = await import('./include-ignore-file.js');
     const result = includeIgnoreFile();
     expect(result).toMatchObject({ name: 'mock-ignore' });
@@ -53,8 +53,8 @@ describe('lib/include-ignore-file', () => {
 });
 
 describe('lib/include-ignore-file (integration)', () => {
-  it('invokes the real @eslint/compat helper against a fixture .gitignore', async () => {
-    vi.doUnmock('@eslint/compat');
+  it('invokes the real @eslint/config-helpers helper against a fixture .gitignore', async () => {
+    vi.doUnmock('@eslint/config-helpers');
     vi.resetModules();
     const previous = cwd();
     try {
