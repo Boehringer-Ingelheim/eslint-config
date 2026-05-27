@@ -14,6 +14,8 @@ export default defineConfig(
       parserOptions: {
         projectService: {
           allowDefaultProject: ['*.*js', '*.*ts'],
+          // eslint-disable-next-line camelcase -- sonarjs/no-commented-code rule adds some placeholder.*js files to the project to check if comment is code. Those files do not actually exist, so we need to limit the number of files that are checked.
+          maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING: 10,
         },
       },
     },

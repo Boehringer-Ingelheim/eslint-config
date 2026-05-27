@@ -21,7 +21,7 @@ export const flatten = (config: unknown): Linter.Config[] => {
   }
 
   if (config && typeof config === 'object') {
-    return [config as Linter.Config];
+    return [config];
   }
 
   return [];
