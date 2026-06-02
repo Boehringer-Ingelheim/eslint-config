@@ -37,6 +37,8 @@ jobs:
         run: npm audit signatures
       - name: Lint the project
         run: npm run lint
+      - name: Run tests
+        run: npm run test:ci
       - name: Build the project
         run: npm run build
       - name: Release package to npm and GitHub

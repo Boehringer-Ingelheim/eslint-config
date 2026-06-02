@@ -49,9 +49,12 @@
     "release": "semantic-release",
     "repair": "npx --yes rimraf@6 .git/hooks node_modules package-lock.json && npm install",
     "lint": "eslint .",
-    "build:esm": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig.build.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build": "npm run build:esm && npm run build:cjs"
+    "build": "npm run build:esm && npm run build:cjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ci": "vitest run --reporter=verbose"
   },
   "peerDependencies": {
     "eslint": ">= 9.34.0"
@@ -86,7 +89,8 @@
     "lint-staged": "17.0.4",
     "prettier": "3.8.3",
     "semantic-release": "25.0.3",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
   },
   "type": "module"
 }
