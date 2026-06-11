@@ -245,16 +245,16 @@ exports[`configs/prettier-disable > snapshot of resolved rules for src/foo.ts (c
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "logical-assignment-operators": [

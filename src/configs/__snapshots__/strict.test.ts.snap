@@ -345,20 +345,20 @@ exports[`configs/strict > snapshot of resolved rules for src/foo.ts 1`] = `
   "for-direction": [
     2,
   ],
-  "import/consistent-type-specifier-style": [
+  "import-x/consistent-type-specifier-style": [
     2,
     "prefer-top-level",
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "logical-assignment-operators": [

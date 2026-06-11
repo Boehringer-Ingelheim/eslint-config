@@ -27,9 +27,7 @@ Create or update the `eslint.config.mjs` (`eslint.config.cjs` is also possible i
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict
-)
+export default defineConfig(boehringer.configs.strict);
 ```
 
 #### Extend or Override configuration
@@ -40,14 +38,11 @@ This is not recommended as the goal is to have similar code stylings in all proj
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict, 
-  {
-    rules: {
-      'no-empty-function': 'off',
-    },
-  }
-);
+export default defineConfig(boehringer.configs.strict, {
+  rules: {
+    'no-empty-function': 'off',
+  },
+});
 ```
 
 #### `boehringer.includeIgnoreFile()`
@@ -97,9 +92,7 @@ Opinionated Options that differ from the standard/recommended ESLint configurati
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.base
-)
+export default defineConfig(boehringer.configs.base);
 ```
 
 This shared ESLint configuration is set up for TypeScript projects that adhere to modern JavaScript standards. It uses the latest version of TypeScript (ES2022) and extends several plugins and recommended rules to enforce best practices and catch potential errors.
@@ -107,7 +100,7 @@ This shared ESLint configuration is set up for TypeScript projects that adhere t
 The following plugins are used in this configuration:
 
 - [`@typescript-eslint/eslint-plugin`](https://typescript-eslint.io/rules/)
-- [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
+- [`eslint-plugin-import-x`](https://github.com/un-es/eslint-plugin-import-x)
 - [`eslint-plugin-sonarjs`](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 
 Additionally, the [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) is used to automatically fix sorting issues.
@@ -120,10 +113,7 @@ This configuration also sets up the TypeScript parser [`@typescript-eslint/parse
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.base,
-  boehringer.configs.local
-);
+export default defineConfig(boehringer.configs.base, boehringer.configs.local);
 ```
 
 This shared ESLint configuration configures or disables some rules for a better performance locally. With the help of [`is-ci`](https://www.npmjs.com/package/is-ci) those configs only apply to environments outside the CI pipelines.
@@ -134,9 +124,7 @@ This shared ESLint configuration configures or disables some rules for a better 
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict
-);
+export default defineConfig(boehringer.configs.strict);
 ```
 
 This shared ESLint configuration extends the [base configuration](#base) and adds additional strict linting rules from the typescript-eslint plugin. These strict rules aim to enforce a high standard of code quality and improve code maintainability.
@@ -147,10 +135,7 @@ This shared ESLint configuration extends the [base configuration](#base) and add
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict,
-  boehringer.configs.react
-);
+export default defineConfig(boehringer.configs.strict, boehringer.configs.react);
 ```
 
 This shared ESLint configuration is specifically tailored for [React](https://reactjs.org/) projects, and extends the [base configuration](#base). It uses the browser environment, and includes recommended configurations for the following plugins:
@@ -169,10 +154,7 @@ Additionally in restricts the usage of enums using [`no-restricted-syntax`](http
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict,
-  boehringer.configs.nextjs
-);
+export default defineConfig(boehringer.configs.strict, boehringer.configs.nextjs);
 ```
 
 This shared ESLint configuration is specifically tailored for [Next.js](https://nextjs.org/) projects. It extends the [react configuration](#react) and includes the [`@next/eslint-plugin-next`](https://nextjs.org/docs/app/api-reference/config/eslint) plugin with the recommended and [`core-web-vital`](https://nextjs.org/docs/app/api-reference/config/eslint#with-core-web-vitals) rule set. The configuration also adapts the rule `react-refresh/only-export-components` to be compatible with Next.js.
@@ -183,10 +165,7 @@ This shared ESLint configuration is specifically tailored for [Next.js](https://
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict,
-  boehringer.configs.playwright
-);
+export default defineConfig(boehringer.configs.strict, boehringer.configs.playwright);
 ```
 
 or for specific files only:
@@ -195,13 +174,10 @@ or for specific files only:
 import boehringer from '@boehringer-ingelheim/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(
-  boehringer.configs.strict,
-  {
-    files: ['src/**/*.test.{ts,tsx}'],
-    ...boehringer.configs.playwright[0],
-  },
-);
+export default defineConfig(boehringer.configs.strict, {
+  files: ['src/**/*.test.{ts,tsx}'],
+  ...boehringer.configs.playwright[0],
+});
 ```
 
 This shared ESLint configuration is designed to enforce best practices and recommendations when writing tests with Playwright. It extends the [`eslint-plugin-playwright`](https://github.com/playwright-community/eslint-plugin-playwright) configuration and adds the following rules:
@@ -219,7 +195,7 @@ import { defineConfig } from 'eslint/config';
 export default defineConfig(
   boehringer.configs.strict,
   // possibly other configs,
-  boehringer.configs.experimentalNamingConvention
+  boehringer.configs.experimentalNamingConvention,
 );
 ```
 
@@ -271,7 +247,7 @@ Include the .(c|m)?js files in your main tsconfig.json:
     "*.*js", // this will include all .js, .cjs, .mjs files and similar in your project root
     "*.ts", // this will include all .ts files and similar in your project root
     // Add all other files/folders in which this error occurs
-  ]
+  ],
 }
 ```
 
@@ -289,17 +265,14 @@ export default defineConfig(
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: [
-            '*.*js', 
-            '.*.*js',
-          ],
+          allowDefaultProject: ['*.*js', '.*.*js'],
           // defaultProject can be used to specify separate tsconfig options for "out-of-project" files included by allowDefaultProject
           // defaultProject: 'tsconfig.eslint.json',
         },
       },
     },
   },
-)
+);
 ```
 
 ## Local Development
