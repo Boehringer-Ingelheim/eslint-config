@@ -79,18 +79,18 @@
   },
   "devDependencies": {
     "@boehringer-ingelheim/prettier-config": "2.0.0",
-    "@commitlint/cli": "21.0.1",
-    "@commitlint/config-conventional": "21.0.1",
+    "@commitlint/cli": "21.0.2",
+    "@commitlint/config-conventional": "21.0.2",
     "@commitlint/types": "21.0.1",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
     "@types/node": "24.12.4",
     "dotenv-cli": "11.0.0",
     "husky": "9.1.7",
-    "lint-staged": "17.0.5",
-    "prettier": "3.8.3",
-    "semantic-release": "25.0.3",
+    "lint-staged": "17.0.7",
+    "prettier": "3.8.4",
+    "semantic-release": "25.0.5",
     "typescript": "6.0.3",
-    "vitest": "4.1.7"
+    "vitest": "4.1.9"
   },
   "type": "module"
 }
