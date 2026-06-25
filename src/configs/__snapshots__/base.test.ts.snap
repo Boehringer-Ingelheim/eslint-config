@@ -245,16 +245,16 @@ exports[`configs/base > snapshot of resolved rules for src/foo.spec.ts (test ove
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "logical-assignment-operators": [
@@ -1654,16 +1654,16 @@ exports[`configs/base > snapshot of resolved rules for src/foo.ts 1`] = `
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "logical-assignment-operators": [

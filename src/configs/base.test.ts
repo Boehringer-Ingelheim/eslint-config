@@ -12,7 +12,7 @@ describe('configs/base', () => {
   const flat = flatten(base);
   const plugins = collectPlugins(base);
 
-  it.each(['@typescript-eslint', 'import', 'perfectionist', 'sonarjs'])('registers the %s plugin', (plugin) => {
+  it.each(['@typescript-eslint', 'import-x', 'perfectionist', 'sonarjs'])('registers the %s plugin', (plugin) => {
     expect(plugins.has(plugin)).toBe(true);
   });
 

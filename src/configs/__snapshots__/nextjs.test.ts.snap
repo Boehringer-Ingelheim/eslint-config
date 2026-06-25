@@ -322,16 +322,16 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
@@ -2137,16 +2137,16 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
@@ -3952,16 +3952,16 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
@@ -5767,16 +5767,16 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
@@ -7567,16 +7567,16 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
@@ -9371,16 +9371,16 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
@@ -11175,16 +11175,16 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "for-direction": [
     2,
   ],
-  "import/export": [
+  "import-x/export": [
     2,
   ],
-  "import/no-cycle": [
+  "import-x/no-cycle": [
     2,
   ],
-  "import/no-duplicates": [
+  "import-x/no-duplicates": [
     1,
   ],
-  "import/no-named-as-default": [
+  "import-x/no-named-as-default": [
     1,
   ],
   "jsx-a11y/alt-text": [
