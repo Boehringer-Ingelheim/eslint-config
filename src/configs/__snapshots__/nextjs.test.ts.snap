@@ -1172,6 +1172,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -1254,9 +1257,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -1321,9 +1321,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -1342,7 +1339,7 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -1415,9 +1412,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -1428,6 +1422,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -1454,6 +1451,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -1464,6 +1464,12 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -1521,19 +1527,14 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -1542,9 +1543,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -1560,9 +1558,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -1628,6 +1623,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -1676,9 +1674,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -1695,6 +1690,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -1752,6 +1750,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
@@ -2987,6 +2988,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -3069,9 +3073,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -3136,9 +3137,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -3157,7 +3155,7 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -3230,9 +3228,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -3243,6 +3238,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -3269,6 +3267,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -3279,6 +3280,12 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -3336,19 +3343,14 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -3357,9 +3359,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -3375,9 +3374,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -3443,6 +3439,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -3491,9 +3490,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -3510,6 +3506,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -3567,6 +3566,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
@@ -4802,6 +4804,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -4884,9 +4889,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -4951,9 +4953,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -4972,7 +4971,7 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -5045,9 +5044,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -5058,6 +5054,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -5084,6 +5083,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -5094,6 +5096,12 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -5151,19 +5159,14 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -5172,9 +5175,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -5190,9 +5190,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -5258,6 +5255,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -5306,9 +5306,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -5325,6 +5322,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -5382,6 +5382,9 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
@@ -6602,6 +6605,9 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -6684,9 +6690,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -6751,9 +6754,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -6772,7 +6772,7 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -6845,9 +6845,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -6858,6 +6855,9 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -6884,6 +6884,9 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -6894,6 +6897,12 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -6951,19 +6960,14 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -6972,9 +6976,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -6990,9 +6991,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -7058,6 +7056,9 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -7106,9 +7107,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -7125,6 +7123,9 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -7182,6 +7183,9 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
@@ -8406,6 +8410,9 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -8488,9 +8495,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -8555,9 +8559,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -8576,7 +8577,7 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -8649,9 +8650,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -8662,6 +8660,9 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -8688,6 +8689,9 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -8698,6 +8702,12 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -8755,19 +8765,14 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -8776,9 +8781,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -8794,9 +8796,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -8862,6 +8861,9 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -8910,9 +8912,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -8929,6 +8928,9 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -8986,6 +8988,9 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
@@ -10210,6 +10215,9 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -10292,9 +10300,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -10359,9 +10364,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -10380,7 +10382,7 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -10453,9 +10455,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -10466,6 +10465,9 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -10492,6 +10494,9 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -10502,6 +10507,12 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -10559,19 +10570,14 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -10580,9 +10586,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -10598,9 +10601,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -10666,6 +10666,9 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -10714,9 +10717,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -10733,6 +10733,9 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -10790,6 +10793,9 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
@@ -12015,6 +12021,9 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -12097,9 +12106,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -12164,9 +12170,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -12185,7 +12188,7 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -12258,9 +12261,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -12271,6 +12271,9 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -12297,6 +12300,9 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -12307,6 +12313,12 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -12364,19 +12376,14 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -12385,9 +12392,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -12403,9 +12407,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -12471,6 +12472,9 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -12519,9 +12523,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -12538,6 +12539,9 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -12595,6 +12599,9 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [

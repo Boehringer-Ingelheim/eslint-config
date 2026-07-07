@@ -860,6 +860,9 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/assertions-in-tests": [
     2,
   ],
+  "sonarjs/async-test-assertions": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -942,9 +945,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/concise-regex": [
     2,
   ],
-  "sonarjs/confidential-information-logging": [
-    2,
-  ],
   "sonarjs/constructor-for-side-effects": [
     2,
   ],
@@ -1009,9 +1009,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/for-loop-increment-sign": [
     2,
   ],
-  "sonarjs/frame-ancestors": [
-    2,
-  ],
   "sonarjs/function-inside-loop": [
     2,
   ],
@@ -1030,7 +1027,7 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/hashing": [
     2,
   ],
-  "sonarjs/hidden-files": [
+  "sonarjs/hooks-before-test-cases": [
     2,
   ],
   "sonarjs/in-operator-type-error": [
@@ -1103,9 +1100,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/no-collection-size-mischeck": [
     2,
   ],
-  "sonarjs/no-commented-code": [
-    2,
-  ],
   "sonarjs/no-control-regex": [
     2,
   ],
@@ -1116,6 +1110,9 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-test-title": [
     2,
   ],
   "sonarjs/no-duplicated-branches": [
@@ -1142,6 +1139,9 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/no-empty-test-file": [
     2,
   ],
+  "sonarjs/no-empty-test-title": [
+    2,
+  ],
   "sonarjs/no-equals-in-for-termination": [
     2,
   ],
@@ -1152,6 +1152,12 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-floating-point-equality": [
+    2,
+  ],
+  "sonarjs/no-forced-browser-interaction": [
     2,
   ],
   "sonarjs/no-global-this": [
@@ -1209,19 +1215,14 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/no-in-misuse": [
     2,
   ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2,
+  ],
   "sonarjs/no-incomplete-assertions": [
     2,
   ],
   "sonarjs/no-internal-api-use": [
     2,
-  ],
-  "sonarjs/no-intrusive-permissions": [
-    2,
-    {
-      "permissions": [
-        "geolocation",
-      ],
-    },
   ],
   "sonarjs/no-invalid-regexp": [
     2,
@@ -1230,9 +1231,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
     2,
   ],
   "sonarjs/no-inverted-boolean-check": [
-    2,
-  ],
-  "sonarjs/no-ip-forward": [
     2,
   ],
   "sonarjs/no-labels": [
@@ -1248,9 +1246,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
     2,
   ],
   "sonarjs/no-misleading-character-class": [
-    2,
-  ],
-  "sonarjs/no-mixed-content": [
     2,
   ],
   "sonarjs/no-nested-assignment": [
@@ -1316,6 +1311,9 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/no-table-as-layout": [
     2,
   ],
+  "sonarjs/no-trivial-assertions": [
+    2,
+  ],
   "sonarjs/no-try-promise": [
     2,
   ],
@@ -1364,9 +1362,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/object-alt-content": [
     2,
   ],
-  "sonarjs/os-command": [
-    2,
-  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -1383,6 +1378,9 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
     2,
   ],
   "sonarjs/prefer-single-boolean-return": [
+    2,
+  ],
+  "sonarjs/prefer-specific-assertions": [
     2,
   ],
   "sonarjs/prefer-type-guard": [
@@ -1440,6 +1438,9 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
     2,
   ],
   "sonarjs/strict-transport-security": [
+    2,
+  ],
+  "sonarjs/super-linear-regex": [
     2,
   ],
   "sonarjs/table-header": [
