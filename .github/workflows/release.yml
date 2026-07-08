@@ -24,18 +24,7 @@ jobs:
     name: Test
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v6
-        with:
-          cache: npm
-          node-version-file: '.nvmrc'
-          registry-url: https://registry.npmjs.org/
-      - name: Install Dependencies
-        run: npm clean-install
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures
+      - uses: ./.github/actions/setup
       - name: Lint the project
         run: npm run lint
       - name: Run tests
@@ -46,16 +35,7 @@ jobs:
     needs: test
     if: ${{ inputs.dryRun }}
     steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v6
-        with:
-          cache: npm
-          node-version-file: '.nvmrc'
-          registry-url: https://registry.npmjs.org/
-      - name: Install Dependencies
-        run: npm clean-install
+      - uses: ./.github/actions/setup
       - name: Build the project
         run: npm run build
       - name: Run release as a dry run
@@ -71,16 +51,7 @@ jobs:
       pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for npm provenance
     steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v6
-        with:
-          cache: npm
-          node-version-file: '.nvmrc'
-          registry-url: https://registry.npmjs.org/
-      - name: Install Dependencies
-        run: npm clean-install
+      - uses: ./.github/actions/setup
       - name: Build the project
         run: npm run build
       - name: Release package to npm and GitHub
