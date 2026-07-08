@@ -1154,9 +1154,6 @@ exports[`configs/experimental-naming-convention > snapshot of resolved rules for
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],

@@ -1167,9 +1167,6 @@ exports[`configs/strict > snapshot of resolved rules for src/foo.ts 1`] = `
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],

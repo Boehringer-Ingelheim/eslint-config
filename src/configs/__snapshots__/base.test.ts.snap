@@ -1063,9 +1063,6 @@ exports[`configs/base > snapshot of resolved rules for src/foo.spec.ts (test ove
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],
@@ -2471,9 +2468,6 @@ exports[`configs/base > snapshot of resolved rules for src/foo.ts 1`] = `
     2,
   ],
   "sonarjs/no-fallthrough": [
-    2,
-  ],
-  "sonarjs/no-floating-point-equality": [
     2,
   ],
   "sonarjs/no-forced-browser-interaction": [
