@@ -1060,9 +1060,6 @@ exports[`configs/prettier-disable > snapshot of resolved rules for src/foo.ts (c
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],

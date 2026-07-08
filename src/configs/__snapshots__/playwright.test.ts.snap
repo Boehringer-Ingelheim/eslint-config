@@ -1165,9 +1165,6 @@ exports[`configs/playwright > snapshot of resolved rules for sample.spec.ts (com
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],

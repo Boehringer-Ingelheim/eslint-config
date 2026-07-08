@@ -1388,9 +1388,6 @@ exports[`configs/react > snapshot of resolved rules for src/Foo.tsx 1`] = `
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],

@@ -1466,9 +1466,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory layout (src 
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],
@@ -3280,9 +3277,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory page (app/pa
     2,
   ],
   "sonarjs/no-fallthrough": [
-    2,
-  ],
-  "sonarjs/no-floating-point-equality": [
     2,
   ],
   "sonarjs/no-forced-browser-interaction": [
@@ -5098,9 +5092,6 @@ exports[`configs/nextjs > resolved rules snapshot for app directory route handle
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],
@@ -6897,9 +6888,6 @@ exports[`configs/nextjs > resolved rules snapshot for regular component (src/com
     2,
   ],
   "sonarjs/no-fallthrough": [
-    2,
-  ],
-  "sonarjs/no-floating-point-equality": [
     2,
   ],
   "sonarjs/no-forced-browser-interaction": [
@@ -8704,9 +8692,6 @@ exports[`configs/nextjs > resolved rules snapshot for root instrumentation (inst
   "sonarjs/no-fallthrough": [
     2,
   ],
-  "sonarjs/no-floating-point-equality": [
-    2,
-  ],
   "sonarjs/no-forced-browser-interaction": [
     2,
   ],
@@ -10507,9 +10492,6 @@ exports[`configs/nextjs > resolved rules snapshot for root middleware (middlewar
     2,
   ],
   "sonarjs/no-fallthrough": [
-    2,
-  ],
-  "sonarjs/no-floating-point-equality": [
     2,
   ],
   "sonarjs/no-forced-browser-interaction": [
@@ -12313,9 +12295,6 @@ exports[`configs/nextjs > resolved rules snapshot for root proxy (proxy.ts) 1`] 
     2,
   ],
   "sonarjs/no-fallthrough": [
-    2,
-  ],
-  "sonarjs/no-floating-point-equality": [
     2,
   ],
   "sonarjs/no-forced-browser-interaction": [
