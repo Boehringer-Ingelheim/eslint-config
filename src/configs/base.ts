@@ -76,8 +76,7 @@ export default defineConfig(
       /**
        * The rule is disabled for now as it is not compatible with flat-configs, without adding an artifical `.eslintrc` file.
        *
-       * @see: https://github.com/import-js/eslint-plugin-import/issues/3079#issuecomment-2557191925
-       * @todo Enable rule, as soon as fix is available: https://github.com/Boehringer-Ingelheim/eslint-config/blob/9f028ed43bb5db11082a2982f249ddfe7eaf5c13/configs/base.js#L77
+       * @see: https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unused-modules.md
        */
       'import-x/no-unused-modules': 'off',
       'import-x/order': 'off', // disabled due to conflict with eslint-plugin-perfectionist
