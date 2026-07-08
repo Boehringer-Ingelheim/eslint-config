@@ -1,27 +1,28 @@
-name: Release
+name: test, build and release
 
 on:
   push:
     branches:
       - master
       - next
-      - feature/**
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: 'Run release as a dry run'
+        required: false
+        default: true
 
 permissions:
   contents: read # for checkout
 
+env:
+  # Disable husky (git hooks) in CI, see: https://typicode.github.io/husky/#/?id=disable-husky-in-cidocker
+  HUSKY: 0
+
 jobs:
-  release:
-    env:
-      # Disable husky (git hooks) in CI, see: https://typicode.github.io/husky/#/?id=disable-husky-in-cidocker
-      HUSKY: 0
-    name: Release
+  test:
+    name: Test
     runs-on: ubuntu-24.04
-    permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
-      id-token: write # to enable use of OIDC for npm provenance
     steps:
       - uses: actions/checkout@v6
         with:
@@ -39,6 +40,47 @@ jobs:
         run: npm run lint
       - name: Run tests
         run: npm run test:ci
+  releaseDryRun:
+    name: Release Dry Run
+    runs-on: ubuntu-24.04
+    needs: test
+    if: github.event_name == 'workflow_dispatch' && inputs.dryRun == true
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          cache: npm
+          node-version-file: '.nvmrc'
+          registry-url: https://registry.npmjs.org/
+      - name: Install Dependencies
+        run: npm clean-install
+      - name: Build the project
+        run: npm run build
+      - name: Run release as a dry run
+        run: npm run release -- --dry-run
+  release:
+    name: Release
+    runs-on: ubuntu-24.04
+    needs: test
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dryRun == false)
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          cache: npm
+          node-version-file: '.nvmrc'
+          registry-url: https://registry.npmjs.org/
+      - name: Install Dependencies
+        run: npm clean-install
       - name: Build the project
         run: npm run build
       - name: Release package to npm and GitHub
