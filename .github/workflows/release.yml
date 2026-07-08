@@ -44,7 +44,7 @@ jobs:
     name: Release Dry Run
     runs-on: ubuntu-24.04
     needs: test
-    if: github.event_name == 'workflow_dispatch' && inputs.dryRun == true
+    if: ${{ inputs.dryRun }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -64,7 +64,7 @@ jobs:
     name: Release
     runs-on: ubuntu-24.04
     needs: test
-    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dryRun == false)
+    if: ${{ !inputs.dryRun }}
     permissions:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
