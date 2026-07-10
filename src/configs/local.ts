@@ -7,10 +7,10 @@ export default defineConfig(
     : {
         rules: {
           // Only activate in CI, as suggested here: https://typescript-eslint.io/linting/troubleshooting/performance-troubleshooting#eslint-plugin-import
-          'import/no-cycle': 'off',
-          'import/no-deprecated': 'off',
-          'import/no-named-as-default': 'off',
-          'import/no-unused-modules': 'off',
+          'import-x/no-cycle': 'off',
+          'import-x/no-deprecated': 'off',
+          'import-x/no-named-as-default': 'off',
+          'import-x/no-unused-modules': 'off',
         },
       },
 );

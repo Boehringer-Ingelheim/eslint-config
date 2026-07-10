@@ -1,0 +1,16 @@
+name: Setup
+description: Checkout, setup Node, and install dependencies
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v6
+      with:
+        cache: npm
+        node-version-file: .nvmrc
+        registry-url: https://registry.npmjs.org/
+    - name: Install Dependencies
+      shell: bash
+      run: npm clean-install
+    - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+      shell: bash
+      run: npm audit signatures

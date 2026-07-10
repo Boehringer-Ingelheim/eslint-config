@@ -107,7 +107,7 @@ This shared ESLint configuration is set up for TypeScript projects that adhere t
 The following plugins are used in this configuration:
 
 - [`@typescript-eslint/eslint-plugin`](https://typescript-eslint.io/rules/)
-- [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
+- [`eslint-plugin-import-x`](https://github.com/un-es/eslint-plugin-import-x)
 - [`eslint-plugin-sonarjs`](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 
 Additionally, the [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) is used to automatically fix sorting issues.

@@ -1,5 +1,5 @@
 import eslint from '@eslint/js';
-import importPlugin from 'eslint-plugin-import';
+import { flatConfigs as importXConfigs } from 'eslint-plugin-import-x';
 import perfectionist from 'eslint-plugin-perfectionist';
 import { configs as sonarjsConfigs } from 'eslint-plugin-sonarjs';
 import { defineConfig } from 'eslint/config';
@@ -16,8 +16,8 @@ export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylisticTypeChecked,
-  importPlugin.flatConfigs.recommended,
-  importPlugin.flatConfigs.typescript,
+  importXConfigs.recommended,
+  importXConfigs.typescript,
   perfectionist.configs['recommended-natural'],
   sonarjsConfigs.recommended,
   {
@@ -72,23 +72,22 @@ export default defineConfig(
       'sort-keys': 'off', // disabled due to conflict with eslint-plugin-perfectionist
 
       // eslint-plugin-import: https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
-      'import/no-cycle': 'error',
+      'import-x/no-cycle': 'error',
       /**
        * The rule is disabled for now as it is not compatible with flat-configs, without adding an artifical `.eslintrc` file.
        *
-       * @see: https://github.com/import-js/eslint-plugin-import/issues/3079#issuecomment-2557191925
-       * @todo Enable rule, as soon as fix is available: https://github.com/Boehringer-Ingelheim/eslint-config/blob/9f028ed43bb5db11082a2982f249ddfe7eaf5c13/configs/base.js#L77
+       * @see: https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unused-modules.md
        */
-      'import/no-unused-modules': 'off',
-      'import/order': 'off', // disabled due to conflict with eslint-plugin-perfectionist
-      'import/prefer-default-export': 'off',
+      'import-x/no-unused-modules': 'off',
+      'import-x/order': 'off', // disabled due to conflict with eslint-plugin-perfectionist
+      'import-x/prefer-default-export': 'off',
 
       // Deactivated as TypeScript provides the same checks as part of standard type checking: https://typescript-eslint.io/linting/troubleshooting/performance-troubleshooting
-      'import/default': 'off',
-      'import/named': 'off',
-      'import/namespace': 'off',
-      'import/no-named-as-default-member': 'off',
-      'import/no-unresolved': 'off',
+      'import-x/default': 'off',
+      'import-x/named': 'off',
+      'import-x/namespace': 'off',
+      'import-x/no-named-as-default-member': 'off',
+      'import-x/no-unresolved': 'off',
 
       // eslint-plugin-perfectionist: https://github.com/azat-io/eslint-plugin-perfectionist
       'perfectionist/sort-classes': [
@@ -125,11 +124,12 @@ export default defineConfig(
 
       // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
       'sonarjs/deprecation': 'off', // disable rule in favor of @typescript-eslint/no-deprecated
+      'sonarjs/no-floating-point-equality': 'off',
       'sonarjs/no-unused-vars': 'off', // disabled due to overlap with @typescript-eslint/no-unused-vars
       'sonarjs/todo-tag': 'warn',
     },
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         typescript: true,
       },
       perfectionist: {
@@ -144,7 +144,7 @@ export default defineConfig(
       './*.{js,cjs,mjs,ts,cts,mts}', // Mostly configuration files on root level
     ],
     rules: {
-      'import/no-unused-modules': 'off',
+      'import-x/no-unused-modules': 'off',
     },
   },
   {

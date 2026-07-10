@@ -1,22 +1,56 @@
-name: Release
+name: test, build and release
 
 on:
   push:
     branches:
       - master
       - next
-      - feature/**
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: 'Run release as a dry run'
+        required: false
+        default: true
 
 permissions:
   contents: read # for checkout
 
+env:
+  # Disable husky (git hooks) in CI, see: https://typicode.github.io/husky/#/?id=disable-husky-in-cidocker
+  HUSKY: 0
+
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup
+      - name: Lint the project
+        run: npm run lint
+      - name: Run tests
+        run: npm run test:ci
+  releaseDryRun:
+    name: Release Dry Run
+    runs-on: ubuntu-24.04
+    needs: test
+    if: ${{ inputs.dryRun }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup
+      - name: Build the project
+        run: npm run build
+      - name: Run release as a dry run
+        run: npm run release -- --dry-run
   release:
-    env:
-      # Disable husky (git hooks) in CI, see: https://typicode.github.io/husky/#/?id=disable-husky-in-cidocker
-      HUSKY: 0
     name: Release
     runs-on: ubuntu-24.04
+    needs: test
+    if: ${{ !inputs.dryRun }}
     permissions:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
@@ -26,19 +60,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v6
-        with:
-          cache: npm
-          node-version-file: '.nvmrc'
-          registry-url: https://registry.npmjs.org/
-      - name: Install Dependencies
-        run: npm clean-install
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures
-      - name: Lint the project
-        run: npm run lint
-      - name: Run tests
-        run: npm run test:ci
+      - uses: ./.github/actions/setup
       - name: Build the project
         run: npm run build
       - name: Release package to npm and GitHub

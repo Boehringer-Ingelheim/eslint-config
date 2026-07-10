@@ -30,6 +30,6 @@ export default defineConfig(...base, tseslint.configs.strictTypeChecked, {
     ],
 
     // eslint-plugin-import: https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
-    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import-x/consistent-type-specifier-style': ['error', 'prefer-top-level'],
   },
 });

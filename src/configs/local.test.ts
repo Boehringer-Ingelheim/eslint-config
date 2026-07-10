@@ -16,10 +16,10 @@ describe('configs/local', () => {
     it('disables performance-heavy import rules', async () => {
       const local = (await import('./local.js')).default;
       const rules = collectRules(local);
-      expect(rules['import/no-cycle']).toBe('off');
-      expect(rules['import/no-deprecated']).toBe('off');
-      expect(rules['import/no-named-as-default']).toBe('off');
-      expect(rules['import/no-unused-modules']).toBe('off');
+      expect(rules['import-x/no-cycle']).toBe('off');
+      expect(rules['import-x/no-deprecated']).toBe('off');
+      expect(rules['import-x/no-named-as-default']).toBe('off');
+      expect(rules['import-x/no-unused-modules']).toBe('off');
     });
   });
 
