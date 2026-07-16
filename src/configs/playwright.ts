@@ -33,6 +33,7 @@ export default defineConfig({
 
     // eslint-plugin-sonarjs: https://github.com/SonarSource/SonarJS/blob/master/packages/analysis/src/jsts/rules/README.md
     'sonarjs/no-duplicate-string': 'off',
+    'sonarjs/no-fixed-wait-in-tests': 'off', // We have playwright/no-wait-for-timeout for that already
     'sonarjs/slow-regex': 'off',
   },
 });
